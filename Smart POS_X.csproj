@@ -85,6 +85,24 @@
     <Compile Include="UI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\OrderScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OrderScreen.Designer.cs">
+      <DependentUpon>OrderScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP UP\Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP UP\Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\XtraForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\XtraForm1.Designer.cs">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,6 +115,15 @@
     </Compile>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OrderScreen.resx">
+      <DependentUpon>OrderScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP UP\Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\XtraForm1.resx">
+      <DependentUpon>XtraForm1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -121,6 +148,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

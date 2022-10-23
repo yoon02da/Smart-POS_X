@@ -18,19 +18,24 @@ namespace Smart_POS_X.UI
             InitializeComponent();
         }
 
-        private void Btn_Login_Click(object sender, EventArgs e)
+        private void btn_Login_Click(object sender, EventArgs e)
         {
             //로그인 ID 검증 후
             //다음 메뉴
         }
 
-        private void Btn_Cancel_Click(object sender, EventArgs e)
+        private void btn_Cancel_Click(object sender, EventArgs e)
             =>this.Close();
         
 
-        private void Btn_Admin_Click(object sender, EventArgs e)
+        private void btn_Admin_Click(object sender, EventArgs e)
         {
             //관리자 화면으로 이동
+        }
+
+        private void labelControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
