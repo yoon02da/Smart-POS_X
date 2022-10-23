@@ -19,7 +19,7 @@ namespace Smart_POS_X
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OrderScreen());
+            Application.Run(new Receipt());
         }
     }
 }

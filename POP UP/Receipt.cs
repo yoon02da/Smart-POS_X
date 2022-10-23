@@ -23,5 +23,14 @@ namespace Smart_POS_X.UI
 
         }
 
+        private void txt_ReceiptNo_EditValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_ReInput_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

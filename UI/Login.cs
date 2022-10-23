@@ -32,10 +32,5 @@ namespace Smart_POS_X.UI
         {
             //관리자 화면으로 이동
         }
-
-        private void labelControl1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
