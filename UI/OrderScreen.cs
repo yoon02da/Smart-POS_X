@@ -82,5 +82,10 @@ namespace Smart_POS_X.UI
         {
 
         }
+
+        private void labelControl2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
