@@ -67,33 +67,6 @@
             this.gridCol3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
-            this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton36 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton35 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton34 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton33 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton32 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
-            this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton31 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton30 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton29 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton28 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton27 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton26 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
@@ -104,12 +77,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
-            this.tablePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
-            this.tablePanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
-            this.tablePanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
             this.SuspendLayout();
@@ -557,12 +524,10 @@
             // 
             // gridControl2
             // 
-            this.tablePanel1.SetColumn(this.gridControl2, 0);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl2.Location = new System.Drawing.Point(3, 3);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
-            this.tablePanel1.SetRow(this.gridControl2, 0);
             this.gridControl2.Size = new System.Drawing.Size(591, 354);
             this.gridControl2.TabIndex = 1;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -627,7 +592,6 @@
             this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel1.Controls.Add(this.tablePanel5);
             this.tablePanel1.Controls.Add(this.tablePanel2);
             this.tablePanel1.Controls.Add(this.gridControl2);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1009,7 +973,6 @@
             // 
             // tablePanel2
             // 
-            this.tablePanel1.SetColumn(this.tablePanel2, 0);
             this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
@@ -1018,7 +981,6 @@
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel2.Location = new System.Drawing.Point(3, 363);
             this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel1.SetRow(this.tablePanel2, 1);
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
             this.tablePanel2.Size = new System.Drawing.Size(591, 354);
@@ -1043,12 +1005,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
-            this.tablePanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
-            this.tablePanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
-            this.tablePanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
             this.tablePanel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1067,7 +1023,6 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel4;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
-        private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraGrid.Columns.GridColumn gridCol1;
@@ -1092,32 +1047,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.Utils.Layout.TablePanel tablePanel7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton36;
-        private DevExpress.XtraEditors.SimpleButton simpleButton35;
-        private DevExpress.XtraEditors.SimpleButton simpleButton34;
-        private DevExpress.XtraEditors.SimpleButton simpleButton33;
-        private DevExpress.XtraEditors.SimpleButton simpleButton32;
-        private DevExpress.XtraEditors.SimpleButton simpleButton16;
-        private DevExpress.XtraEditors.SimpleButton simpleButton15;
-        private DevExpress.XtraEditors.SimpleButton simpleButton14;
-        private DevExpress.Utils.Layout.TablePanel tablePanel6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton31;
-        private DevExpress.XtraEditors.SimpleButton simpleButton30;
-        private DevExpress.XtraEditors.SimpleButton simpleButton29;
-        private DevExpress.XtraEditors.SimpleButton simpleButton28;
-        private DevExpress.XtraEditors.SimpleButton simpleButton27;
-        private DevExpress.XtraEditors.SimpleButton simpleButton26;
-        private DevExpress.XtraEditors.SimpleButton simpleButton25;
-        private DevExpress.XtraEditors.SimpleButton simpleButton24;
-        private DevExpress.XtraEditors.SimpleButton simpleButton23;
-        private DevExpress.XtraEditors.SimpleButton simpleButton22;
-        private DevExpress.XtraEditors.SimpleButton simpleButton21;
-        private DevExpress.XtraEditors.SimpleButton simpleButton20;
-        private DevExpress.XtraEditors.SimpleButton simpleButton19;
-        private DevExpress.XtraEditors.SimpleButton simpleButton18;
-        private DevExpress.XtraEditors.SimpleButton simpleButton17;
-        private DevExpress.XtraEditors.SimpleButton simpleButton13;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl10;
         private DevExpress.XtraEditors.LabelControl labelControl9;
