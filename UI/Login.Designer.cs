@@ -51,7 +51,7 @@
             this.tablePanel1.SetColumn(this.labelControl1, 1);
             this.labelControl1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl1.Location = new System.Drawing.Point(41, 48);
+            this.labelControl1.Location = new System.Drawing.Point(40, 48);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 1);
             this.labelControl1.Size = new System.Drawing.Size(88, 39);
@@ -64,7 +64,7 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.labelControl2, 1);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelControl2.Location = new System.Drawing.Point(41, 93);
+            this.labelControl2.Location = new System.Drawing.Point(40, 93);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel1.SetRow(this.labelControl2, 2);
             this.labelControl2.Size = new System.Drawing.Size(87, 39);
@@ -74,39 +74,39 @@
             // txt_ID
             // 
             this.tablePanel1.SetColumn(this.txt_ID, 2);
-            this.txt_ID.Location = new System.Drawing.Point(141, 56);
+            this.txt_ID.Location = new System.Drawing.Point(140, 56);
             this.txt_ID.Name = "txt_ID";
             this.tablePanel1.SetRow(this.txt_ID, 1);
-            this.txt_ID.Size = new System.Drawing.Size(185, 22);
+            this.txt_ID.Size = new System.Drawing.Size(180, 22);
             this.txt_ID.TabIndex = 2;
             // 
             // txt_Password
             // 
             this.tablePanel1.SetColumn(this.txt_Password, 2);
-            this.txt_Password.Location = new System.Drawing.Point(141, 101);
+            this.txt_Password.Location = new System.Drawing.Point(140, 101);
             this.txt_Password.Name = "txt_Password";
             this.tablePanel1.SetRow(this.txt_Password, 2);
-            this.txt_Password.Size = new System.Drawing.Size(185, 22);
+            this.txt_Password.Size = new System.Drawing.Size(180, 22);
             this.txt_Password.TabIndex = 3;
             // 
             // btn_Cancel
             // 
-            this.tablePanel1.SetColumn(this.btn_Cancel, 3);
-            this.btn_Cancel.Location = new System.Drawing.Point(332, 100);
+            this.tablePanel1.SetColumn(this.btn_Cancel, 4);
+            this.btn_Cancel.Location = new System.Drawing.Point(336, 100);
             this.btn_Cancel.Name = "btn_Cancel";
             this.tablePanel1.SetRow(this.btn_Cancel, 2);
-            this.btn_Cancel.Size = new System.Drawing.Size(90, 25);
+            this.btn_Cancel.Size = new System.Drawing.Size(87, 25);
             this.btn_Cancel.TabIndex = 5;
             this.btn_Cancel.Text = "취소";
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_Admin
             // 
-            this.tablePanel1.SetColumn(this.btn_Admin, 3);
-            this.btn_Admin.Location = new System.Drawing.Point(332, 145);
+            this.tablePanel1.SetColumn(this.btn_Admin, 4);
+            this.btn_Admin.Location = new System.Drawing.Point(336, 145);
             this.btn_Admin.Name = "btn_Admin";
             this.tablePanel1.SetRow(this.btn_Admin, 3);
-            this.btn_Admin.Size = new System.Drawing.Size(90, 25);
+            this.btn_Admin.Size = new System.Drawing.Size(87, 25);
             this.btn_Admin.TabIndex = 6;
             this.btn_Admin.Text = "관리자";
             this.btn_Admin.Click += new System.EventHandler(this.btn_Admin_Click);
@@ -117,6 +117,7 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 8F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 100F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 8F)});
             this.tablePanel1.Controls.Add(this.btn_Login);
@@ -140,11 +141,11 @@
             // 
             // btn_Login
             // 
-            this.tablePanel1.SetColumn(this.btn_Login, 3);
-            this.btn_Login.Location = new System.Drawing.Point(332, 55);
+            this.tablePanel1.SetColumn(this.btn_Login, 4);
+            this.btn_Login.Location = new System.Drawing.Point(336, 55);
             this.btn_Login.Name = "btn_Login";
             this.tablePanel1.SetRow(this.btn_Login, 1);
-            this.btn_Login.Size = new System.Drawing.Size(90, 25);
+            this.btn_Login.Size = new System.Drawing.Size(87, 25);
             this.btn_Login.TabIndex = 7;
             this.btn_Login.Text = "로그인";
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.tablePanel1);
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Login.IconOptions.LargeImage")));
             this.Name = "Login";
-            this.Text = "Login";
+            this.Text = "로그인";
             ((System.ComponentModel.ISupportInitialize)(this.txt_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();

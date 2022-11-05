@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Smart_POS_X.UI
 {
-    public partial class Receipt : DevExpress.XtraEditors.XtraForm
+    public partial class ReceiptPopUp : DevExpress.XtraEditors.XtraForm
     {
-        public Receipt()
+        public ReceiptPopUp()
         {
             InitializeComponent();
         }

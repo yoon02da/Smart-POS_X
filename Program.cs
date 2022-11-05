@@ -21,7 +21,8 @@ namespace Smart_POS_X
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MemberSelect());
+            Application.Run(new SalesManagedPopUp());
         }
+
     }
 }

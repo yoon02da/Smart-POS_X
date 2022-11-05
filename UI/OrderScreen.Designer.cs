@@ -197,11 +197,14 @@
             // labelControl11
             // 
             this.labelControl11.Appearance.BackColor = System.Drawing.Color.White;
+            this.labelControl11.Appearance.BorderColor = System.Drawing.Color.Black;
             this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl11.Appearance.Options.UseBackColor = true;
+            this.labelControl11.Appearance.Options.UseBorderColor = true;
             this.labelControl11.Appearance.Options.UseFont = true;
             this.labelControl11.Appearance.Options.UseTextOptions = true;
             this.labelControl11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.labelControl11, 1);
             this.labelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl11.Location = new System.Drawing.Point(148, 283);
@@ -219,6 +222,7 @@
             this.labelControl10.Appearance.Options.UseFont = true;
             this.labelControl10.Appearance.Options.UseTextOptions = true;
             this.labelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.labelControl10, 1);
             this.labelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl10.Location = new System.Drawing.Point(148, 213);
@@ -236,6 +240,7 @@
             this.labelControl9.Appearance.Options.UseFont = true;
             this.labelControl9.Appearance.Options.UseTextOptions = true;
             this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.labelControl9, 1);
             this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl9.Location = new System.Drawing.Point(148, 143);
@@ -248,11 +253,14 @@
             // labelControl8
             // 
             this.labelControl8.Appearance.BackColor = System.Drawing.Color.White;
+            this.labelControl8.Appearance.BorderColor = System.Drawing.Color.Black;
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl8.Appearance.Options.UseBackColor = true;
+            this.labelControl8.Appearance.Options.UseBorderColor = true;
             this.labelControl8.Appearance.Options.UseFont = true;
             this.labelControl8.Appearance.Options.UseTextOptions = true;
             this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.labelControl8, 1);
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl8.Location = new System.Drawing.Point(148, 73);
@@ -265,11 +273,14 @@
             // labelControl6
             // 
             this.labelControl6.Appearance.BackColor = System.Drawing.Color.White;
+            this.labelControl6.Appearance.BorderColor = System.Drawing.Color.Black;
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl6.Appearance.Options.UseBackColor = true;
+            this.labelControl6.Appearance.Options.UseBorderColor = true;
             this.labelControl6.Appearance.Options.UseFont = true;
             this.labelControl6.Appearance.Options.UseTextOptions = true;
             this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.labelControl6, 1);
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl6.Location = new System.Drawing.Point(148, 3);
@@ -574,6 +585,7 @@
             this.gridView2.OptionsView.AllowHtmlDrawGroups = false;
             this.gridView2.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.False;
             this.gridView2.OptionsView.ShowGroupPanel = false;
+            this.gridView2.OptionsView.ShowIndicator = false;
             this.gridView2.RowHeight = 10;
             // 
             // gridCol1
@@ -647,6 +659,7 @@
             // 
             // tablePanel7
             // 
+            this.tablePanel5.SetColumn(this.tablePanel7, 0);
             this.tablePanel7.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
@@ -663,6 +676,7 @@
             this.tablePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel7.Location = new System.Drawing.Point(3, 543);
             this.tablePanel7.Name = "tablePanel7";
+            this.tablePanel5.SetRow(this.tablePanel7, 1);
             this.tablePanel7.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
@@ -767,6 +781,7 @@
             // 
             // tablePanel6
             // 
+            this.tablePanel5.SetColumn(this.tablePanel6, 0);
             this.tablePanel6.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
@@ -791,6 +806,7 @@
             this.tablePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel6.Location = new System.Drawing.Point(3, 3);
             this.tablePanel6.Name = "tablePanel6";
+            this.tablePanel5.SetRow(this.tablePanel6, 0);
             this.tablePanel6.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
@@ -1015,7 +1031,7 @@
             this.ClientSize = new System.Drawing.Size(1193, 720);
             this.Controls.Add(this.tablePanel1);
             this.Name = "OrderScreen";
-            this.Text = "XtraForm1";
+            this.Text = "SmartPOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);

@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Smart_POS_X.POP_UP
 {
-    public partial class MemberSelect : DevExpress.XtraEditors.XtraForm
+    public partial class SalesManagedPopUp : DevExpress.XtraEditors.XtraForm
     {
-        public MemberSelect()
+        public SalesManagedPopUp()
         {
             InitializeComponent();
         }

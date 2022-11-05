@@ -51,11 +51,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1" />
+    <Reference Include="DevExpress.Charts.v22.1.Core, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.1" />
     <Reference Include="DevExpress.Data.v22.1" />
     <Reference Include="DevExpress.Utils.v22.1" />
     <Reference Include="DevExpress.Sparkline.v22.1.Core" />
+    <Reference Include="DevExpress.Utils.v22.1.UI, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraBars.v22.1, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.1, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.UI, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v22.1.Wizard, Version=22.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.1" />
     <Reference Include="DevExpress.Printing.v22.1.Core" />
     <Reference Include="DevExpress.Drawing.v22.1" />
@@ -77,11 +82,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="POP UP\MemberSelect.cs">
+    <Compile Include="POP UP\MemberOverlapPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POP UP\MemberSelect.Designer.cs">
-      <DependentUpon>MemberSelect.cs</DependentUpon>
+    <Compile Include="POP UP\MemberOverlapPopUp.Designer.cs">
+      <DependentUpon>MemberOverlapPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP UP\MemberSelectPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP UP\MemberSelectPopUp.Designer.cs">
+      <DependentUpon>MemberSelectPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POP UP\SalesManagedPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP UP\SalesManagedPopUp.Designer.cs">
+      <DependentUpon>SalesManagedPopUp.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,11 +114,11 @@
     <Compile Include="UI\OrderScreen.Designer.cs">
       <DependentUpon>OrderScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="POP UP\Receipt.cs">
+    <Compile Include="POP UP\ReceiptPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="POP UP\Receipt.Designer.cs">
-      <DependentUpon>Receipt.cs</DependentUpon>
+    <Compile Include="POP UP\ReceiptPopUp.Designer.cs">
+      <DependentUpon>ReceiptPopUp.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\XtraForm1.cs">
       <SubType>Form</SubType>
@@ -109,8 +126,14 @@
     <Compile Include="UI\XtraForm1.Designer.cs">
       <DependentUpon>XtraForm1.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="POP UP\MemberSelect.resx">
-      <DependentUpon>MemberSelect.cs</DependentUpon>
+    <EmbeddedResource Include="POP UP\MemberOverlapPopUp.resx">
+      <DependentUpon>MemberOverlapPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP UP\MemberSelectPopUp.resx">
+      <DependentUpon>MemberSelectPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP UP\SalesManagedPopUp.resx">
+      <DependentUpon>SalesManagedPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -128,8 +151,8 @@
     <EmbeddedResource Include="UI\OrderScreen.resx">
       <DependentUpon>OrderScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="POP UP\Receipt.resx">
-      <DependentUpon>Receipt.cs</DependentUpon>
+    <EmbeddedResource Include="POP UP\ReceiptPopUp.resx">
+      <DependentUpon>ReceiptPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\XtraForm1.resx">
       <DependentUpon>XtraForm1.cs</DependentUpon>
