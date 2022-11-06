@@ -67,45 +67,45 @@
             this.gridCol3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
-            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
-            this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton26 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton27 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton28 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton29 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton30 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton31 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton32 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton33 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton34 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton35 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton36 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton37 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton47 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton46 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton45 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton44 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton43 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton38 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton39 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton40 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton41 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton42 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton43 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton44 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton45 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton46 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton47 = new DevExpress.XtraEditors.SimpleButton();
+            this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
+            this.simpleButton37 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton36 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton35 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton34 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton33 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton32 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton31 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton30 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton29 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton28 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton27 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton26 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton25 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton24 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton23 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton18 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton17 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton16 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
+            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
@@ -115,14 +115,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
-            this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
-            this.tablePanel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
             this.tablePanel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
+            this.tablePanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
+            this.tablePanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tileGroup1
@@ -241,7 +241,6 @@
             this.tablePanel4.SetRow(this.labelControl10, 3);
             this.labelControl10.Size = new System.Drawing.Size(139, 64);
             this.labelControl10.TabIndex = 9;
-            this.labelControl10.Text = "labelControl10";
             // 
             // labelControl9
             // 
@@ -259,7 +258,6 @@
             this.tablePanel4.SetRow(this.labelControl9, 2);
             this.labelControl9.Size = new System.Drawing.Size(139, 64);
             this.labelControl9.TabIndex = 8;
-            this.labelControl9.Text = "labelControl9";
             // 
             // labelControl8
             // 
@@ -279,7 +277,6 @@
             this.tablePanel4.SetRow(this.labelControl8, 1);
             this.labelControl8.Size = new System.Drawing.Size(139, 64);
             this.labelControl8.TabIndex = 7;
-            this.labelControl8.Text = "labelControl8";
             // 
             // labelControl6
             // 
@@ -299,7 +296,6 @@
             this.tablePanel4.SetRow(this.labelControl6, 0);
             this.labelControl6.Size = new System.Drawing.Size(139, 64);
             this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "labelControl6";
             // 
             // labelControl5
             // 
@@ -650,23 +646,6 @@
             this.tablePanel1.Size = new System.Drawing.Size(1193, 720);
             this.tablePanel1.TabIndex = 3;
             // 
-            // tablePanel2
-            // 
-            this.tablePanel1.SetColumn(this.tablePanel2, 0);
-            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel2.Controls.Add(this.tablePanel4);
-            this.tablePanel2.Controls.Add(this.tablePanel3);
-            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel2.Location = new System.Drawing.Point(3, 363);
-            this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel1.SetRow(this.tablePanel2, 1);
-            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
-            this.tablePanel2.Size = new System.Drawing.Size(591, 354);
-            this.tablePanel2.TabIndex = 2;
-            // 
             // tablePanel5
             // 
             this.tablePanel1.SetColumn(this.tablePanel5, 1);
@@ -684,54 +663,6 @@
             this.tablePanel1.SetRowSpan(this.tablePanel5, 2);
             this.tablePanel5.Size = new System.Drawing.Size(591, 714);
             this.tablePanel5.TabIndex = 3;
-            // 
-            // tablePanel6
-            // 
-            this.tablePanel5.SetColumn(this.tablePanel6, 0);
-            this.tablePanel6.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
-            this.tablePanel6.Controls.Add(this.simpleButton37);
-            this.tablePanel6.Controls.Add(this.simpleButton36);
-            this.tablePanel6.Controls.Add(this.simpleButton35);
-            this.tablePanel6.Controls.Add(this.simpleButton34);
-            this.tablePanel6.Controls.Add(this.simpleButton33);
-            this.tablePanel6.Controls.Add(this.simpleButton32);
-            this.tablePanel6.Controls.Add(this.simpleButton31);
-            this.tablePanel6.Controls.Add(this.simpleButton30);
-            this.tablePanel6.Controls.Add(this.simpleButton29);
-            this.tablePanel6.Controls.Add(this.simpleButton28);
-            this.tablePanel6.Controls.Add(this.simpleButton27);
-            this.tablePanel6.Controls.Add(this.simpleButton26);
-            this.tablePanel6.Controls.Add(this.simpleButton25);
-            this.tablePanel6.Controls.Add(this.simpleButton24);
-            this.tablePanel6.Controls.Add(this.simpleButton23);
-            this.tablePanel6.Controls.Add(this.simpleButton22);
-            this.tablePanel6.Controls.Add(this.simpleButton21);
-            this.tablePanel6.Controls.Add(this.simpleButton20);
-            this.tablePanel6.Controls.Add(this.simpleButton19);
-            this.tablePanel6.Controls.Add(this.simpleButton18);
-            this.tablePanel6.Controls.Add(this.simpleButton17);
-            this.tablePanel6.Controls.Add(this.simpleButton16);
-            this.tablePanel6.Controls.Add(this.simpleButton15);
-            this.tablePanel6.Controls.Add(this.simpleButton14);
-            this.tablePanel6.Controls.Add(this.simpleButton13);
-            this.tablePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel6.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.tablePanel6.Name = "tablePanel6";
-            this.tablePanel5.SetRow(this.tablePanel6, 0);
-            this.tablePanel6.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
-            this.tablePanel6.Size = new System.Drawing.Size(591, 537);
-            this.tablePanel6.TabIndex = 0;
             // 
             // tablePanel7
             // 
@@ -763,305 +694,65 @@
             this.tablePanel7.Size = new System.Drawing.Size(591, 177);
             this.tablePanel7.TabIndex = 1;
             // 
-            // simpleButton13
+            // simpleButton47
             // 
-            this.tablePanel6.SetColumn(this.simpleButton13, 0);
-            this.simpleButton13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton13.Location = new System.Drawing.Point(5, 5);
-            this.simpleButton13.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton13.Name = "simpleButton13";
-            this.tablePanel6.SetRow(this.simpleButton13, 0);
-            this.simpleButton13.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton13.TabIndex = 0;
-            this.simpleButton13.Text = "simpleButton13";
+            this.tablePanel7.SetColumn(this.simpleButton47, 4);
+            this.simpleButton47.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton47.Location = new System.Drawing.Point(478, 94);
+            this.simpleButton47.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton47.Name = "simpleButton47";
+            this.tablePanel7.SetRow(this.simpleButton47, 1);
+            this.simpleButton47.Size = new System.Drawing.Size(108, 78);
+            this.simpleButton47.TabIndex = 34;
+            this.simpleButton47.Text = "simpleButton47";
             // 
-            // simpleButton14
+            // simpleButton46
             // 
-            this.tablePanel6.SetColumn(this.simpleButton14, 1);
-            this.simpleButton14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton14.Location = new System.Drawing.Point(123, 5);
-            this.simpleButton14.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton14.Name = "simpleButton14";
-            this.tablePanel6.SetRow(this.simpleButton14, 0);
-            this.simpleButton14.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton14.TabIndex = 1;
-            this.simpleButton14.Text = "simpleButton14";
+            this.tablePanel7.SetColumn(this.simpleButton46, 3);
+            this.simpleButton46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton46.Location = new System.Drawing.Point(360, 94);
+            this.simpleButton46.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton46.Name = "simpleButton46";
+            this.tablePanel7.SetRow(this.simpleButton46, 1);
+            this.simpleButton46.Size = new System.Drawing.Size(108, 78);
+            this.simpleButton46.TabIndex = 33;
+            this.simpleButton46.Text = "simpleButton46";
             // 
-            // simpleButton15
+            // simpleButton45
             // 
-            this.tablePanel6.SetColumn(this.simpleButton15, 2);
-            this.simpleButton15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton15.Location = new System.Drawing.Point(241, 5);
-            this.simpleButton15.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton15.Name = "simpleButton15";
-            this.tablePanel6.SetRow(this.simpleButton15, 0);
-            this.simpleButton15.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton15.TabIndex = 2;
-            this.simpleButton15.Text = "simpleButton15";
+            this.tablePanel7.SetColumn(this.simpleButton45, 2);
+            this.simpleButton45.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton45.Location = new System.Drawing.Point(241, 94);
+            this.simpleButton45.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton45.Name = "simpleButton45";
+            this.tablePanel7.SetRow(this.simpleButton45, 1);
+            this.simpleButton45.Size = new System.Drawing.Size(108, 78);
+            this.simpleButton45.TabIndex = 32;
+            this.simpleButton45.Text = "simpleButton45";
             // 
-            // simpleButton16
+            // simpleButton44
             // 
-            this.tablePanel6.SetColumn(this.simpleButton16, 3);
-            this.simpleButton16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton16.Location = new System.Drawing.Point(360, 5);
-            this.simpleButton16.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton16.Name = "simpleButton16";
-            this.tablePanel6.SetRow(this.simpleButton16, 0);
-            this.simpleButton16.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton16.TabIndex = 3;
-            this.simpleButton16.Text = "simpleButton16";
+            this.tablePanel7.SetColumn(this.simpleButton44, 1);
+            this.simpleButton44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton44.Location = new System.Drawing.Point(123, 94);
+            this.simpleButton44.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton44.Name = "simpleButton44";
+            this.tablePanel7.SetRow(this.simpleButton44, 1);
+            this.simpleButton44.Size = new System.Drawing.Size(108, 78);
+            this.simpleButton44.TabIndex = 31;
+            this.simpleButton44.Text = "simpleButton44";
             // 
-            // simpleButton17
+            // simpleButton43
             // 
-            this.tablePanel6.SetColumn(this.simpleButton17, 4);
-            this.simpleButton17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton17.Location = new System.Drawing.Point(478, 5);
-            this.simpleButton17.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton17.Name = "simpleButton17";
-            this.tablePanel6.SetRow(this.simpleButton17, 0);
-            this.simpleButton17.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton17.TabIndex = 4;
-            this.simpleButton17.Text = "simpleButton17";
-            // 
-            // simpleButton18
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton18, 0);
-            this.simpleButton18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton18.Location = new System.Drawing.Point(5, 112);
-            this.simpleButton18.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton18.Name = "simpleButton18";
-            this.tablePanel6.SetRow(this.simpleButton18, 1);
-            this.simpleButton18.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton18.TabIndex = 5;
-            this.simpleButton18.Text = "simpleButton18";
-            // 
-            // simpleButton19
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton19, 1);
-            this.simpleButton19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton19.Location = new System.Drawing.Point(123, 112);
-            this.simpleButton19.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton19.Name = "simpleButton19";
-            this.tablePanel6.SetRow(this.simpleButton19, 1);
-            this.simpleButton19.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton19.TabIndex = 6;
-            this.simpleButton19.Text = "simpleButton19";
-            // 
-            // simpleButton20
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton20, 2);
-            this.simpleButton20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton20.Location = new System.Drawing.Point(241, 112);
-            this.simpleButton20.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton20.Name = "simpleButton20";
-            this.tablePanel6.SetRow(this.simpleButton20, 1);
-            this.simpleButton20.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton20.TabIndex = 7;
-            this.simpleButton20.Text = "simpleButton20";
-            // 
-            // simpleButton21
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton21, 3);
-            this.simpleButton21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton21.Location = new System.Drawing.Point(360, 112);
-            this.simpleButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton21.Name = "simpleButton21";
-            this.tablePanel6.SetRow(this.simpleButton21, 1);
-            this.simpleButton21.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton21.TabIndex = 8;
-            this.simpleButton21.Text = "simpleButton21";
-            // 
-            // simpleButton22
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton22, 4);
-            this.simpleButton22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton22.Location = new System.Drawing.Point(478, 112);
-            this.simpleButton22.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton22.Name = "simpleButton22";
-            this.tablePanel6.SetRow(this.simpleButton22, 1);
-            this.simpleButton22.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton22.TabIndex = 9;
-            this.simpleButton22.Text = "simpleButton22";
-            // 
-            // simpleButton23
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton23, 0);
-            this.simpleButton23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton23.Location = new System.Drawing.Point(5, 219);
-            this.simpleButton23.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton23.Name = "simpleButton23";
-            this.tablePanel6.SetRow(this.simpleButton23, 2);
-            this.simpleButton23.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton23.TabIndex = 10;
-            this.simpleButton23.Text = "simpleButton23";
-            // 
-            // simpleButton24
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton24, 1);
-            this.simpleButton24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton24.Location = new System.Drawing.Point(123, 219);
-            this.simpleButton24.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton24.Name = "simpleButton24";
-            this.tablePanel6.SetRow(this.simpleButton24, 2);
-            this.simpleButton24.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton24.TabIndex = 11;
-            this.simpleButton24.Text = "simpleButton24";
-            // 
-            // simpleButton25
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton25, 2);
-            this.simpleButton25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton25.Location = new System.Drawing.Point(241, 219);
-            this.simpleButton25.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton25.Name = "simpleButton25";
-            this.tablePanel6.SetRow(this.simpleButton25, 2);
-            this.simpleButton25.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton25.TabIndex = 12;
-            this.simpleButton25.Text = "simpleButton25";
-            // 
-            // simpleButton26
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton26, 3);
-            this.simpleButton26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton26.Location = new System.Drawing.Point(360, 219);
-            this.simpleButton26.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton26.Name = "simpleButton26";
-            this.tablePanel6.SetRow(this.simpleButton26, 2);
-            this.simpleButton26.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton26.TabIndex = 13;
-            this.simpleButton26.Text = "simpleButton26";
-            // 
-            // simpleButton27
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton27, 4);
-            this.simpleButton27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton27.Location = new System.Drawing.Point(478, 219);
-            this.simpleButton27.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton27.Name = "simpleButton27";
-            this.tablePanel6.SetRow(this.simpleButton27, 2);
-            this.simpleButton27.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton27.TabIndex = 14;
-            this.simpleButton27.Text = "simpleButton27";
-            // 
-            // simpleButton28
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton28, 0);
-            this.simpleButton28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton28.Location = new System.Drawing.Point(5, 326);
-            this.simpleButton28.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton28.Name = "simpleButton28";
-            this.tablePanel6.SetRow(this.simpleButton28, 3);
-            this.simpleButton28.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton28.TabIndex = 15;
-            this.simpleButton28.Text = "simpleButton28";
-            // 
-            // simpleButton29
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton29, 1);
-            this.simpleButton29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton29.Location = new System.Drawing.Point(123, 326);
-            this.simpleButton29.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton29.Name = "simpleButton29";
-            this.tablePanel6.SetRow(this.simpleButton29, 3);
-            this.simpleButton29.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton29.TabIndex = 16;
-            this.simpleButton29.Text = "simpleButton29";
-            // 
-            // simpleButton30
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton30, 2);
-            this.simpleButton30.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton30.Location = new System.Drawing.Point(241, 326);
-            this.simpleButton30.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton30.Name = "simpleButton30";
-            this.tablePanel6.SetRow(this.simpleButton30, 3);
-            this.simpleButton30.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton30.TabIndex = 17;
-            this.simpleButton30.Text = "simpleButton30";
-            // 
-            // simpleButton31
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton31, 3);
-            this.simpleButton31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton31.Location = new System.Drawing.Point(360, 326);
-            this.simpleButton31.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton31.Name = "simpleButton31";
-            this.tablePanel6.SetRow(this.simpleButton31, 3);
-            this.simpleButton31.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton31.TabIndex = 18;
-            this.simpleButton31.Text = "simpleButton31";
-            // 
-            // simpleButton32
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton32, 4);
-            this.simpleButton32.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton32.Location = new System.Drawing.Point(478, 326);
-            this.simpleButton32.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton32.Name = "simpleButton32";
-            this.tablePanel6.SetRow(this.simpleButton32, 3);
-            this.simpleButton32.Size = new System.Drawing.Size(108, 97);
-            this.simpleButton32.TabIndex = 19;
-            this.simpleButton32.Text = "simpleButton32";
-            // 
-            // simpleButton33
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton33, 0);
-            this.simpleButton33.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton33.Location = new System.Drawing.Point(5, 433);
-            this.simpleButton33.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton33.Name = "simpleButton33";
-            this.tablePanel6.SetRow(this.simpleButton33, 4);
-            this.simpleButton33.Size = new System.Drawing.Size(108, 99);
-            this.simpleButton33.TabIndex = 20;
-            this.simpleButton33.Text = "simpleButton33";
-            // 
-            // simpleButton34
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton34, 1);
-            this.simpleButton34.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton34.Location = new System.Drawing.Point(123, 433);
-            this.simpleButton34.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton34.Name = "simpleButton34";
-            this.tablePanel6.SetRow(this.simpleButton34, 4);
-            this.simpleButton34.Size = new System.Drawing.Size(108, 99);
-            this.simpleButton34.TabIndex = 21;
-            this.simpleButton34.Text = "simpleButton34";
-            // 
-            // simpleButton35
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton35, 2);
-            this.simpleButton35.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton35.Location = new System.Drawing.Point(241, 433);
-            this.simpleButton35.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton35.Name = "simpleButton35";
-            this.tablePanel6.SetRow(this.simpleButton35, 4);
-            this.simpleButton35.Size = new System.Drawing.Size(108, 99);
-            this.simpleButton35.TabIndex = 22;
-            this.simpleButton35.Text = "simpleButton35";
-            // 
-            // simpleButton36
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton36, 3);
-            this.simpleButton36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton36.Location = new System.Drawing.Point(360, 433);
-            this.simpleButton36.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton36.Name = "simpleButton36";
-            this.tablePanel6.SetRow(this.simpleButton36, 4);
-            this.simpleButton36.Size = new System.Drawing.Size(108, 99);
-            this.simpleButton36.TabIndex = 23;
-            this.simpleButton36.Text = "simpleButton36";
-            // 
-            // simpleButton37
-            // 
-            this.tablePanel6.SetColumn(this.simpleButton37, 4);
-            this.simpleButton37.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton37.Location = new System.Drawing.Point(478, 433);
-            this.simpleButton37.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton37.Name = "simpleButton37";
-            this.tablePanel6.SetRow(this.simpleButton37, 4);
-            this.simpleButton37.Size = new System.Drawing.Size(108, 99);
-            this.simpleButton37.TabIndex = 24;
-            this.simpleButton37.Text = "simpleButton37";
+            this.tablePanel7.SetColumn(this.simpleButton43, 0);
+            this.simpleButton43.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton43.Location = new System.Drawing.Point(5, 94);
+            this.simpleButton43.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton43.Name = "simpleButton43";
+            this.tablePanel7.SetRow(this.simpleButton43, 1);
+            this.simpleButton43.Size = new System.Drawing.Size(108, 78);
+            this.simpleButton43.TabIndex = 30;
+            this.simpleButton43.Text = "simpleButton43";
             // 
             // simpleButton38
             // 
@@ -1123,65 +814,370 @@
             this.simpleButton42.TabIndex = 29;
             this.simpleButton42.Text = "simpleButton42";
             // 
-            // simpleButton43
+            // tablePanel6
             // 
-            this.tablePanel7.SetColumn(this.simpleButton43, 0);
-            this.simpleButton43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton43.Location = new System.Drawing.Point(5, 94);
-            this.simpleButton43.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton43.Name = "simpleButton43";
-            this.tablePanel7.SetRow(this.simpleButton43, 1);
-            this.simpleButton43.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton43.TabIndex = 30;
-            this.simpleButton43.Text = "simpleButton43";
+            this.tablePanel5.SetColumn(this.tablePanel6, 0);
+            this.tablePanel6.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
+            this.tablePanel6.Controls.Add(this.simpleButton37);
+            this.tablePanel6.Controls.Add(this.simpleButton36);
+            this.tablePanel6.Controls.Add(this.simpleButton35);
+            this.tablePanel6.Controls.Add(this.simpleButton34);
+            this.tablePanel6.Controls.Add(this.simpleButton33);
+            this.tablePanel6.Controls.Add(this.simpleButton32);
+            this.tablePanel6.Controls.Add(this.simpleButton31);
+            this.tablePanel6.Controls.Add(this.simpleButton30);
+            this.tablePanel6.Controls.Add(this.simpleButton29);
+            this.tablePanel6.Controls.Add(this.simpleButton28);
+            this.tablePanel6.Controls.Add(this.simpleButton27);
+            this.tablePanel6.Controls.Add(this.simpleButton26);
+            this.tablePanel6.Controls.Add(this.simpleButton25);
+            this.tablePanel6.Controls.Add(this.simpleButton24);
+            this.tablePanel6.Controls.Add(this.simpleButton23);
+            this.tablePanel6.Controls.Add(this.simpleButton22);
+            this.tablePanel6.Controls.Add(this.simpleButton21);
+            this.tablePanel6.Controls.Add(this.simpleButton20);
+            this.tablePanel6.Controls.Add(this.simpleButton19);
+            this.tablePanel6.Controls.Add(this.simpleButton18);
+            this.tablePanel6.Controls.Add(this.simpleButton17);
+            this.tablePanel6.Controls.Add(this.simpleButton16);
+            this.tablePanel6.Controls.Add(this.simpleButton15);
+            this.tablePanel6.Controls.Add(this.simpleButton14);
+            this.tablePanel6.Controls.Add(this.simpleButton13);
+            this.tablePanel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel6.Location = new System.Drawing.Point(0, 0);
+            this.tablePanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.tablePanel6.Name = "tablePanel6";
+            this.tablePanel5.SetRow(this.tablePanel6, 0);
+            this.tablePanel6.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
+            this.tablePanel6.Size = new System.Drawing.Size(591, 537);
+            this.tablePanel6.TabIndex = 0;
             // 
-            // simpleButton44
+            // simpleButton37
             // 
-            this.tablePanel7.SetColumn(this.simpleButton44, 1);
-            this.simpleButton44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton44.Location = new System.Drawing.Point(123, 94);
-            this.simpleButton44.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton44.Name = "simpleButton44";
-            this.tablePanel7.SetRow(this.simpleButton44, 1);
-            this.simpleButton44.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton44.TabIndex = 31;
-            this.simpleButton44.Text = "simpleButton44";
+            this.tablePanel6.SetColumn(this.simpleButton37, 4);
+            this.simpleButton37.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton37.Location = new System.Drawing.Point(478, 433);
+            this.simpleButton37.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton37.Name = "simpleButton37";
+            this.tablePanel6.SetRow(this.simpleButton37, 4);
+            this.simpleButton37.Size = new System.Drawing.Size(108, 99);
+            this.simpleButton37.TabIndex = 24;
+            this.simpleButton37.Text = "simpleButton37";
             // 
-            // simpleButton45
+            // simpleButton36
             // 
-            this.tablePanel7.SetColumn(this.simpleButton45, 2);
-            this.simpleButton45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton45.Location = new System.Drawing.Point(241, 94);
-            this.simpleButton45.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton45.Name = "simpleButton45";
-            this.tablePanel7.SetRow(this.simpleButton45, 1);
-            this.simpleButton45.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton45.TabIndex = 32;
-            this.simpleButton45.Text = "simpleButton45";
+            this.tablePanel6.SetColumn(this.simpleButton36, 3);
+            this.simpleButton36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton36.Location = new System.Drawing.Point(360, 433);
+            this.simpleButton36.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton36.Name = "simpleButton36";
+            this.tablePanel6.SetRow(this.simpleButton36, 4);
+            this.simpleButton36.Size = new System.Drawing.Size(108, 99);
+            this.simpleButton36.TabIndex = 23;
+            this.simpleButton36.Text = "simpleButton36";
             // 
-            // simpleButton46
+            // simpleButton35
             // 
-            this.tablePanel7.SetColumn(this.simpleButton46, 3);
-            this.simpleButton46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton46.Location = new System.Drawing.Point(360, 94);
-            this.simpleButton46.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton46.Name = "simpleButton46";
-            this.tablePanel7.SetRow(this.simpleButton46, 1);
-            this.simpleButton46.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton46.TabIndex = 33;
-            this.simpleButton46.Text = "simpleButton46";
+            this.tablePanel6.SetColumn(this.simpleButton35, 2);
+            this.simpleButton35.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton35.Location = new System.Drawing.Point(241, 433);
+            this.simpleButton35.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton35.Name = "simpleButton35";
+            this.tablePanel6.SetRow(this.simpleButton35, 4);
+            this.simpleButton35.Size = new System.Drawing.Size(108, 99);
+            this.simpleButton35.TabIndex = 22;
+            this.simpleButton35.Text = "simpleButton35";
             // 
-            // simpleButton47
+            // simpleButton34
             // 
-            this.tablePanel7.SetColumn(this.simpleButton47, 4);
-            this.simpleButton47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton47.Location = new System.Drawing.Point(478, 94);
-            this.simpleButton47.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton47.Name = "simpleButton47";
-            this.tablePanel7.SetRow(this.simpleButton47, 1);
-            this.simpleButton47.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton47.TabIndex = 34;
-            this.simpleButton47.Text = "simpleButton47";
+            this.tablePanel6.SetColumn(this.simpleButton34, 1);
+            this.simpleButton34.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton34.Location = new System.Drawing.Point(123, 433);
+            this.simpleButton34.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton34.Name = "simpleButton34";
+            this.tablePanel6.SetRow(this.simpleButton34, 4);
+            this.simpleButton34.Size = new System.Drawing.Size(108, 99);
+            this.simpleButton34.TabIndex = 21;
+            this.simpleButton34.Text = "simpleButton34";
+            // 
+            // simpleButton33
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton33, 0);
+            this.simpleButton33.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton33.Location = new System.Drawing.Point(5, 433);
+            this.simpleButton33.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton33.Name = "simpleButton33";
+            this.tablePanel6.SetRow(this.simpleButton33, 4);
+            this.simpleButton33.Size = new System.Drawing.Size(108, 99);
+            this.simpleButton33.TabIndex = 20;
+            this.simpleButton33.Text = "simpleButton33";
+            // 
+            // simpleButton32
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton32, 4);
+            this.simpleButton32.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton32.Location = new System.Drawing.Point(478, 326);
+            this.simpleButton32.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton32.Name = "simpleButton32";
+            this.tablePanel6.SetRow(this.simpleButton32, 3);
+            this.simpleButton32.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton32.TabIndex = 19;
+            this.simpleButton32.Text = "simpleButton32";
+            // 
+            // simpleButton31
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton31, 3);
+            this.simpleButton31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton31.Location = new System.Drawing.Point(360, 326);
+            this.simpleButton31.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton31.Name = "simpleButton31";
+            this.tablePanel6.SetRow(this.simpleButton31, 3);
+            this.simpleButton31.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton31.TabIndex = 18;
+            this.simpleButton31.Text = "simpleButton31";
+            // 
+            // simpleButton30
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton30, 2);
+            this.simpleButton30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton30.Location = new System.Drawing.Point(241, 326);
+            this.simpleButton30.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton30.Name = "simpleButton30";
+            this.tablePanel6.SetRow(this.simpleButton30, 3);
+            this.simpleButton30.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton30.TabIndex = 17;
+            this.simpleButton30.Text = "simpleButton30";
+            // 
+            // simpleButton29
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton29, 1);
+            this.simpleButton29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton29.Location = new System.Drawing.Point(123, 326);
+            this.simpleButton29.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton29.Name = "simpleButton29";
+            this.tablePanel6.SetRow(this.simpleButton29, 3);
+            this.simpleButton29.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton29.TabIndex = 16;
+            this.simpleButton29.Text = "simpleButton29";
+            // 
+            // simpleButton28
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton28, 0);
+            this.simpleButton28.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton28.Location = new System.Drawing.Point(5, 326);
+            this.simpleButton28.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton28.Name = "simpleButton28";
+            this.tablePanel6.SetRow(this.simpleButton28, 3);
+            this.simpleButton28.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton28.TabIndex = 15;
+            this.simpleButton28.Text = "simpleButton28";
+            // 
+            // simpleButton27
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton27, 4);
+            this.simpleButton27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton27.Location = new System.Drawing.Point(478, 219);
+            this.simpleButton27.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton27.Name = "simpleButton27";
+            this.tablePanel6.SetRow(this.simpleButton27, 2);
+            this.simpleButton27.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton27.TabIndex = 14;
+            this.simpleButton27.Text = "simpleButton27";
+            // 
+            // simpleButton26
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton26, 3);
+            this.simpleButton26.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton26.Location = new System.Drawing.Point(360, 219);
+            this.simpleButton26.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton26.Name = "simpleButton26";
+            this.tablePanel6.SetRow(this.simpleButton26, 2);
+            this.simpleButton26.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton26.TabIndex = 13;
+            this.simpleButton26.Text = "simpleButton26";
+            // 
+            // simpleButton25
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton25, 2);
+            this.simpleButton25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton25.Location = new System.Drawing.Point(241, 219);
+            this.simpleButton25.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton25.Name = "simpleButton25";
+            this.tablePanel6.SetRow(this.simpleButton25, 2);
+            this.simpleButton25.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton25.TabIndex = 12;
+            this.simpleButton25.Text = "simpleButton25";
+            // 
+            // simpleButton24
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton24, 1);
+            this.simpleButton24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton24.Location = new System.Drawing.Point(123, 219);
+            this.simpleButton24.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton24.Name = "simpleButton24";
+            this.tablePanel6.SetRow(this.simpleButton24, 2);
+            this.simpleButton24.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton24.TabIndex = 11;
+            this.simpleButton24.Text = "simpleButton24";
+            // 
+            // simpleButton23
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton23, 0);
+            this.simpleButton23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton23.Location = new System.Drawing.Point(5, 219);
+            this.simpleButton23.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton23.Name = "simpleButton23";
+            this.tablePanel6.SetRow(this.simpleButton23, 2);
+            this.simpleButton23.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton23.TabIndex = 10;
+            this.simpleButton23.Text = "simpleButton23";
+            // 
+            // simpleButton22
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton22, 4);
+            this.simpleButton22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton22.Location = new System.Drawing.Point(478, 112);
+            this.simpleButton22.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton22.Name = "simpleButton22";
+            this.tablePanel6.SetRow(this.simpleButton22, 1);
+            this.simpleButton22.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton22.TabIndex = 9;
+            this.simpleButton22.Text = "simpleButton22";
+            // 
+            // simpleButton21
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton21, 3);
+            this.simpleButton21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton21.Location = new System.Drawing.Point(360, 112);
+            this.simpleButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton21.Name = "simpleButton21";
+            this.tablePanel6.SetRow(this.simpleButton21, 1);
+            this.simpleButton21.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton21.TabIndex = 8;
+            this.simpleButton21.Text = "simpleButton21";
+            // 
+            // simpleButton20
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton20, 2);
+            this.simpleButton20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton20.Location = new System.Drawing.Point(241, 112);
+            this.simpleButton20.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton20.Name = "simpleButton20";
+            this.tablePanel6.SetRow(this.simpleButton20, 1);
+            this.simpleButton20.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton20.TabIndex = 7;
+            this.simpleButton20.Text = "simpleButton20";
+            // 
+            // simpleButton19
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton19, 1);
+            this.simpleButton19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton19.Location = new System.Drawing.Point(123, 112);
+            this.simpleButton19.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton19.Name = "simpleButton19";
+            this.tablePanel6.SetRow(this.simpleButton19, 1);
+            this.simpleButton19.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton19.TabIndex = 6;
+            this.simpleButton19.Text = "simpleButton19";
+            // 
+            // simpleButton18
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton18, 0);
+            this.simpleButton18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton18.Location = new System.Drawing.Point(5, 112);
+            this.simpleButton18.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton18.Name = "simpleButton18";
+            this.tablePanel6.SetRow(this.simpleButton18, 1);
+            this.simpleButton18.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton18.TabIndex = 5;
+            this.simpleButton18.Text = "simpleButton18";
+            // 
+            // simpleButton17
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton17, 4);
+            this.simpleButton17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton17.Location = new System.Drawing.Point(478, 5);
+            this.simpleButton17.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton17.Name = "simpleButton17";
+            this.tablePanel6.SetRow(this.simpleButton17, 0);
+            this.simpleButton17.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton17.TabIndex = 4;
+            this.simpleButton17.Text = "simpleButton17";
+            // 
+            // simpleButton16
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton16, 3);
+            this.simpleButton16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton16.Location = new System.Drawing.Point(360, 5);
+            this.simpleButton16.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton16.Name = "simpleButton16";
+            this.tablePanel6.SetRow(this.simpleButton16, 0);
+            this.simpleButton16.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton16.TabIndex = 3;
+            this.simpleButton16.Text = "simpleButton16";
+            // 
+            // simpleButton15
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton15, 2);
+            this.simpleButton15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton15.Location = new System.Drawing.Point(241, 5);
+            this.simpleButton15.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton15.Name = "simpleButton15";
+            this.tablePanel6.SetRow(this.simpleButton15, 0);
+            this.simpleButton15.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton15.TabIndex = 2;
+            this.simpleButton15.Text = "simpleButton15";
+            // 
+            // simpleButton14
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton14, 1);
+            this.simpleButton14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton14.Location = new System.Drawing.Point(123, 5);
+            this.simpleButton14.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton14.Name = "simpleButton14";
+            this.tablePanel6.SetRow(this.simpleButton14, 0);
+            this.simpleButton14.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton14.TabIndex = 1;
+            this.simpleButton14.Text = "simpleButton14";
+            // 
+            // simpleButton13
+            // 
+            this.tablePanel6.SetColumn(this.simpleButton13, 0);
+            this.simpleButton13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.simpleButton13.Location = new System.Drawing.Point(5, 5);
+            this.simpleButton13.Margin = new System.Windows.Forms.Padding(5);
+            this.simpleButton13.Name = "simpleButton13";
+            this.tablePanel6.SetRow(this.simpleButton13, 0);
+            this.simpleButton13.Size = new System.Drawing.Size(108, 97);
+            this.simpleButton13.TabIndex = 0;
+            this.simpleButton13.Text = "simpleButton13";
+            // 
+            // tablePanel2
+            // 
+            this.tablePanel1.SetColumn(this.tablePanel2, 0);
+            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
+            this.tablePanel2.Controls.Add(this.tablePanel4);
+            this.tablePanel2.Controls.Add(this.tablePanel3);
+            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel2.Location = new System.Drawing.Point(3, 363);
+            this.tablePanel2.Name = "tablePanel2";
+            this.tablePanel1.SetRow(this.tablePanel2, 1);
+            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
+            this.tablePanel2.Size = new System.Drawing.Size(591, 354);
+            this.tablePanel2.TabIndex = 2;
             // 
             // OrderScreen
             // 
@@ -1202,14 +1198,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
-            this.tablePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
-            this.tablePanel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
             this.tablePanel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
+            this.tablePanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
+            this.tablePanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
