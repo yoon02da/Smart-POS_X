@@ -1,4 +1,6 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.Utils.Extensions;
+using DevExpress.XtraEditors;
+using DevExpress.XtraEditors.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,9 +59,6 @@ namespace Smart_POS_X.UI
         private void Menu_Setting()
         {
             DBHelper DBh = new DBHelper();
-            //이넘을 이용해 해당 객채들을 소환하고.. \
-
-
             DataTable DT = DBh.Exec($"OrderScreen_S01 '{MenuSelecter.ToString().ToUpper()}'"); // 1.커피,2.논커피,3.스무디,4.샌드위치,5.기타.
                                                                                                //메뉴순번 , 메뉴 이름 받아야함
             Menu_reset();
@@ -85,5 +84,19 @@ namespace Smart_POS_X.UI
             }
         }
 
+        private void btn_POS_End_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Menu_Click(object sender, EventArgs e)
+        {
+            string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
+
+
+            DBHelper DBh = new DBHelper();
+            DataTable DT = DBh.Exec($"OrderScreen_S02 '{MenuName}'");
+
+        }
     }
 }

@@ -195,7 +195,7 @@
             this.tablePanel4.Controls.Add(this.labelControl1);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel4.Location = new System.Drawing.Point(6, 6);
-            this.tablePanel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel4.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel2.SetRow(this.tablePanel4, 0);
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -221,7 +221,7 @@
             this.tablePanel4.SetColumn(this.lbl_Remain, 1);
             this.lbl_Remain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Remain.Location = new System.Drawing.Point(274, 602);
-            this.lbl_Remain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Remain.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Remain.Name = "lbl_Remain";
             this.tablePanel4.SetRow(this.lbl_Remain, 4);
             this.lbl_Remain.Size = new System.Drawing.Size(256, 136);
@@ -239,7 +239,7 @@
             this.tablePanel4.SetColumn(this.lbl_Receive, 1);
             this.lbl_Receive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Receive.Location = new System.Drawing.Point(274, 453);
-            this.lbl_Receive.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Receive.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Receive.Name = "lbl_Receive";
             this.tablePanel4.SetRow(this.lbl_Receive, 3);
             this.lbl_Receive.Size = new System.Drawing.Size(256, 137);
@@ -257,7 +257,7 @@
             this.tablePanel4.SetColumn(this.lbl_Discount, 1);
             this.lbl_Discount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Discount.Location = new System.Drawing.Point(274, 304);
-            this.lbl_Discount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Discount.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Discount.Name = "lbl_Discount";
             this.tablePanel4.SetRow(this.lbl_Discount, 2);
             this.lbl_Discount.Size = new System.Drawing.Size(256, 137);
@@ -277,7 +277,7 @@
             this.tablePanel4.SetColumn(this.lbl_Pay, 1);
             this.lbl_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Pay.Location = new System.Drawing.Point(274, 155);
-            this.lbl_Pay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Pay.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Pay.Name = "lbl_Pay";
             this.tablePanel4.SetRow(this.lbl_Pay, 1);
             this.lbl_Pay.Size = new System.Drawing.Size(256, 137);
@@ -297,7 +297,7 @@
             this.tablePanel4.SetColumn(this.lbl_AllAmount, 1);
             this.lbl_AllAmount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_AllAmount.Location = new System.Drawing.Point(274, 6);
-            this.lbl_AllAmount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_AllAmount.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_AllAmount.Name = "lbl_AllAmount";
             this.tablePanel4.SetRow(this.lbl_AllAmount, 0);
             this.lbl_AllAmount.Size = new System.Drawing.Size(256, 137);
@@ -309,7 +309,7 @@
             this.labelControl5.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl5, 0);
             this.labelControl5.Location = new System.Drawing.Point(6, 627);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl5, 4);
@@ -323,7 +323,7 @@
             this.labelControl4.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl4, 0);
             this.labelControl4.Location = new System.Drawing.Point(6, 478);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl4, 3);
@@ -337,7 +337,7 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl3, 0);
             this.labelControl3.Location = new System.Drawing.Point(6, 329);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl3, 2);
@@ -351,7 +351,7 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
             this.labelControl2.Location = new System.Drawing.Point(6, 180);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl2, 1);
@@ -365,7 +365,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl1, 0);
             this.labelControl1.Location = new System.Drawing.Point(6, 31);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl1, 0);
@@ -394,7 +394,7 @@
             this.tablePanel3.Controls.Add(this.simpleButton1);
             this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel3.Location = new System.Drawing.Point(554, 6);
-            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel2.SetRow(this.tablePanel3, 0);
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -412,7 +412,7 @@
             this.tablePanel3.SetColumn(this.simpleButton12, 2);
             this.simpleButton12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton12.Location = new System.Drawing.Point(363, 564);
-            this.simpleButton12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton12.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton12.Name = "simpleButton12";
             this.tablePanel3.SetRow(this.simpleButton12, 3);
             this.simpleButton12.Size = new System.Drawing.Size(167, 174);
@@ -426,7 +426,7 @@
             this.tablePanel3.SetColumn(this.simpleButton11, 1);
             this.simpleButton11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton11.Location = new System.Drawing.Point(185, 564);
-            this.simpleButton11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton11.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton11.Name = "simpleButton11";
             this.tablePanel3.SetRow(this.simpleButton11, 3);
             this.simpleButton11.Size = new System.Drawing.Size(167, 174);
@@ -440,7 +440,7 @@
             this.tablePanel3.SetColumn(this.simpleButton10, 0);
             this.simpleButton10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton10.Location = new System.Drawing.Point(6, 564);
-            this.simpleButton10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton10.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton10.Name = "simpleButton10";
             this.tablePanel3.SetRow(this.simpleButton10, 3);
             this.simpleButton10.Size = new System.Drawing.Size(167, 174);
@@ -454,7 +454,7 @@
             this.tablePanel3.SetColumn(this.simpleButton9, 2);
             this.simpleButton9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton9.Location = new System.Drawing.Point(363, 378);
-            this.simpleButton9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton9.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton9.Name = "simpleButton9";
             this.tablePanel3.SetRow(this.simpleButton9, 2);
             this.simpleButton9.Size = new System.Drawing.Size(167, 174);
@@ -468,7 +468,7 @@
             this.tablePanel3.SetColumn(this.simpleButton8, 1);
             this.simpleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton8.Location = new System.Drawing.Point(185, 378);
-            this.simpleButton8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton8.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton8.Name = "simpleButton8";
             this.tablePanel3.SetRow(this.simpleButton8, 2);
             this.simpleButton8.Size = new System.Drawing.Size(167, 174);
@@ -482,7 +482,7 @@
             this.tablePanel3.SetColumn(this.simpleButton7, 0);
             this.simpleButton7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton7.Location = new System.Drawing.Point(6, 378);
-            this.simpleButton7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton7.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton7.Name = "simpleButton7";
             this.tablePanel3.SetRow(this.simpleButton7, 2);
             this.simpleButton7.Size = new System.Drawing.Size(167, 174);
@@ -496,7 +496,7 @@
             this.tablePanel3.SetColumn(this.simpleButton6, 2);
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton6.Location = new System.Drawing.Point(363, 192);
-            this.simpleButton6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton6.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton6.Name = "simpleButton6";
             this.tablePanel3.SetRow(this.simpleButton6, 1);
             this.simpleButton6.Size = new System.Drawing.Size(167, 174);
@@ -510,7 +510,7 @@
             this.tablePanel3.SetColumn(this.simpleButton5, 1);
             this.simpleButton5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton5.Location = new System.Drawing.Point(185, 192);
-            this.simpleButton5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton5.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton5.Name = "simpleButton5";
             this.tablePanel3.SetRow(this.simpleButton5, 1);
             this.simpleButton5.Size = new System.Drawing.Size(167, 174);
@@ -524,7 +524,7 @@
             this.tablePanel3.SetColumn(this.simpleButton4, 0);
             this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton4.Location = new System.Drawing.Point(6, 192);
-            this.simpleButton4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton4.Name = "simpleButton4";
             this.tablePanel3.SetRow(this.simpleButton4, 1);
             this.simpleButton4.Size = new System.Drawing.Size(167, 174);
@@ -538,7 +538,7 @@
             this.tablePanel3.SetColumn(this.simpleButton3, 2);
             this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton3.Location = new System.Drawing.Point(363, 6);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton3.Name = "simpleButton3";
             this.tablePanel3.SetRow(this.simpleButton3, 0);
             this.simpleButton3.Size = new System.Drawing.Size(167, 174);
@@ -552,7 +552,7 @@
             this.tablePanel3.SetColumn(this.simpleButton2, 1);
             this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton2.Location = new System.Drawing.Point(185, 6);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton2.Name = "simpleButton2";
             this.tablePanel3.SetRow(this.simpleButton2, 0);
             this.simpleButton2.Size = new System.Drawing.Size(167, 174);
@@ -566,7 +566,7 @@
             this.tablePanel3.SetColumn(this.simpleButton1, 0);
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton1.Location = new System.Drawing.Point(6, 6);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton1.Name = "simpleButton1";
             this.tablePanel3.SetRow(this.simpleButton1, 0);
             this.simpleButton1.Size = new System.Drawing.Size(167, 174);
@@ -577,10 +577,10 @@
             // 
             this.tablePanel1.SetColumn(this.gridControl2, 0);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl2.Location = new System.Drawing.Point(6, 6);
             this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl2.Name = "gridControl2";
             this.tablePanel1.SetRow(this.gridControl2, 0);
             this.gridControl2.Size = new System.Drawing.Size(1096, 756);
@@ -670,7 +670,7 @@
             this.tablePanel1.Controls.Add(this.gridControl2);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel1.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
@@ -687,7 +687,7 @@
             this.tablePanel5.Controls.Add(this.tablePanel6);
             this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel5.Location = new System.Drawing.Point(1114, 6);
-            this.tablePanel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel5.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel5.Name = "tablePanel5";
             this.tablePanel1.SetRow(this.tablePanel5, 0);
             this.tablePanel5.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -740,6 +740,7 @@
             this.btn_POS_End.Size = new System.Drawing.Size(201, 166);
             this.btn_POS_End.TabIndex = 34;
             this.btn_POS_End.Text = "POS 종료";
+            this.btn_POS_End.Click += new System.EventHandler(this.btn_POS_End_Click);
             // 
             // btn_SalesSelect
             // 
@@ -1129,6 +1130,26 @@
             this.tablePanel6.SetRow(this.Menu2, 1);
             this.Menu2.Size = new System.Drawing.Size(201, 207);
             this.Menu2.TabIndex = 6;
+            this.Menu1.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu2.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu3.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu4.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu5.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu6.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu7.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu8.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu9.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu10.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu11.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu12.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu13.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu14.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu15.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu16.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu17.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu18.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu19.Click += new System.EventHandler(this.Menu_Click);
+            this.Menu20.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu1
             // 
@@ -1139,7 +1160,7 @@
             this.Menu1.Name = "Menu1";
             this.tablePanel6.SetRow(this.Menu1, 1);
             this.Menu1.Size = new System.Drawing.Size(201, 207);
-            this.Menu1.TabIndex = 5;
+            this.Menu1.TabIndex = 5; 
             // 
             // simpleButton17
             // 
@@ -1236,7 +1257,7 @@
             this.tablePanel2.Controls.Add(this.tablePanel3);
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel2.Location = new System.Drawing.Point(6, 774);
-            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel2.Name = "tablePanel2";
             this.tablePanel1.SetRow(this.tablePanel2, 1);
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -1250,7 +1271,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2216, 1536);
             this.Controls.Add(this.tablePanel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "OrderScreen";
             this.Text = "SmartPOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
