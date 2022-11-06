@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Smart_POS_X.UI
 {
-    public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
+    public partial class AdminScreen : DevExpress.XtraEditors.XtraForm
     {
-        public XtraForm1()
+        public AdminScreen()
         {
             InitializeComponent();
         }
