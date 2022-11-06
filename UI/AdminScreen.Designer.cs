@@ -103,6 +103,7 @@
             this.tablePanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tablePanel2.Name = "tablePanel2";
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 8F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 8F),
@@ -118,11 +119,11 @@
             this.btn_Refresh.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_Refresh, 0);
             this.btn_Refresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Refresh.Location = new System.Drawing.Point(50, 147);
+            this.btn_Refresh.Location = new System.Drawing.Point(50, 168);
             this.btn_Refresh.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
             this.btn_Refresh.Name = "btn_Refresh";
-            this.tablePanel2.SetRow(this.btn_Refresh, 2);
-            this.btn_Refresh.Size = new System.Drawing.Size(66, 19);
+            this.tablePanel2.SetRow(this.btn_Refresh, 3);
+            this.btn_Refresh.Size = new System.Drawing.Size(66, 18);
             this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "새로고침";
             // 
@@ -133,11 +134,11 @@
             this.btn_End.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_End, 0);
             this.btn_End.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_End.Location = new System.Drawing.Point(50, 108);
+            this.btn_End.Location = new System.Drawing.Point(50, 130);
             this.btn_End.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
             this.btn_End.Name = "btn_End";
-            this.tablePanel2.SetRow(this.btn_End, 1);
-            this.btn_End.Size = new System.Drawing.Size(66, 19);
+            this.tablePanel2.SetRow(this.btn_End, 2);
+            this.btn_End.Size = new System.Drawing.Size(66, 18);
             this.btn_End.TabIndex = 2;
             this.btn_End.Text = "종료";
             this.btn_End.Click += new System.EventHandler(this.btn_End_Click);
@@ -147,7 +148,7 @@
             this.tablePanel2.SetColumn(this.pictureEdit1, 0);
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit1.EditValue = global::Smart_POS_X.Properties.Resources.administrator_3552;
-            this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
+            this.pictureEdit1.Location = new System.Drawing.Point(0, 26);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
@@ -155,8 +156,9 @@
             this.pictureEdit1.Properties.Appearance.Options.UseBackColor = true;
             this.pictureEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.tablePanel2.SetRow(this.pictureEdit1, 0);
-            this.pictureEdit1.Size = new System.Drawing.Size(166, 98);
+            this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
+            this.tablePanel2.SetRow(this.pictureEdit1, 1);
+            this.pictureEdit1.Size = new System.Drawing.Size(166, 94);
             this.pictureEdit1.TabIndex = 1;
             // 
             // accordionControl1
@@ -179,13 +181,13 @@
             this.btnAco_Sales,
             this.btnAco_Menu,
             this.btnAco_Emp});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 274);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 290);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(0);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.Padding = new System.Windows.Forms.Padding(100);
-            this.tablePanel2.SetRow(this.accordionControl1, 4);
+            this.tablePanel2.SetRow(this.accordionControl1, 5);
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl1.Size = new System.Drawing.Size(166, 297);
+            this.accordionControl1.Size = new System.Drawing.Size(166, 281);
             this.accordionControl1.TabIndex = 0;
             // 
             // btnAco_DashBoard
