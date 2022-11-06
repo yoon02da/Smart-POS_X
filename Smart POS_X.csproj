@@ -89,6 +89,7 @@
       <DependentUpon>XtraUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="POP UP\MemberOverlapPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
