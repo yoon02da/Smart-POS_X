@@ -11,12 +11,11 @@ using System.Windows.Forms;
 
 namespace Smart_POS_X.POP_UP
 {
-    public partial class SalesManagedPopUp : DevExpress.XtraEditors.XtraForm
+    public partial class PaymentPopUp2 : DevExpress.XtraEditors.XtraForm
     {
-        public SalesManagedPopUp()
+        public PaymentPopUp2()
         {
             InitializeComponent();
         }
-
     }
 }

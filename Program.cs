@@ -26,7 +26,7 @@ namespace Smart_POS_X
             dbHelper.DB = "Master";
             dbHelper.ID = "sa";
             dbHelper.PWD = "tmakxmvhtm";
-            dbHelper.DBStart();
+            dbHelper.DBStart(); 
             /*
              예제
             string a = "Y";
@@ -36,7 +36,7 @@ namespace Smart_POS_X
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new PaymentPopUp2());
         }
 
     }
