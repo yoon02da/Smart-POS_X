@@ -20,15 +20,11 @@ namespace Smart_POS_X.UI
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            OrderScreen orderScreen = new OrderScreen();
-            orderScreen.Show();
-            //if(orderScreen.ShowDialog() == DialogResult.OK)
-            //{
+            OrderScreen order = new OrderScreen();
+            if(order.ShowDialog() == DialogResult.OK)
+            {
 
-            //}
-            
-            //로그인 ID 검증 후
-            //다음 메뉴
+            }
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
@@ -37,7 +33,14 @@ namespace Smart_POS_X.UI
 
         private void btn_Admin_Click(object sender, EventArgs e)
         {
+            AdminScreen admin = new AdminScreen();
+            if(admin.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+            
             //관리자 화면으로 이동
         }
+
     }
 }

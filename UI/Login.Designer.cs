@@ -148,6 +148,7 @@
             this.btn_Login.Size = new System.Drawing.Size(87, 25);
             this.btn_Login.TabIndex = 7;
             this.btn_Login.Text = "로그인";
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // Login
             // 
