@@ -20,9 +20,8 @@ namespace Smart_POS_X
         [STAThread]
         static void Main()
         {
-
             DBHelper dbHelper = new DBHelper();
-            dbHelper.IP = "172.20.10.7,1433";
+            DBHelper.IP = "172.20.10.7,1433"; 
             dbHelper.DB = "Master";
             dbHelper.ID = "sa";
             dbHelper.PWD = "tmakxmvhtm";

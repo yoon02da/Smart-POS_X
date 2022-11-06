@@ -1,8 +1,10 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.XtraCharts.Native;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,6 +18,8 @@ namespace Smart_POS_X.UI
         public Login()
         {
             InitializeComponent();
+            IP.Visible = false;
+            simpleButton1.Visible = false;
         }
 
         private void btn_Login_Click(object sender, EventArgs e)
@@ -42,5 +46,28 @@ namespace Smart_POS_X.UI
             //관리자 화면으로 이동
         }
 
+        private void IPset_Click(object sender, EventArgs e)
+        {
+            DBHelper DB = new DBHelper();
+
+            if (DB.DBCheckConnection() == false) {
+                IP.Visible = true;
+                simpleButton1.Visible = true;
+            }
+
+            MessageBox.Show($"지금 연결된 DB : {DBHelper.IP}");
+        }
+
+        private void tablePanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            DBHelper DB = new DBHelper();
+            DBHelper.IP = IP.Text;
+            DB.DBCheckConnection();
+        }
     }
 }
