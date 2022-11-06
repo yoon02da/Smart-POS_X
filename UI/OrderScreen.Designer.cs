@@ -37,11 +37,11 @@
             this.bar8 = new DevExpress.XtraBars.Bar();
             this.bar7 = new DevExpress.XtraBars.Bar();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_Remain = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_Receive = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_Discount = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_Pay = new DevExpress.XtraEditors.LabelControl();
+            this.lbl_AllAmount = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
@@ -62,20 +62,24 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton47 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton46 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton45 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton44 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton43 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton38 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton39 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton40 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton41 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton42 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_POS_End = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_SalesSelect = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Reset = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_ObjectMinus = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_ObjectPlus = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Plus = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Minus = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Pay = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_ReceipeSelect = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_MemberShip = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel6 = new DevExpress.Utils.Layout.TablePanel();
             this.simpleButton37 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton36 = new DevExpress.XtraEditors.SimpleButton();
@@ -103,10 +107,6 @@
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
@@ -183,11 +183,11 @@
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
-            this.tablePanel4.Controls.Add(this.labelControl11);
-            this.tablePanel4.Controls.Add(this.labelControl10);
-            this.tablePanel4.Controls.Add(this.labelControl9);
-            this.tablePanel4.Controls.Add(this.labelControl8);
-            this.tablePanel4.Controls.Add(this.labelControl6);
+            this.tablePanel4.Controls.Add(this.lbl_Remain);
+            this.tablePanel4.Controls.Add(this.lbl_Receive);
+            this.tablePanel4.Controls.Add(this.lbl_Discount);
+            this.tablePanel4.Controls.Add(this.lbl_Pay);
+            this.tablePanel4.Controls.Add(this.lbl_AllAmount);
             this.tablePanel4.Controls.Add(this.labelControl5);
             this.tablePanel4.Controls.Add(this.labelControl4);
             this.tablePanel4.Controls.Add(this.labelControl3);
@@ -206,96 +206,96 @@
             this.tablePanel4.Size = new System.Drawing.Size(290, 348);
             this.tablePanel4.TabIndex = 2;
             // 
-            // labelControl11
+            // lbl_Remain
             // 
-            this.labelControl11.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl11.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl11.Appearance.Options.UseBackColor = true;
-            this.labelControl11.Appearance.Options.UseBorderColor = true;
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Appearance.Options.UseTextOptions = true;
-            this.labelControl11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl11.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.labelControl11, 1);
-            this.labelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl11.Location = new System.Drawing.Point(148, 283);
-            this.labelControl11.Name = "labelControl11";
-            this.tablePanel4.SetRow(this.labelControl11, 4);
-            this.labelControl11.Size = new System.Drawing.Size(139, 62);
-            this.labelControl11.TabIndex = 10;
+            this.lbl_Remain.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_Remain.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.lbl_Remain.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Remain.Appearance.Options.UseBackColor = true;
+            this.lbl_Remain.Appearance.Options.UseBorderColor = true;
+            this.lbl_Remain.Appearance.Options.UseFont = true;
+            this.lbl_Remain.Appearance.Options.UseTextOptions = true;
+            this.lbl_Remain.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_Remain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.tablePanel4.SetColumn(this.lbl_Remain, 1);
+            this.lbl_Remain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Remain.Location = new System.Drawing.Point(148, 283);
+            this.lbl_Remain.Name = "lbl_Remain";
+            this.tablePanel4.SetRow(this.lbl_Remain, 4);
+            this.lbl_Remain.Size = new System.Drawing.Size(139, 62);
+            this.lbl_Remain.TabIndex = 10;
             // 
-            // labelControl10
+            // lbl_Receive
             // 
-            this.labelControl10.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl10.Appearance.Options.UseBackColor = true;
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Appearance.Options.UseTextOptions = true;
-            this.labelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl10.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.labelControl10, 1);
-            this.labelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl10.Location = new System.Drawing.Point(148, 213);
-            this.labelControl10.Name = "labelControl10";
-            this.tablePanel4.SetRow(this.labelControl10, 3);
-            this.labelControl10.Size = new System.Drawing.Size(139, 64);
-            this.labelControl10.TabIndex = 9;
+            this.lbl_Receive.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_Receive.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Receive.Appearance.Options.UseBackColor = true;
+            this.lbl_Receive.Appearance.Options.UseFont = true;
+            this.lbl_Receive.Appearance.Options.UseTextOptions = true;
+            this.lbl_Receive.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_Receive.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.tablePanel4.SetColumn(this.lbl_Receive, 1);
+            this.lbl_Receive.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Receive.Location = new System.Drawing.Point(148, 213);
+            this.lbl_Receive.Name = "lbl_Receive";
+            this.tablePanel4.SetRow(this.lbl_Receive, 3);
+            this.lbl_Receive.Size = new System.Drawing.Size(139, 64);
+            this.lbl_Receive.TabIndex = 9;
             // 
-            // labelControl9
+            // lbl_Discount
             // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl9.Appearance.Options.UseBackColor = true;
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Appearance.Options.UseTextOptions = true;
-            this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl9.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.labelControl9, 1);
-            this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl9.Location = new System.Drawing.Point(148, 143);
-            this.labelControl9.Name = "labelControl9";
-            this.tablePanel4.SetRow(this.labelControl9, 2);
-            this.labelControl9.Size = new System.Drawing.Size(139, 64);
-            this.labelControl9.TabIndex = 8;
+            this.lbl_Discount.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_Discount.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Discount.Appearance.Options.UseBackColor = true;
+            this.lbl_Discount.Appearance.Options.UseFont = true;
+            this.lbl_Discount.Appearance.Options.UseTextOptions = true;
+            this.lbl_Discount.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_Discount.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.tablePanel4.SetColumn(this.lbl_Discount, 1);
+            this.lbl_Discount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Discount.Location = new System.Drawing.Point(148, 143);
+            this.lbl_Discount.Name = "lbl_Discount";
+            this.tablePanel4.SetRow(this.lbl_Discount, 2);
+            this.lbl_Discount.Size = new System.Drawing.Size(139, 64);
+            this.lbl_Discount.TabIndex = 8;
             // 
-            // labelControl8
+            // lbl_Pay
             // 
-            this.labelControl8.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl8.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.Options.UseBackColor = true;
-            this.labelControl8.Appearance.Options.UseBorderColor = true;
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Appearance.Options.UseTextOptions = true;
-            this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl8.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.labelControl8, 1);
-            this.labelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl8.Location = new System.Drawing.Point(148, 73);
-            this.labelControl8.Name = "labelControl8";
-            this.tablePanel4.SetRow(this.labelControl8, 1);
-            this.labelControl8.Size = new System.Drawing.Size(139, 64);
-            this.labelControl8.TabIndex = 7;
+            this.lbl_Pay.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_Pay.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.lbl_Pay.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Pay.Appearance.Options.UseBackColor = true;
+            this.lbl_Pay.Appearance.Options.UseBorderColor = true;
+            this.lbl_Pay.Appearance.Options.UseFont = true;
+            this.lbl_Pay.Appearance.Options.UseTextOptions = true;
+            this.lbl_Pay.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_Pay.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.tablePanel4.SetColumn(this.lbl_Pay, 1);
+            this.lbl_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_Pay.Location = new System.Drawing.Point(148, 73);
+            this.lbl_Pay.Name = "lbl_Pay";
+            this.tablePanel4.SetRow(this.lbl_Pay, 1);
+            this.lbl_Pay.Size = new System.Drawing.Size(139, 64);
+            this.lbl_Pay.TabIndex = 7;
             // 
-            // labelControl6
+            // lbl_AllAmount
             // 
-            this.labelControl6.Appearance.BackColor = System.Drawing.Color.White;
-            this.labelControl6.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl6.Appearance.Options.UseBackColor = true;
-            this.labelControl6.Appearance.Options.UseBorderColor = true;
-            this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Appearance.Options.UseTextOptions = true;
-            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.labelControl6, 1);
-            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl6.Location = new System.Drawing.Point(148, 3);
-            this.labelControl6.Name = "labelControl6";
-            this.tablePanel4.SetRow(this.labelControl6, 0);
-            this.labelControl6.Size = new System.Drawing.Size(139, 64);
-            this.labelControl6.TabIndex = 5;
+            this.lbl_AllAmount.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_AllAmount.Appearance.BorderColor = System.Drawing.Color.Black;
+            this.lbl_AllAmount.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_AllAmount.Appearance.Options.UseBackColor = true;
+            this.lbl_AllAmount.Appearance.Options.UseBorderColor = true;
+            this.lbl_AllAmount.Appearance.Options.UseFont = true;
+            this.lbl_AllAmount.Appearance.Options.UseTextOptions = true;
+            this.lbl_AllAmount.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_AllAmount.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.tablePanel4.SetColumn(this.lbl_AllAmount, 1);
+            this.lbl_AllAmount.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_AllAmount.Location = new System.Drawing.Point(148, 3);
+            this.lbl_AllAmount.Name = "lbl_AllAmount";
+            this.tablePanel4.SetRow(this.lbl_AllAmount, 0);
+            this.lbl_AllAmount.Size = new System.Drawing.Size(139, 64);
+            this.lbl_AllAmount.TabIndex = 5;
             // 
             // labelControl5
             // 
@@ -582,6 +582,46 @@
             this.gridView2.OptionsView.ShowIndicator = false;
             this.gridView2.RowHeight = 10;
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.Caption = "No.";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 70;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "메뉴명";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 286;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn3.Caption = "수량";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn4.Caption = "가격";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 158;
+            // 
             // gridView1
             // 
             this.gridView1.GridControl = this.gridControl2;
@@ -631,16 +671,16 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
-            this.tablePanel7.Controls.Add(this.simpleButton47);
-            this.tablePanel7.Controls.Add(this.simpleButton46);
-            this.tablePanel7.Controls.Add(this.simpleButton45);
-            this.tablePanel7.Controls.Add(this.simpleButton44);
-            this.tablePanel7.Controls.Add(this.simpleButton43);
-            this.tablePanel7.Controls.Add(this.simpleButton38);
-            this.tablePanel7.Controls.Add(this.simpleButton39);
-            this.tablePanel7.Controls.Add(this.simpleButton40);
-            this.tablePanel7.Controls.Add(this.simpleButton41);
-            this.tablePanel7.Controls.Add(this.simpleButton42);
+            this.tablePanel7.Controls.Add(this.btn_POS_End);
+            this.tablePanel7.Controls.Add(this.btn_SalesSelect);
+            this.tablePanel7.Controls.Add(this.btn_Reset);
+            this.tablePanel7.Controls.Add(this.btn_ObjectMinus);
+            this.tablePanel7.Controls.Add(this.btn_ObjectPlus);
+            this.tablePanel7.Controls.Add(this.btn_Plus);
+            this.tablePanel7.Controls.Add(this.btn_Minus);
+            this.tablePanel7.Controls.Add(this.btn_Pay);
+            this.tablePanel7.Controls.Add(this.btn_ReceipeSelect);
+            this.tablePanel7.Controls.Add(this.btn_MemberShip);
             this.tablePanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel7.Location = new System.Drawing.Point(0, 537);
             this.tablePanel7.Margin = new System.Windows.Forms.Padding(0);
@@ -652,145 +692,151 @@
             this.tablePanel7.Size = new System.Drawing.Size(591, 177);
             this.tablePanel7.TabIndex = 1;
             // 
-            // simpleButton47
+            // btn_POS_End
             // 
-            this.simpleButton47.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton47.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton47, 4);
-            this.simpleButton47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton47.Location = new System.Drawing.Point(478, 94);
-            this.simpleButton47.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton47.Name = "simpleButton47";
-            this.tablePanel7.SetRow(this.simpleButton47, 1);
-            this.simpleButton47.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton47.TabIndex = 34;
-            this.simpleButton47.Text = "POS 종료";
+            this.btn_POS_End.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_POS_End.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_POS_End, 4);
+            this.btn_POS_End.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_POS_End.Location = new System.Drawing.Point(478, 94);
+            this.btn_POS_End.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_POS_End.Name = "btn_POS_End";
+            this.tablePanel7.SetRow(this.btn_POS_End, 1);
+            this.btn_POS_End.Size = new System.Drawing.Size(108, 78);
+            this.btn_POS_End.TabIndex = 34;
+            this.btn_POS_End.Text = "POS 종료";
             // 
-            // simpleButton46
+            // btn_SalesSelect
             // 
-            this.simpleButton46.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton46.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton46, 3);
-            this.simpleButton46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton46.Location = new System.Drawing.Point(360, 94);
-            this.simpleButton46.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton46.Name = "simpleButton46";
-            this.tablePanel7.SetRow(this.simpleButton46, 1);
-            this.simpleButton46.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton46.TabIndex = 33;
-            this.simpleButton46.Text = "매출 조회";
+            this.btn_SalesSelect.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SalesSelect.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_SalesSelect, 3);
+            this.btn_SalesSelect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_SalesSelect.Location = new System.Drawing.Point(360, 94);
+            this.btn_SalesSelect.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_SalesSelect.Name = "btn_SalesSelect";
+            this.tablePanel7.SetRow(this.btn_SalesSelect, 1);
+            this.btn_SalesSelect.Size = new System.Drawing.Size(108, 78);
+            this.btn_SalesSelect.TabIndex = 33;
+            this.btn_SalesSelect.Text = "매출 조회";
             // 
-            // simpleButton45
+            // btn_Reset
             // 
-            this.simpleButton45.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton45.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton45, 2);
-            this.simpleButton45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton45.Location = new System.Drawing.Point(241, 94);
-            this.simpleButton45.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton45.Name = "simpleButton45";
-            this.tablePanel7.SetRow(this.simpleButton45, 1);
-            this.simpleButton45.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton45.TabIndex = 32;
-            this.simpleButton45.Text = "전체삭제";
+            this.btn_Reset.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_Reset, 2);
+            this.btn_Reset.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Reset.Location = new System.Drawing.Point(241, 94);
+            this.btn_Reset.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Reset.Name = "btn_Reset";
+            this.tablePanel7.SetRow(this.btn_Reset, 1);
+            this.btn_Reset.Size = new System.Drawing.Size(108, 78);
+            this.btn_Reset.TabIndex = 32;
+            this.btn_Reset.Text = "전체삭제";
             // 
-            // simpleButton44
+            // btn_ObjectMinus
             // 
-            this.simpleButton44.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton44.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton44, 1);
-            this.simpleButton44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton44.Location = new System.Drawing.Point(123, 94);
-            this.simpleButton44.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton44.Name = "simpleButton44";
-            this.tablePanel7.SetRow(this.simpleButton44, 1);
-            this.simpleButton44.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton44.TabIndex = 31;
-            this.simpleButton44.Text = "상품삭제";
+            this.btn_ObjectMinus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ObjectMinus.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_ObjectMinus, 1);
+            this.btn_ObjectMinus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ObjectMinus.Location = new System.Drawing.Point(123, 94);
+            this.btn_ObjectMinus.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_ObjectMinus.Name = "btn_ObjectMinus";
+            this.tablePanel7.SetRow(this.btn_ObjectMinus, 1);
+            this.btn_ObjectMinus.Size = new System.Drawing.Size(108, 78);
+            this.btn_ObjectMinus.TabIndex = 31;
+            this.btn_ObjectMinus.Text = "상품삭제";
             // 
-            // simpleButton43
+            // btn_ObjectPlus
             // 
-            this.simpleButton43.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton43.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton43, 0);
-            this.simpleButton43.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton43.Location = new System.Drawing.Point(5, 94);
-            this.simpleButton43.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton43.Name = "simpleButton43";
-            this.tablePanel7.SetRow(this.simpleButton43, 1);
-            this.simpleButton43.Size = new System.Drawing.Size(108, 78);
-            this.simpleButton43.TabIndex = 30;
-            this.simpleButton43.Text = "상품추가";
+            this.btn_ObjectPlus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ObjectPlus.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_ObjectPlus, 0);
+            this.btn_ObjectPlus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ObjectPlus.Location = new System.Drawing.Point(5, 94);
+            this.btn_ObjectPlus.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_ObjectPlus.Name = "btn_ObjectPlus";
+            this.tablePanel7.SetRow(this.btn_ObjectPlus, 1);
+            this.btn_ObjectPlus.Size = new System.Drawing.Size(108, 78);
+            this.btn_ObjectPlus.TabIndex = 30;
+            this.btn_ObjectPlus.Text = "상품추가";
             // 
-            // simpleButton38
+            // btn_Plus
             // 
-            this.simpleButton38.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton38.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton38, 0);
-            this.simpleButton38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton38.Location = new System.Drawing.Point(5, 5);
-            this.simpleButton38.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton38.Name = "simpleButton38";
-            this.tablePanel7.SetRow(this.simpleButton38, 0);
-            this.simpleButton38.Size = new System.Drawing.Size(108, 79);
-            this.simpleButton38.TabIndex = 25;
-            this.simpleButton38.Text = "+";
+            this.btn_Plus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Plus.Appearance.Options.UseFont = true;
+            this.btn_Plus.Appearance.Options.UseTextOptions = true;
+            this.btn_Plus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btn_Plus.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel7.SetColumn(this.btn_Plus, 0);
+            this.btn_Plus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Plus.Location = new System.Drawing.Point(5, 5);
+            this.btn_Plus.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Plus.Name = "btn_Plus";
+            this.tablePanel7.SetRow(this.btn_Plus, 0);
+            this.btn_Plus.Size = new System.Drawing.Size(108, 79);
+            this.btn_Plus.TabIndex = 25;
+            this.btn_Plus.Text = "+";
             // 
-            // simpleButton39
+            // btn_Minus
             // 
-            this.simpleButton39.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton39.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton39, 1);
-            this.simpleButton39.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton39.Location = new System.Drawing.Point(123, 5);
-            this.simpleButton39.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton39.Name = "simpleButton39";
-            this.tablePanel7.SetRow(this.simpleButton39, 0);
-            this.simpleButton39.Size = new System.Drawing.Size(108, 79);
-            this.simpleButton39.TabIndex = 26;
-            this.simpleButton39.Text = "-";
+            this.btn_Minus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Minus.Appearance.Options.UseFont = true;
+            this.btn_Minus.Appearance.Options.UseTextOptions = true;
+            this.btn_Minus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btn_Minus.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel7.SetColumn(this.btn_Minus, 1);
+            this.btn_Minus.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Minus.Location = new System.Drawing.Point(123, 5);
+            this.btn_Minus.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Minus.Name = "btn_Minus";
+            this.tablePanel7.SetRow(this.btn_Minus, 0);
+            this.btn_Minus.Size = new System.Drawing.Size(108, 79);
+            this.btn_Minus.TabIndex = 26;
+            this.btn_Minus.Text = "-";
             // 
-            // simpleButton40
+            // btn_Pay
             // 
-            this.simpleButton40.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton40.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton40, 2);
-            this.simpleButton40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton40.Location = new System.Drawing.Point(241, 5);
-            this.simpleButton40.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton40.Name = "simpleButton40";
-            this.tablePanel7.SetRow(this.simpleButton40, 0);
-            this.simpleButton40.Size = new System.Drawing.Size(108, 79);
-            this.simpleButton40.TabIndex = 27;
-            this.simpleButton40.Text = "결제";
+            this.btn_Pay.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Pay.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_Pay, 2);
+            this.btn_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Pay.Location = new System.Drawing.Point(241, 5);
+            this.btn_Pay.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_Pay.Name = "btn_Pay";
+            this.tablePanel7.SetRow(this.btn_Pay, 0);
+            this.btn_Pay.Size = new System.Drawing.Size(108, 79);
+            this.btn_Pay.TabIndex = 27;
+            this.btn_Pay.Text = "결제";
             // 
-            // simpleButton41
+            // btn_ReceipeSelect
             // 
-            this.simpleButton41.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton41.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton41, 3);
-            this.simpleButton41.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton41.Location = new System.Drawing.Point(360, 5);
-            this.simpleButton41.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton41.Name = "simpleButton41";
-            this.tablePanel7.SetRow(this.simpleButton41, 0);
-            this.simpleButton41.Size = new System.Drawing.Size(108, 79);
-            this.simpleButton41.TabIndex = 28;
-            this.simpleButton41.Text = "영수증 조회";
+            this.btn_ReceipeSelect.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ReceipeSelect.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_ReceipeSelect, 3);
+            this.btn_ReceipeSelect.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_ReceipeSelect.Location = new System.Drawing.Point(360, 5);
+            this.btn_ReceipeSelect.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_ReceipeSelect.Name = "btn_ReceipeSelect";
+            this.tablePanel7.SetRow(this.btn_ReceipeSelect, 0);
+            this.btn_ReceipeSelect.Size = new System.Drawing.Size(108, 79);
+            this.btn_ReceipeSelect.TabIndex = 28;
+            this.btn_ReceipeSelect.Text = "영수증 조회";
             // 
-            // simpleButton42
+            // btn_MemberShip
             // 
-            this.simpleButton42.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton42.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.simpleButton42, 4);
-            this.simpleButton42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton42.Location = new System.Drawing.Point(478, 5);
-            this.simpleButton42.Margin = new System.Windows.Forms.Padding(5);
-            this.simpleButton42.Name = "simpleButton42";
-            this.tablePanel7.SetRow(this.simpleButton42, 0);
-            this.simpleButton42.Size = new System.Drawing.Size(108, 79);
-            this.simpleButton42.TabIndex = 29;
-            this.simpleButton42.Text = "멤버십 관리";
+            this.btn_MemberShip.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MemberShip.Appearance.Options.UseFont = true;
+            this.tablePanel7.SetColumn(this.btn_MemberShip, 4);
+            this.btn_MemberShip.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_MemberShip.Location = new System.Drawing.Point(478, 5);
+            this.btn_MemberShip.Margin = new System.Windows.Forms.Padding(5);
+            this.btn_MemberShip.Name = "btn_MemberShip";
+            this.tablePanel7.SetRow(this.btn_MemberShip, 0);
+            this.btn_MemberShip.Size = new System.Drawing.Size(108, 79);
+            this.btn_MemberShip.TabIndex = 29;
+            this.btn_MemberShip.Text = "멤버십 관리";
             // 
             // tablePanel6
             // 
@@ -1147,46 +1193,6 @@
             this.tablePanel2.Size = new System.Drawing.Size(591, 354);
             this.tablePanel2.TabIndex = 2;
             // 
-            // gridColumn1
-            // 
-            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn1.Caption = "No.";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 70;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "메뉴명";
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 286;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn3.Caption = "수량";
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn4.Caption = "가격";
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 158;
-            // 
             // OrderScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1251,23 +1257,23 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.LabelControl lbl_Remain;
+        private DevExpress.XtraEditors.LabelControl lbl_Receive;
+        private DevExpress.XtraEditors.LabelControl lbl_Discount;
+        private DevExpress.XtraEditors.LabelControl lbl_Pay;
+        private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.Utils.Layout.TablePanel tablePanel7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton47;
-        private DevExpress.XtraEditors.SimpleButton simpleButton46;
-        private DevExpress.XtraEditors.SimpleButton simpleButton45;
-        private DevExpress.XtraEditors.SimpleButton simpleButton44;
-        private DevExpress.XtraEditors.SimpleButton simpleButton43;
-        private DevExpress.XtraEditors.SimpleButton simpleButton38;
-        private DevExpress.XtraEditors.SimpleButton simpleButton39;
-        private DevExpress.XtraEditors.SimpleButton simpleButton40;
-        private DevExpress.XtraEditors.SimpleButton simpleButton41;
-        private DevExpress.XtraEditors.SimpleButton simpleButton42;
+        private DevExpress.XtraEditors.SimpleButton btn_POS_End;
+        private DevExpress.XtraEditors.SimpleButton btn_SalesSelect;
+        private DevExpress.XtraEditors.SimpleButton btn_Reset;
+        private DevExpress.XtraEditors.SimpleButton btn_ObjectMinus;
+        private DevExpress.XtraEditors.SimpleButton btn_ObjectPlus;
+        private DevExpress.XtraEditors.SimpleButton btn_Plus;
+        private DevExpress.XtraEditors.SimpleButton btn_Minus;
+        private DevExpress.XtraEditors.SimpleButton btn_Pay;
+        private DevExpress.XtraEditors.SimpleButton btn_ReceipeSelect;
+        private DevExpress.XtraEditors.SimpleButton btn_MemberShip;
         private DevExpress.Utils.Layout.TablePanel tablePanel6;
         private DevExpress.XtraEditors.SimpleButton simpleButton37;
         private DevExpress.XtraEditors.SimpleButton simpleButton36;

@@ -31,14 +31,14 @@
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.panelControl2 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Refresh = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_End = new DevExpress.XtraEditors.SimpleButton();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
-            this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnAco_DashBoard = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnAco_Sales = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnAco_Menu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnAco_Emp = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.pictureEdit2 = new DevExpress.XtraEditors.PictureEdit();
@@ -94,8 +94,8 @@
             // 
             this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel2.Controls.Add(this.simpleButton2);
-            this.tablePanel2.Controls.Add(this.simpleButton1);
+            this.tablePanel2.Controls.Add(this.btn_Refresh);
+            this.tablePanel2.Controls.Add(this.btn_End);
             this.tablePanel2.Controls.Add(this.pictureEdit1);
             this.tablePanel2.Controls.Add(this.accordionControl1);
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,35 +111,36 @@
             this.tablePanel2.Size = new System.Drawing.Size(166, 571);
             this.tablePanel2.TabIndex = 0;
             // 
-            // simpleButton2
+            // btn_Refresh
             // 
-            this.simpleButton2.AllowFocus = false;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.tablePanel2.SetColumn(this.simpleButton2, 0);
-            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton2.Location = new System.Drawing.Point(50, 147);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
-            this.simpleButton2.Name = "simpleButton2";
-            this.tablePanel2.SetRow(this.simpleButton2, 2);
-            this.simpleButton2.Size = new System.Drawing.Size(66, 19);
-            this.simpleButton2.TabIndex = 3;
-            this.simpleButton2.Text = "새로고침";
+            this.btn_Refresh.AllowFocus = false;
+            this.btn_Refresh.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Refresh.Appearance.Options.UseFont = true;
+            this.tablePanel2.SetColumn(this.btn_Refresh, 0);
+            this.btn_Refresh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Refresh.Location = new System.Drawing.Point(50, 147);
+            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.tablePanel2.SetRow(this.btn_Refresh, 2);
+            this.btn_Refresh.Size = new System.Drawing.Size(66, 19);
+            this.btn_Refresh.TabIndex = 3;
+            this.btn_Refresh.Text = "새로고침";
             // 
-            // simpleButton1
+            // btn_End
             // 
-            this.simpleButton1.AllowFocus = false;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.tablePanel2.SetColumn(this.simpleButton1, 0);
-            this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton1.Location = new System.Drawing.Point(50, 108);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
-            this.simpleButton1.Name = "simpleButton1";
-            this.tablePanel2.SetRow(this.simpleButton1, 1);
-            this.simpleButton1.Size = new System.Drawing.Size(66, 19);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "종료";
+            this.btn_End.AllowFocus = false;
+            this.btn_End.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_End.Appearance.Options.UseFont = true;
+            this.tablePanel2.SetColumn(this.btn_End, 0);
+            this.btn_End.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_End.Location = new System.Drawing.Point(50, 108);
+            this.btn_End.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
+            this.btn_End.Name = "btn_End";
+            this.tablePanel2.SetRow(this.btn_End, 1);
+            this.btn_End.Size = new System.Drawing.Size(66, 19);
+            this.btn_End.TabIndex = 2;
+            this.btn_End.Text = "종료";
+            this.btn_End.Click += new System.EventHandler(this.btn_End_Click);
             // 
             // pictureEdit1
             // 
@@ -174,10 +175,10 @@
             this.tablePanel2.SetColumn(this.accordionControl1, 0);
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement3,
-            this.accordionControlElement4,
-            this.accordionControlElement5,
-            this.accordionControlElement6});
+            this.btnAco_DashBoard,
+            this.btnAco_Sales,
+            this.btnAco_Menu,
+            this.btnAco_Emp});
             this.accordionControl1.Location = new System.Drawing.Point(0, 274);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(0);
             this.accordionControl1.Name = "accordionControl1";
@@ -187,73 +188,73 @@
             this.accordionControl1.Size = new System.Drawing.Size(166, 297);
             this.accordionControl1.TabIndex = 0;
             // 
-            // accordionControlElement3
+            // btnAco_DashBoard
             // 
-            this.accordionControlElement3.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement3.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.accordionControlElement3.Appearance.Default.Options.UseBackColor = true;
-            this.accordionControlElement3.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement3.Appearance.Default.Options.UseTextOptions = true;
-            this.accordionControlElement3.Appearance.Default.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.accordionControlElement3.Appearance.Default.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.accordionControlElement3.Appearance.Disabled.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement3.Appearance.Disabled.Options.UseBackColor = true;
-            this.accordionControlElement3.Appearance.Disabled.Options.UseTextOptions = true;
-            this.accordionControlElement3.Appearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.accordionControlElement3.Appearance.Disabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.accordionControlElement3.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.btnAco_DashBoard.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAco_DashBoard.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAco_DashBoard.Appearance.Default.Options.UseBackColor = true;
+            this.btnAco_DashBoard.Appearance.Default.Options.UseFont = true;
+            this.btnAco_DashBoard.Appearance.Default.Options.UseTextOptions = true;
+            this.btnAco_DashBoard.Appearance.Default.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btnAco_DashBoard.Appearance.Default.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.btnAco_DashBoard.Appearance.Disabled.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAco_DashBoard.Appearance.Disabled.Options.UseBackColor = true;
+            this.btnAco_DashBoard.Appearance.Disabled.Options.UseTextOptions = true;
+            this.btnAco_DashBoard.Appearance.Disabled.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btnAco_DashBoard.Appearance.Disabled.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.btnAco_DashBoard.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Left),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
-            this.accordionControlElement3.Name = "accordionControlElement3";
-            this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "대시보드";
+            this.btnAco_DashBoard.Name = "btnAco_DashBoard";
+            this.btnAco_DashBoard.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnAco_DashBoard.Text = "대시보드";
             // 
-            // accordionControlElement4
+            // btnAco_Sales
             // 
-            this.accordionControlElement4.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement4.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.accordionControlElement4.Appearance.Default.Options.UseBackColor = true;
-            this.accordionControlElement4.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement4.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.btnAco_Sales.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAco_Sales.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAco_Sales.Appearance.Default.Options.UseBackColor = true;
+            this.btnAco_Sales.Appearance.Default.Options.UseFont = true;
+            this.btnAco_Sales.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
-            this.accordionControlElement4.Name = "accordionControlElement4";
-            this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "매출관리";
+            this.btnAco_Sales.Name = "btnAco_Sales";
+            this.btnAco_Sales.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnAco_Sales.Text = "매출관리";
             // 
-            // accordionControlElement5
+            // btnAco_Menu
             // 
-            this.accordionControlElement5.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.accordionControlElement5.Appearance.Default.Options.UseBackColor = true;
-            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement5.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.btnAco_Menu.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAco_Menu.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAco_Menu.Appearance.Default.Options.UseBackColor = true;
+            this.btnAco_Menu.Appearance.Default.Options.UseFont = true;
+            this.btnAco_Menu.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "메뉴관리";
+            this.btnAco_Menu.Name = "btnAco_Menu";
+            this.btnAco_Menu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnAco_Menu.Text = "메뉴관리";
             // 
-            // accordionControlElement6
+            // btnAco_Emp
             // 
-            this.accordionControlElement6.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.accordionControlElement6.Appearance.Default.Options.UseBackColor = true;
-            this.accordionControlElement6.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement6.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            this.btnAco_Emp.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAco_Emp.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnAco_Emp.Appearance.Default.Options.UseBackColor = true;
+            this.btnAco_Emp.Appearance.Default.Options.UseFont = true;
+            this.btnAco_Emp.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "직원관리";
+            this.btnAco_Emp.Name = "btnAco_Emp";
+            this.btnAco_Emp.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnAco_Emp.Text = "직원관리";
             // 
             // panelControl1
             // 
@@ -351,17 +352,17 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraEditors.PanelControl panelControl1;
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAco_DashBoard;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAco_Sales;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAco_Menu;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnAco_Emp;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraEditors.PanelControl panelControl2;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_Refresh;
+        private DevExpress.XtraEditors.SimpleButton btn_End;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
         private DevExpress.XtraEditors.PictureEdit pictureEdit2;
     }

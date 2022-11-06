@@ -25,5 +25,10 @@ namespace Smart_POS_X.UI
             accordionControl1.Margin = Empty;
             
         }
+
+        private void btn_End_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
