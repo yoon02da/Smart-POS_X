@@ -82,6 +82,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBHelper.cs" />
     <Compile Include="POP UP\MemberOverlapPopUp.cs">
       <SubType>Form</SubType>
@@ -151,6 +157,9 @@
     <Compile Include="UI\SalesManagedScreen.Designer.cs">
       <DependentUpon>SalesManagedScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Control\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="POP UP\MemberOverlapPopUp.resx">
       <DependentUpon>MemberOverlapPopUp.cs</DependentUpon>
     </EmbeddedResource>

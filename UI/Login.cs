@@ -10,11 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static DevExpress.Xpo.DB.DataStoreLongrunnersWatch;
 
 namespace Smart_POS_X.UI
 {
     public partial class Login : DevExpress.XtraEditors.XtraForm
     {
+
+        DataTable DT = new DataTable();
         public Login()
         {
             InitializeComponent();
@@ -24,10 +27,21 @@ namespace Smart_POS_X.UI
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            OrderScreen order = new OrderScreen();
-            if(order.ShowDialog() == DialogResult.OK)
-            {
+            DBHelper DB = new DBHelper();
+            DB.Exec($"Login_LoginUser '{txt_ID.Text}' ,'{txt_Password.Text}'");
 
+            if (DB.result == false)
+            {
+                MessageBox.Show("ID, 비밀번호를 재확인 해주십시오.");
+                return;
+            }
+
+            OrderScreen order = new OrderScreen();
+            if (order.ShowDialog() == DialogResult.OK)
+            {
+               
+
+               // if (DT.Rows[0])
             }
         }
 
