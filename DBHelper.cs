@@ -7,13 +7,16 @@ using System.Text;
 using System.Threading.Tasks; 
 using System.Data;
 using DevExpress.Xpo.DB;
+using DevExpress.XtraCharts.Native;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace Smart_POS_X
 {
 
     class DBHelper
     {
-        public string IP { get; set; }
+        static public string IP { get; set; }
         public string DB { get; set; }
         public string ID { get; set; }
         public string PWD { get; set; }
@@ -25,6 +28,25 @@ namespace Smart_POS_X
             SqlConnection DBConn = new SqlConnection(con);
 
             sqlConnection = DBConn;
+        }
+        public bool DBCheckConnection() 
+        {
+            sqlConnection.Open();
+            if (sqlConnection.State == ConnectionState.Open)
+            {
+                MessageBox.Show("연결되었습니다.");
+
+                sqlConnection.Close();
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("실패하였습니다.");
+
+                sqlConnection.Close();
+                return false;
+            }
+             
         }
 
         public DataTable Exec(string SQL) {
