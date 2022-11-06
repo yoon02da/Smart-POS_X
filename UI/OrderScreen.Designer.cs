@@ -62,10 +62,10 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.SEQ = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Menu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.QTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
@@ -588,6 +588,7 @@
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2,
             this.gridView1});
+            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // gridView2
             // 
@@ -596,10 +597,10 @@
             this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
+            this.SEQ,
+            this.Menu,
+            this.QTY,
+            this.Price});
             this.gridView2.DetailHeight = 747;
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
@@ -609,50 +610,50 @@
             this.gridView2.OptionsView.ShowIndicator = false;
             this.gridView2.RowHeight = 21;
             // 
-            // gridColumn1
+            // SEQ
             // 
-            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn1.Caption = "No.";
-            this.gridColumn1.MinWidth = 37;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 130;
+            this.SEQ.AppearanceCell.Options.UseTextOptions = true;
+            this.SEQ.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.SEQ.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.SEQ.Caption = "No.";
+            this.SEQ.MinWidth = 37;
+            this.SEQ.Name = "SEQ";
+            this.SEQ.Visible = true;
+            this.SEQ.VisibleIndex = 0;
+            this.SEQ.Width = 130;
             // 
-            // gridColumn2
+            // Menu
             // 
-            this.gridColumn2.Caption = "메뉴명";
-            this.gridColumn2.MinWidth = 37;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 531;
+            this.Menu.Caption = "메뉴명";
+            this.Menu.MinWidth = 37;
+            this.Menu.Name = "Menu";
+            this.Menu.Visible = true;
+            this.Menu.VisibleIndex = 1;
+            this.Menu.Width = 531;
             // 
-            // gridColumn3
+            // QTY
             // 
-            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn3.Caption = "수량";
-            this.gridColumn3.MinWidth = 37;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 139;
+            this.QTY.AppearanceCell.Options.UseTextOptions = true;
+            this.QTY.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.QTY.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.QTY.Caption = "수량";
+            this.QTY.MinWidth = 37;
+            this.QTY.Name = "QTY";
+            this.QTY.Visible = true;
+            this.QTY.VisibleIndex = 2;
+            this.QTY.Width = 139;
             // 
-            // gridColumn4
+            // Price
             // 
-            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn4.Caption = "가격";
-            this.gridColumn4.MinWidth = 37;
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 293;
+            this.Price.AppearanceCell.Options.UseTextOptions = true;
+            this.Price.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.Price.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.Price.Caption = "가격";
+            this.Price.MinWidth = 37;
+            this.Price.Name = "Price";
+            this.Price.Visible = true;
+            this.Price.VisibleIndex = 3;
+            this.Price.Width = 293;
             // 
             // gridView1
             // 
@@ -932,6 +933,7 @@
             this.tablePanel6.SetRow(this.Menu20, 4);
             this.Menu20.Size = new System.Drawing.Size(201, 209);
             this.Menu20.TabIndex = 24;
+            this.Menu20.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu19
             // 
@@ -943,6 +945,7 @@
             this.tablePanel6.SetRow(this.Menu19, 4);
             this.Menu19.Size = new System.Drawing.Size(201, 209);
             this.Menu19.TabIndex = 23;
+            this.Menu19.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu18
             // 
@@ -954,6 +957,7 @@
             this.tablePanel6.SetRow(this.Menu18, 4);
             this.Menu18.Size = new System.Drawing.Size(201, 209);
             this.Menu18.TabIndex = 22;
+            this.Menu18.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu17
             // 
@@ -965,6 +969,7 @@
             this.tablePanel6.SetRow(this.Menu17, 4);
             this.Menu17.Size = new System.Drawing.Size(201, 209);
             this.Menu17.TabIndex = 21;
+            this.Menu17.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu16
             // 
@@ -976,6 +981,7 @@
             this.tablePanel6.SetRow(this.Menu16, 4);
             this.Menu16.Size = new System.Drawing.Size(201, 209);
             this.Menu16.TabIndex = 20;
+            this.Menu16.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu15
             // 
@@ -987,6 +993,7 @@
             this.tablePanel6.SetRow(this.Menu15, 3);
             this.Menu15.Size = new System.Drawing.Size(201, 207);
             this.Menu15.TabIndex = 19;
+            this.Menu15.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu14
             // 
@@ -998,6 +1005,7 @@
             this.tablePanel6.SetRow(this.Menu14, 3);
             this.Menu14.Size = new System.Drawing.Size(201, 207);
             this.Menu14.TabIndex = 18;
+            this.Menu14.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu13
             // 
@@ -1009,6 +1017,7 @@
             this.tablePanel6.SetRow(this.Menu13, 3);
             this.Menu13.Size = new System.Drawing.Size(201, 207);
             this.Menu13.TabIndex = 17;
+            this.Menu13.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu12
             // 
@@ -1020,6 +1029,7 @@
             this.tablePanel6.SetRow(this.Menu12, 3);
             this.Menu12.Size = new System.Drawing.Size(201, 207);
             this.Menu12.TabIndex = 16;
+            this.Menu12.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu11
             // 
@@ -1031,6 +1041,7 @@
             this.tablePanel6.SetRow(this.Menu11, 3);
             this.Menu11.Size = new System.Drawing.Size(201, 207);
             this.Menu11.TabIndex = 15;
+            this.Menu11.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu10
             // 
@@ -1042,6 +1053,7 @@
             this.tablePanel6.SetRow(this.Menu10, 2);
             this.Menu10.Size = new System.Drawing.Size(201, 207);
             this.Menu10.TabIndex = 14;
+            this.Menu10.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu9
             // 
@@ -1053,6 +1065,7 @@
             this.tablePanel6.SetRow(this.Menu9, 2);
             this.Menu9.Size = new System.Drawing.Size(201, 207);
             this.Menu9.TabIndex = 13;
+            this.Menu9.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu8
             // 
@@ -1064,6 +1077,7 @@
             this.tablePanel6.SetRow(this.Menu8, 2);
             this.Menu8.Size = new System.Drawing.Size(201, 207);
             this.Menu8.TabIndex = 12;
+            this.Menu8.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu7
             // 
@@ -1075,6 +1089,7 @@
             this.tablePanel6.SetRow(this.Menu7, 2);
             this.Menu7.Size = new System.Drawing.Size(201, 207);
             this.Menu7.TabIndex = 11;
+            this.Menu7.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu6
             // 
@@ -1086,6 +1101,7 @@
             this.tablePanel6.SetRow(this.Menu6, 2);
             this.Menu6.Size = new System.Drawing.Size(201, 207);
             this.Menu6.TabIndex = 10;
+            this.Menu6.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu5
             // 
@@ -1097,6 +1113,7 @@
             this.tablePanel6.SetRow(this.Menu5, 1);
             this.Menu5.Size = new System.Drawing.Size(201, 207);
             this.Menu5.TabIndex = 9;
+            this.Menu5.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu4
             // 
@@ -1108,6 +1125,7 @@
             this.tablePanel6.SetRow(this.Menu4, 1);
             this.Menu4.Size = new System.Drawing.Size(201, 207);
             this.Menu4.TabIndex = 8;
+            this.Menu4.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu3
             // 
@@ -1119,6 +1137,7 @@
             this.tablePanel6.SetRow(this.Menu3, 1);
             this.Menu3.Size = new System.Drawing.Size(201, 207);
             this.Menu3.TabIndex = 7;
+            this.Menu3.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu2
             // 
@@ -1130,26 +1149,7 @@
             this.tablePanel6.SetRow(this.Menu2, 1);
             this.Menu2.Size = new System.Drawing.Size(201, 207);
             this.Menu2.TabIndex = 6;
-            this.Menu1.Click += new System.EventHandler(this.Menu_Click);
             this.Menu2.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu3.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu4.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu5.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu6.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu7.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu8.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu9.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu10.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu11.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu12.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu13.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu14.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu15.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu16.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu17.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu18.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu19.Click += new System.EventHandler(this.Menu_Click);
-            this.Menu20.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu1
             // 
@@ -1160,7 +1160,8 @@
             this.Menu1.Name = "Menu1";
             this.tablePanel6.SetRow(this.Menu1, 1);
             this.Menu1.Size = new System.Drawing.Size(201, 207);
-            this.Menu1.TabIndex = 5; 
+            this.Menu1.TabIndex = 5;
+            this.Menu1.Click += new System.EventHandler(this.Menu_Click);
             // 
             // simpleButton17
             // 
@@ -1310,7 +1311,6 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
@@ -1373,9 +1373,10 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView2;
+        public DevExpress.XtraGrid.Columns.GridColumn SEQ;
+        public DevExpress.XtraGrid.Columns.GridColumn Menu;
+        public DevExpress.XtraGrid.Columns.GridColumn QTY;
+        public DevExpress.XtraGrid.Columns.GridColumn Price;
     }
 }

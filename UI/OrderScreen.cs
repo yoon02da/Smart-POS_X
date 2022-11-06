@@ -19,6 +19,8 @@ namespace Smart_POS_X.UI
     {
         private int MenuSelect {get; set;}
         private MenuList MenuSelecter { get; set; }
+
+        DataTable MenuTable = new DataTable();
         public OrderScreen()
         {
             InitializeComponent();
@@ -95,7 +97,13 @@ namespace Smart_POS_X.UI
 
 
             DBHelper DBh = new DBHelper();
-            DataTable DT = DBh.Exec($"OrderScreen_S02 '{MenuName}'");
+            MenuTable.Merge(DBh.Exec($"OrderScreen_S02 '{MenuName}'"));
+
+            gridControl2.DataSource = MenuTable;   
+        }
+
+        private void gridControl2_Click(object sender, EventArgs e)
+        {
 
         }
     }

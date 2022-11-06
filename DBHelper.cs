@@ -15,7 +15,6 @@ using System.Runtime.Remoting.Messaging;
 
 namespace Smart_POS_X
 {
-
     class DBHelper
     {
         static public string IP { get; set; }
@@ -50,7 +49,6 @@ namespace Smart_POS_X
                 sqlConnection.Close();
                 return false;
             }
-             
         }
 
         public DataTable Exec(string SQL) {
@@ -63,7 +61,6 @@ namespace Smart_POS_X
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
             sd.Fill(DS, "Table");
-
 
             if (DS == null) return null;
 
