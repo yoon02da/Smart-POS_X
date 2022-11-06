@@ -62,7 +62,7 @@ namespace Smart_POS_X
             DataSet DS = new DataSet();
             sd.Fill(DS, "Table");
 
-            if (DS == null) return null;
+            if (DS.Tables.Count == 0) return null;
 
             DataTable DT = DS.Tables[0];
 

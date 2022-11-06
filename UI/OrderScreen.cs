@@ -1,6 +1,7 @@
 ﻿using DevExpress.Utils.Extensions;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraPrinting.Export;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -95,16 +96,36 @@ namespace Smart_POS_X.UI
         {
             string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
 
-
             DBHelper DBh = new DBHelper();
-            MenuTable.Merge(DBh.Exec($"OrderScreen_S02 '{MenuName}'"));
 
-            gridControl2.DataSource = MenuTable;   
+            DataTable DT = DBh.Exec($"OrderScreen_S02 '{MenuName}'");
+
+            var MenuNameTemp = DT.Rows[0]["Menu"].ToString();
+            
+            foreach (DataRow DR in MenuTable.Rows)
+            {
+                if (MenuNameTemp == DR["Menu"].ToString())
+                {
+                    int QTYNUM = Int32.Parse(DR["QTY"].ToString());
+                    int PriceNUM = Int32.Parse(DR["ORG_Price"].ToString());
+                    DR["QTY"] = ++QTYNUM;
+                    DR["Price"] = QTYNUM * PriceNUM;
+
+                    gridControl1.DataSource = MenuTable;
+                    return;
+                }
+            }
+
+            MenuTable.Merge(DT);
+            gridControl1.DataSource = MenuTable;
+
         }
 
         private void gridControl2_Click(object sender, EventArgs e)
         {
 
         }
+
+
     }
 }

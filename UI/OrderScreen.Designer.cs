@@ -36,6 +36,7 @@
             this.bar9 = new DevExpress.XtraBars.Bar();
             this.bar8 = new DevExpress.XtraBars.Bar();
             this.bar7 = new DevExpress.XtraBars.Bar();
+            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
             this.lbl_Remain = new DevExpress.XtraEditors.LabelControl();
             this.lbl_Receive = new DevExpress.XtraEditors.LabelControl();
@@ -60,14 +61,6 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.SEQ = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Menu = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.QTY = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_POS_End = new DevExpress.XtraEditors.SimpleButton();
@@ -106,24 +99,28 @@
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
+            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.Menu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.QTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
+            this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
-            this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
             this.tablePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
             this.tablePanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
-            this.tablePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
+            this.tablePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tileGroup1
@@ -176,6 +173,24 @@
             this.bar7.DockCol = 0;
             this.bar7.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar7.Text = "Tools";
+            // 
+            // tablePanel2
+            // 
+            this.tablePanel1.SetColumn(this.tablePanel2, 0);
+            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
+            this.tablePanel2.Controls.Add(this.tablePanel4);
+            this.tablePanel2.Controls.Add(this.tablePanel3);
+            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel2.Location = new System.Drawing.Point(6, 774);
+            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel2.Name = "tablePanel2";
+            this.tablePanel1.SetRow(this.tablePanel2, 1);
+            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
+            this.tablePanel2.Size = new System.Drawing.Size(1096, 756);
+            this.tablePanel2.TabIndex = 2;
             // 
             // tablePanel4
             // 
@@ -572,112 +587,6 @@
             this.simpleButton1.Size = new System.Drawing.Size(167, 174);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "1";
-            // 
-            // gridControl2
-            // 
-            this.tablePanel1.SetColumn(this.gridControl2, 0);
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl2.Location = new System.Drawing.Point(6, 6);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl2.Name = "gridControl2";
-            this.tablePanel1.SetRow(this.gridControl2, 0);
-            this.gridControl2.Size = new System.Drawing.Size(1096, 756);
-            this.gridControl2.TabIndex = 1;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2,
-            this.gridView1});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
-            // 
-            // gridView2
-            // 
-            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.SEQ,
-            this.Menu,
-            this.QTY,
-            this.Price});
-            this.gridView2.DetailHeight = 747;
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.AllowHtmlDrawGroups = false;
-            this.gridView2.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.False;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            this.gridView2.OptionsView.ShowIndicator = false;
-            this.gridView2.RowHeight = 21;
-            // 
-            // SEQ
-            // 
-            this.SEQ.AppearanceCell.Options.UseTextOptions = true;
-            this.SEQ.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.SEQ.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.SEQ.Caption = "No.";
-            this.SEQ.MinWidth = 37;
-            this.SEQ.Name = "SEQ";
-            this.SEQ.Visible = true;
-            this.SEQ.VisibleIndex = 0;
-            this.SEQ.Width = 130;
-            // 
-            // Menu
-            // 
-            this.Menu.Caption = "메뉴명";
-            this.Menu.MinWidth = 37;
-            this.Menu.Name = "Menu";
-            this.Menu.Visible = true;
-            this.Menu.VisibleIndex = 1;
-            this.Menu.Width = 531;
-            // 
-            // QTY
-            // 
-            this.QTY.AppearanceCell.Options.UseTextOptions = true;
-            this.QTY.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.QTY.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.QTY.Caption = "수량";
-            this.QTY.MinWidth = 37;
-            this.QTY.Name = "QTY";
-            this.QTY.Visible = true;
-            this.QTY.VisibleIndex = 2;
-            this.QTY.Width = 139;
-            // 
-            // Price
-            // 
-            this.Price.AppearanceCell.Options.UseTextOptions = true;
-            this.Price.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.Price.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.Price.Caption = "가격";
-            this.Price.MinWidth = 37;
-            this.Price.Name = "Price";
-            this.Price.Visible = true;
-            this.Price.VisibleIndex = 3;
-            this.Price.Width = 293;
-            // 
-            // gridView1
-            // 
-            this.gridView1.DetailHeight = 747;
-            this.gridView1.GridControl = this.gridControl2;
-            this.gridView1.Name = "gridView1";
-            // 
-            // tablePanel1
-            // 
-            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel1.Controls.Add(this.tablePanel5);
-            this.tablePanel1.Controls.Add(this.tablePanel2);
-            this.tablePanel1.Controls.Add(this.gridControl2);
-            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel1.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6);
-            this.tablePanel1.Name = "tablePanel1";
-            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(2216, 1536);
-            this.tablePanel1.TabIndex = 3;
             // 
             // tablePanel5
             // 
@@ -1248,23 +1157,81 @@
             this.simpleButton13.Text = "COFFEE";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
             // 
-            // tablePanel2
+            // tablePanel1
             // 
-            this.tablePanel1.SetColumn(this.tablePanel2, 0);
-            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel2.Controls.Add(this.tablePanel4);
-            this.tablePanel2.Controls.Add(this.tablePanel3);
-            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel2.Location = new System.Drawing.Point(6, 774);
-            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6);
-            this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel1.SetRow(this.tablePanel2, 1);
-            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            this.tablePanel1.Controls.Add(this.gridControl1);
+            this.tablePanel1.Controls.Add(this.tablePanel5);
+            this.tablePanel1.Controls.Add(this.tablePanel2);
+            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel1.Location = new System.Drawing.Point(0, 0);
+            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel1.Name = "tablePanel1";
+            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
-            this.tablePanel2.Size = new System.Drawing.Size(1096, 756);
-            this.tablePanel2.TabIndex = 2;
+            this.tablePanel1.Size = new System.Drawing.Size(2216, 1536);
+            this.tablePanel1.TabIndex = 3;
+            // 
+            // gridControl1
+            // 
+            this.tablePanel1.SetColumn(this.gridControl1, 0);
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(3, 3);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.tablePanel1.SetRow(this.gridControl1, 0);
+            this.gridControl1.Size = new System.Drawing.Size(1102, 762);
+            this.gridControl1.TabIndex = 4;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.GroupPanel.BackColor = System.Drawing.Color.DimGray;
+            this.gridView1.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.AntiqueWhite;
+            this.gridView1.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.DimGray;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Menu,
+            this.Price,
+            this.QTY});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // Menu
+            // 
+            this.Menu.Caption = "메뉴";
+            this.Menu.FieldName = "Menu";
+            this.Menu.MinWidth = 40;
+            this.Menu.Name = "Menu";
+            this.Menu.Visible = true;
+            this.Menu.VisibleIndex = 0;
+            this.Menu.Width = 150;
+            // 
+            // Price
+            // 
+            this.Price.AppearanceCell.BackColor = System.Drawing.Color.White;
+            this.Price.AppearanceCell.Options.UseBackColor = true;
+            this.Price.Caption = "가격";
+            this.Price.FieldName = "Price";
+            this.Price.MinWidth = 40;
+            this.Price.Name = "Price";
+            this.Price.Visible = true;
+            this.Price.VisibleIndex = 1;
+            this.Price.Width = 150;
+            // 
+            // QTY
+            // 
+            this.QTY.Caption = "개수";
+            this.QTY.FieldName = "QTY";
+            this.QTY.MinWidth = 40;
+            this.QTY.Name = "QTY";
+            this.QTY.Visible = true;
+            this.QTY.VisibleIndex = 2;
+            this.QTY.Width = 150;
             // 
             // OrderScreen
             // 
@@ -1276,24 +1243,23 @@
             this.Name = "OrderScreen";
             this.Text = "SmartPOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
+            this.tablePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
-            this.tablePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
             this.tablePanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
             this.tablePanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
-            this.tablePanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
+            this.tablePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1307,34 +1273,9 @@
         private DevExpress.XtraBars.Bar bar9;
         private DevExpress.XtraBars.Bar bar8;
         private DevExpress.XtraBars.Bar bar7;
-        private DevExpress.Utils.Layout.TablePanel tablePanel4;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.LabelControl lbl_Remain;
-        private DevExpress.XtraEditors.LabelControl lbl_Receive;
-        private DevExpress.XtraEditors.LabelControl lbl_Discount;
-        private DevExpress.XtraEditors.LabelControl lbl_Pay;
-        private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
+        private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.Utils.Layout.TablePanel tablePanel7;
         private DevExpress.XtraEditors.SimpleButton btn_POS_End;
@@ -1373,10 +1314,33 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        public DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        public DevExpress.XtraGrid.Columns.GridColumn SEQ;
+        private DevExpress.Utils.Layout.TablePanel tablePanel4;
+        private DevExpress.XtraEditors.LabelControl lbl_Remain;
+        private DevExpress.XtraEditors.LabelControl lbl_Receive;
+        private DevExpress.XtraEditors.LabelControl lbl_Discount;
+        private DevExpress.XtraEditors.LabelControl lbl_Pay;
+        private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.Utils.Layout.TablePanel tablePanel3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         public DevExpress.XtraGrid.Columns.GridColumn Menu;
-        public DevExpress.XtraGrid.Columns.GridColumn QTY;
         public DevExpress.XtraGrid.Columns.GridColumn Price;
+        public DevExpress.XtraGrid.Columns.GridColumn QTY;
     }
 }
