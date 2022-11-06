@@ -16,6 +16,8 @@ namespace Smart_POS_X.UI
         public EmpManagedScreen()
         {
             InitializeComponent();
+
         }
+
     }
 }
