@@ -21,7 +21,7 @@ namespace Smart_POS_X
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminScreen());
+            Application.Run(new EmpManagedScreen());
         }
 
     }

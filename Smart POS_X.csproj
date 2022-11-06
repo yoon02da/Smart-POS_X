@@ -108,11 +108,23 @@
     <Compile Include="UI\AdminScreen.Designer.cs">
       <DependentUpon>AdminScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\EmpManagedScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EmpManagedScreen.Designer.cs">
+      <DependentUpon>EmpManagedScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MenuManagedScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MenuManagedScreen.Designer.cs">
+      <DependentUpon>MenuManagedScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\OrderScreen.cs">
       <SubType>Form</SubType>
@@ -125,6 +137,12 @@
     </Compile>
     <Compile Include="POP UP\ReceiptPopUp.Designer.cs">
       <DependentUpon>ReceiptPopUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SalesManagedScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SalesManagedScreen.Designer.cs">
+      <DependentUpon>SalesManagedScreen.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="POP UP\MemberOverlapPopUp.resx">
       <DependentUpon>MemberOverlapPopUp.cs</DependentUpon>
@@ -149,8 +167,14 @@
     <EmbeddedResource Include="UI\AdminScreen.resx">
       <DependentUpon>AdminScreen.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\EmpManagedScreen.resx">
+      <DependentUpon>EmpManagedScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MenuManagedScreen.resx">
+      <DependentUpon>MenuManagedScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\OrderScreen.resx">
       <DependentUpon>OrderScreen.cs</DependentUpon>
@@ -158,8 +182,8 @@
     <EmbeddedResource Include="POP UP\ReceiptPopUp.resx">
       <DependentUpon>ReceiptPopUp.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\XtraForm2.resx">
-      <DependentUpon>XtraForm2.cs</DependentUpon>
+    <EmbeddedResource Include="UI\SalesManagedScreen.resx">
+      <DependentUpon>SalesManagedScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
