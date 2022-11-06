@@ -35,7 +35,7 @@ namespace Smart_POS_X
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaymentPopUp2());
+            Application.Run(new Login());
         }
 
     }

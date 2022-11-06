@@ -62,9 +62,6 @@
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridCol1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridCol2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridCol3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
@@ -106,6 +103,10 @@
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
@@ -223,7 +224,6 @@
             this.tablePanel4.SetRow(this.labelControl11, 4);
             this.labelControl11.Size = new System.Drawing.Size(139, 62);
             this.labelControl11.TabIndex = 10;
-            this.labelControl11.Text = "labelControl11";
             // 
             // labelControl10
             // 
@@ -348,7 +348,6 @@
             this.labelControl2.Size = new System.Drawing.Size(139, 45);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "결제금액";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
             // 
             // labelControl1
             // 
@@ -406,7 +405,6 @@
             this.simpleButton12.Size = new System.Drawing.Size(91, 81);
             this.simpleButton12.TabIndex = 11;
             this.simpleButton12.Text = "OK";
-            this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
             // 
             // simpleButton11
             // 
@@ -420,7 +418,6 @@
             this.simpleButton11.Size = new System.Drawing.Size(91, 81);
             this.simpleButton11.TabIndex = 10;
             this.simpleButton11.Text = "0";
-            this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
             // 
             // simpleButton10
             // 
@@ -434,7 +431,6 @@
             this.simpleButton10.Size = new System.Drawing.Size(91, 81);
             this.simpleButton10.TabIndex = 9;
             this.simpleButton10.Text = "C";
-            this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
             // 
             // simpleButton9
             // 
@@ -448,7 +444,6 @@
             this.simpleButton9.Size = new System.Drawing.Size(91, 81);
             this.simpleButton9.TabIndex = 8;
             this.simpleButton9.Text = "9";
-            this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
             // 
             // simpleButton8
             // 
@@ -462,7 +457,6 @@
             this.simpleButton8.Size = new System.Drawing.Size(91, 81);
             this.simpleButton8.TabIndex = 7;
             this.simpleButton8.Text = "8";
-            this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
             // simpleButton7
             // 
@@ -476,7 +470,6 @@
             this.simpleButton7.Size = new System.Drawing.Size(91, 81);
             this.simpleButton7.TabIndex = 6;
             this.simpleButton7.Text = "7";
-            this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
             // 
             // simpleButton6
             // 
@@ -490,7 +483,6 @@
             this.simpleButton6.Size = new System.Drawing.Size(91, 81);
             this.simpleButton6.TabIndex = 5;
             this.simpleButton6.Text = "6";
-            this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
             // 
             // simpleButton5
             // 
@@ -504,7 +496,6 @@
             this.simpleButton5.Size = new System.Drawing.Size(91, 81);
             this.simpleButton5.TabIndex = 4;
             this.simpleButton5.Text = "5";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // simpleButton4
             // 
@@ -518,7 +509,6 @@
             this.simpleButton4.Size = new System.Drawing.Size(91, 81);
             this.simpleButton4.TabIndex = 3;
             this.simpleButton4.Text = "4";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
             // simpleButton3
             // 
@@ -532,7 +522,6 @@
             this.simpleButton3.Size = new System.Drawing.Size(91, 81);
             this.simpleButton3.TabIndex = 2;
             this.simpleButton3.Text = "3";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // simpleButton2
             // 
@@ -546,7 +535,6 @@
             this.simpleButton2.Size = new System.Drawing.Size(91, 81);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "2";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -560,7 +548,6 @@
             this.simpleButton1.Size = new System.Drawing.Size(91, 81);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // gridControl2
             // 
@@ -575,7 +562,6 @@
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2,
             this.gridView1});
-            this.gridControl2.Click += new System.EventHandler(this.gridControl2_Click);
             // 
             // gridView2
             // 
@@ -584,9 +570,10 @@
             this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridCol1,
-            this.gridCol2,
-            this.gridCol3});
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4});
             this.gridView2.GridControl = this.gridControl2;
             this.gridView2.Name = "gridView2";
             this.gridView2.OptionsView.AllowHtmlDrawGroups = false;
@@ -594,35 +581,6 @@
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowIndicator = false;
             this.gridView2.RowHeight = 10;
-            // 
-            // gridCol1
-            // 
-            this.gridCol1.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 28F);
-            this.gridCol1.AppearanceHeader.Options.UseFont = true;
-            this.gridCol1.Caption = "No.";
-            this.gridCol1.Name = "gridCol1";
-            this.gridCol1.Visible = true;
-            this.gridCol1.VisibleIndex = 0;
-            // 
-            // gridCol2
-            // 
-            this.gridCol2.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 28F);
-            this.gridCol2.AppearanceHeader.Options.UseFont = true;
-            this.gridCol2.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridCol2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridCol2.Caption = "Name";
-            this.gridCol2.Name = "gridCol2";
-            this.gridCol2.Visible = true;
-            this.gridCol2.VisibleIndex = 1;
-            // 
-            // gridCol3
-            // 
-            this.gridCol3.AppearanceHeader.Font = new System.Drawing.Font("Segoe UI", 28F);
-            this.gridCol3.AppearanceHeader.Options.UseFont = true;
-            this.gridCol3.Caption = "Value";
-            this.gridCol3.Name = "gridCol3";
-            this.gridCol3.Visible = true;
-            this.gridCol3.VisibleIndex = 2;
             // 
             // gridView1
             // 
@@ -696,6 +654,8 @@
             // 
             // simpleButton47
             // 
+            this.simpleButton47.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton47.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton47, 4);
             this.simpleButton47.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton47.Location = new System.Drawing.Point(478, 94);
@@ -704,10 +664,12 @@
             this.tablePanel7.SetRow(this.simpleButton47, 1);
             this.simpleButton47.Size = new System.Drawing.Size(108, 78);
             this.simpleButton47.TabIndex = 34;
-            this.simpleButton47.Text = "simpleButton47";
+            this.simpleButton47.Text = "POS 종료";
             // 
             // simpleButton46
             // 
+            this.simpleButton46.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton46.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton46, 3);
             this.simpleButton46.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton46.Location = new System.Drawing.Point(360, 94);
@@ -716,10 +678,12 @@
             this.tablePanel7.SetRow(this.simpleButton46, 1);
             this.simpleButton46.Size = new System.Drawing.Size(108, 78);
             this.simpleButton46.TabIndex = 33;
-            this.simpleButton46.Text = "simpleButton46";
+            this.simpleButton46.Text = "매출 조회";
             // 
             // simpleButton45
             // 
+            this.simpleButton45.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton45.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton45, 2);
             this.simpleButton45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton45.Location = new System.Drawing.Point(241, 94);
@@ -728,10 +692,12 @@
             this.tablePanel7.SetRow(this.simpleButton45, 1);
             this.simpleButton45.Size = new System.Drawing.Size(108, 78);
             this.simpleButton45.TabIndex = 32;
-            this.simpleButton45.Text = "simpleButton45";
+            this.simpleButton45.Text = "전체삭제";
             // 
             // simpleButton44
             // 
+            this.simpleButton44.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton44.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton44, 1);
             this.simpleButton44.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton44.Location = new System.Drawing.Point(123, 94);
@@ -740,10 +706,12 @@
             this.tablePanel7.SetRow(this.simpleButton44, 1);
             this.simpleButton44.Size = new System.Drawing.Size(108, 78);
             this.simpleButton44.TabIndex = 31;
-            this.simpleButton44.Text = "simpleButton44";
+            this.simpleButton44.Text = "상품삭제";
             // 
             // simpleButton43
             // 
+            this.simpleButton43.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton43.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton43, 0);
             this.simpleButton43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton43.Location = new System.Drawing.Point(5, 94);
@@ -752,10 +720,12 @@
             this.tablePanel7.SetRow(this.simpleButton43, 1);
             this.simpleButton43.Size = new System.Drawing.Size(108, 78);
             this.simpleButton43.TabIndex = 30;
-            this.simpleButton43.Text = "simpleButton43";
+            this.simpleButton43.Text = "상품추가";
             // 
             // simpleButton38
             // 
+            this.simpleButton38.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton38.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton38, 0);
             this.simpleButton38.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton38.Location = new System.Drawing.Point(5, 5);
@@ -764,10 +734,12 @@
             this.tablePanel7.SetRow(this.simpleButton38, 0);
             this.simpleButton38.Size = new System.Drawing.Size(108, 79);
             this.simpleButton38.TabIndex = 25;
-            this.simpleButton38.Text = "simpleButton38";
+            this.simpleButton38.Text = "+";
             // 
             // simpleButton39
             // 
+            this.simpleButton39.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton39.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton39, 1);
             this.simpleButton39.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton39.Location = new System.Drawing.Point(123, 5);
@@ -776,10 +748,12 @@
             this.tablePanel7.SetRow(this.simpleButton39, 0);
             this.simpleButton39.Size = new System.Drawing.Size(108, 79);
             this.simpleButton39.TabIndex = 26;
-            this.simpleButton39.Text = "simpleButton39";
+            this.simpleButton39.Text = "-";
             // 
             // simpleButton40
             // 
+            this.simpleButton40.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton40.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton40, 2);
             this.simpleButton40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton40.Location = new System.Drawing.Point(241, 5);
@@ -788,10 +762,12 @@
             this.tablePanel7.SetRow(this.simpleButton40, 0);
             this.simpleButton40.Size = new System.Drawing.Size(108, 79);
             this.simpleButton40.TabIndex = 27;
-            this.simpleButton40.Text = "simpleButton40";
+            this.simpleButton40.Text = "결제";
             // 
             // simpleButton41
             // 
+            this.simpleButton41.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton41.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton41, 3);
             this.simpleButton41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton41.Location = new System.Drawing.Point(360, 5);
@@ -800,10 +776,12 @@
             this.tablePanel7.SetRow(this.simpleButton41, 0);
             this.simpleButton41.Size = new System.Drawing.Size(108, 79);
             this.simpleButton41.TabIndex = 28;
-            this.simpleButton41.Text = "simpleButton41";
+            this.simpleButton41.Text = "영수증 조회";
             // 
             // simpleButton42
             // 
+            this.simpleButton42.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton42.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.simpleButton42, 4);
             this.simpleButton42.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton42.Location = new System.Drawing.Point(478, 5);
@@ -812,7 +790,7 @@
             this.tablePanel7.SetRow(this.simpleButton42, 0);
             this.simpleButton42.Size = new System.Drawing.Size(108, 79);
             this.simpleButton42.TabIndex = 29;
-            this.simpleButton42.Text = "simpleButton42";
+            this.simpleButton42.Text = "멤버십 관리";
             // 
             // tablePanel6
             // 
@@ -872,7 +850,6 @@
             this.tablePanel6.SetRow(this.simpleButton37, 4);
             this.simpleButton37.Size = new System.Drawing.Size(108, 99);
             this.simpleButton37.TabIndex = 24;
-            this.simpleButton37.Text = "simpleButton37";
             // 
             // simpleButton36
             // 
@@ -884,7 +861,6 @@
             this.tablePanel6.SetRow(this.simpleButton36, 4);
             this.simpleButton36.Size = new System.Drawing.Size(108, 99);
             this.simpleButton36.TabIndex = 23;
-            this.simpleButton36.Text = "simpleButton36";
             // 
             // simpleButton35
             // 
@@ -896,7 +872,6 @@
             this.tablePanel6.SetRow(this.simpleButton35, 4);
             this.simpleButton35.Size = new System.Drawing.Size(108, 99);
             this.simpleButton35.TabIndex = 22;
-            this.simpleButton35.Text = "simpleButton35";
             // 
             // simpleButton34
             // 
@@ -908,7 +883,6 @@
             this.tablePanel6.SetRow(this.simpleButton34, 4);
             this.simpleButton34.Size = new System.Drawing.Size(108, 99);
             this.simpleButton34.TabIndex = 21;
-            this.simpleButton34.Text = "simpleButton34";
             // 
             // simpleButton33
             // 
@@ -920,7 +894,6 @@
             this.tablePanel6.SetRow(this.simpleButton33, 4);
             this.simpleButton33.Size = new System.Drawing.Size(108, 99);
             this.simpleButton33.TabIndex = 20;
-            this.simpleButton33.Text = "simpleButton33";
             // 
             // simpleButton32
             // 
@@ -932,7 +905,6 @@
             this.tablePanel6.SetRow(this.simpleButton32, 3);
             this.simpleButton32.Size = new System.Drawing.Size(108, 97);
             this.simpleButton32.TabIndex = 19;
-            this.simpleButton32.Text = "simpleButton32";
             // 
             // simpleButton31
             // 
@@ -944,7 +916,6 @@
             this.tablePanel6.SetRow(this.simpleButton31, 3);
             this.simpleButton31.Size = new System.Drawing.Size(108, 97);
             this.simpleButton31.TabIndex = 18;
-            this.simpleButton31.Text = "simpleButton31";
             // 
             // simpleButton30
             // 
@@ -956,7 +927,6 @@
             this.tablePanel6.SetRow(this.simpleButton30, 3);
             this.simpleButton30.Size = new System.Drawing.Size(108, 97);
             this.simpleButton30.TabIndex = 17;
-            this.simpleButton30.Text = "simpleButton30";
             // 
             // simpleButton29
             // 
@@ -968,7 +938,6 @@
             this.tablePanel6.SetRow(this.simpleButton29, 3);
             this.simpleButton29.Size = new System.Drawing.Size(108, 97);
             this.simpleButton29.TabIndex = 16;
-            this.simpleButton29.Text = "simpleButton29";
             // 
             // simpleButton28
             // 
@@ -980,7 +949,6 @@
             this.tablePanel6.SetRow(this.simpleButton28, 3);
             this.simpleButton28.Size = new System.Drawing.Size(108, 97);
             this.simpleButton28.TabIndex = 15;
-            this.simpleButton28.Text = "simpleButton28";
             // 
             // simpleButton27
             // 
@@ -992,7 +960,6 @@
             this.tablePanel6.SetRow(this.simpleButton27, 2);
             this.simpleButton27.Size = new System.Drawing.Size(108, 97);
             this.simpleButton27.TabIndex = 14;
-            this.simpleButton27.Text = "simpleButton27";
             // 
             // simpleButton26
             // 
@@ -1004,7 +971,6 @@
             this.tablePanel6.SetRow(this.simpleButton26, 2);
             this.simpleButton26.Size = new System.Drawing.Size(108, 97);
             this.simpleButton26.TabIndex = 13;
-            this.simpleButton26.Text = "simpleButton26";
             // 
             // simpleButton25
             // 
@@ -1016,7 +982,6 @@
             this.tablePanel6.SetRow(this.simpleButton25, 2);
             this.simpleButton25.Size = new System.Drawing.Size(108, 97);
             this.simpleButton25.TabIndex = 12;
-            this.simpleButton25.Text = "simpleButton25";
             // 
             // simpleButton24
             // 
@@ -1028,7 +993,6 @@
             this.tablePanel6.SetRow(this.simpleButton24, 2);
             this.simpleButton24.Size = new System.Drawing.Size(108, 97);
             this.simpleButton24.TabIndex = 11;
-            this.simpleButton24.Text = "simpleButton24";
             // 
             // simpleButton23
             // 
@@ -1040,7 +1004,6 @@
             this.tablePanel6.SetRow(this.simpleButton23, 2);
             this.simpleButton23.Size = new System.Drawing.Size(108, 97);
             this.simpleButton23.TabIndex = 10;
-            this.simpleButton23.Text = "simpleButton23";
             // 
             // simpleButton22
             // 
@@ -1052,7 +1015,6 @@
             this.tablePanel6.SetRow(this.simpleButton22, 1);
             this.simpleButton22.Size = new System.Drawing.Size(108, 97);
             this.simpleButton22.TabIndex = 9;
-            this.simpleButton22.Text = "simpleButton22";
             // 
             // simpleButton21
             // 
@@ -1064,7 +1026,6 @@
             this.tablePanel6.SetRow(this.simpleButton21, 1);
             this.simpleButton21.Size = new System.Drawing.Size(108, 97);
             this.simpleButton21.TabIndex = 8;
-            this.simpleButton21.Text = "simpleButton21";
             // 
             // simpleButton20
             // 
@@ -1076,7 +1037,6 @@
             this.tablePanel6.SetRow(this.simpleButton20, 1);
             this.simpleButton20.Size = new System.Drawing.Size(108, 97);
             this.simpleButton20.TabIndex = 7;
-            this.simpleButton20.Text = "simpleButton20";
             // 
             // simpleButton19
             // 
@@ -1088,7 +1048,6 @@
             this.tablePanel6.SetRow(this.simpleButton19, 1);
             this.simpleButton19.Size = new System.Drawing.Size(108, 97);
             this.simpleButton19.TabIndex = 6;
-            this.simpleButton19.Text = "simpleButton19";
             // 
             // simpleButton18
             // 
@@ -1100,10 +1059,11 @@
             this.tablePanel6.SetRow(this.simpleButton18, 1);
             this.simpleButton18.Size = new System.Drawing.Size(108, 97);
             this.simpleButton18.TabIndex = 5;
-            this.simpleButton18.Text = "simpleButton18";
             // 
             // simpleButton17
             // 
+            this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton17.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton17, 4);
             this.simpleButton17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton17.Location = new System.Drawing.Point(478, 5);
@@ -1112,10 +1072,12 @@
             this.tablePanel6.SetRow(this.simpleButton17, 0);
             this.simpleButton17.Size = new System.Drawing.Size(108, 97);
             this.simpleButton17.TabIndex = 4;
-            this.simpleButton17.Text = "simpleButton17";
+            this.simpleButton17.Text = "ETC.";
             // 
             // simpleButton16
             // 
+            this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton16.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton16, 3);
             this.simpleButton16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton16.Location = new System.Drawing.Point(360, 5);
@@ -1124,10 +1086,12 @@
             this.tablePanel6.SetRow(this.simpleButton16, 0);
             this.simpleButton16.Size = new System.Drawing.Size(108, 97);
             this.simpleButton16.TabIndex = 3;
-            this.simpleButton16.Text = "simpleButton16";
+            this.simpleButton16.Text = "SANDWICH";
             // 
             // simpleButton15
             // 
+            this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton15.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton15, 2);
             this.simpleButton15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton15.Location = new System.Drawing.Point(241, 5);
@@ -1136,10 +1100,12 @@
             this.tablePanel6.SetRow(this.simpleButton15, 0);
             this.simpleButton15.Size = new System.Drawing.Size(108, 97);
             this.simpleButton15.TabIndex = 2;
-            this.simpleButton15.Text = "simpleButton15";
+            this.simpleButton15.Text = "SMOOTHIE";
             // 
             // simpleButton14
             // 
+            this.simpleButton14.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton14.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton14, 1);
             this.simpleButton14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton14.Location = new System.Drawing.Point(123, 5);
@@ -1148,10 +1114,12 @@
             this.tablePanel6.SetRow(this.simpleButton14, 0);
             this.simpleButton14.Size = new System.Drawing.Size(108, 97);
             this.simpleButton14.TabIndex = 1;
-            this.simpleButton14.Text = "simpleButton14";
+            this.simpleButton14.Text = "NON-COFFEE";
             // 
             // simpleButton13
             // 
+            this.simpleButton13.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton13.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton13, 0);
             this.simpleButton13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton13.Location = new System.Drawing.Point(5, 5);
@@ -1160,7 +1128,7 @@
             this.tablePanel6.SetRow(this.simpleButton13, 0);
             this.simpleButton13.Size = new System.Drawing.Size(108, 97);
             this.simpleButton13.TabIndex = 0;
-            this.simpleButton13.Text = "simpleButton13";
+            this.simpleButton13.Text = "COFFEE";
             // 
             // tablePanel2
             // 
@@ -1178,6 +1146,46 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
             this.tablePanel2.Size = new System.Drawing.Size(591, 354);
             this.tablePanel2.TabIndex = 2;
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn1.Caption = "No.";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 70;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "메뉴명";
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 286;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn3.Caption = "수량";
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.gridColumn4.Caption = "가격";
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 158;
             // 
             // OrderScreen
             // 
@@ -1224,9 +1232,6 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private DevExpress.XtraGrid.GridControl gridControl2;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridCol1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridCol2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridCol3;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
         private DevExpress.XtraEditors.SimpleButton simpleButton12;
         private DevExpress.XtraEditors.SimpleButton simpleButton11;
@@ -1289,5 +1294,9 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
     }
 }

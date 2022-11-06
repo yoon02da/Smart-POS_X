@@ -17,5 +17,13 @@ namespace Smart_POS_X.UI
         {
             InitializeComponent();
         }
+
+        private void AdminScreen_Load(object sender, EventArgs e)
+        {
+
+            Padding Empty = new Padding(80);
+            accordionControl1.Margin = Empty;
+            
+        }
     }
 }

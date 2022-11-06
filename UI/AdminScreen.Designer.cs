@@ -181,6 +181,7 @@
             this.accordionControl1.Location = new System.Drawing.Point(0, 274);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(0);
             this.accordionControl1.Name = "accordionControl1";
+            this.accordionControl1.Padding = new System.Windows.Forms.Padding(100);
             this.tablePanel2.SetRow(this.accordionControl1, 4);
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
             this.accordionControl1.Size = new System.Drawing.Size(166, 297);
@@ -189,7 +190,7 @@
             // accordionControlElement3
             // 
             this.accordionControlElement3.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement3.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement3.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.accordionControlElement3.Appearance.Default.Options.UseBackColor = true;
             this.accordionControlElement3.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement3.Appearance.Default.Options.UseTextOptions = true;
@@ -207,12 +208,12 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl)});
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement3.Text = "              대시보드";
+            this.accordionControlElement3.Text = "대시보드";
             // 
             // accordionControlElement4
             // 
             this.accordionControlElement4.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement4.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement4.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.accordionControlElement4.Appearance.Default.Options.UseBackColor = true;
             this.accordionControlElement4.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement4.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
@@ -222,12 +223,12 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement4.Text = "              매출관리";
+            this.accordionControlElement4.Text = "매출관리";
             // 
             // accordionControlElement5
             // 
             this.accordionControlElement5.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.accordionControlElement5.Appearance.Default.Options.UseBackColor = true;
             this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement5.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
@@ -237,12 +238,12 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement5.Text = "              메뉴관리";
+            this.accordionControlElement5.Text = "메뉴관리";
             // 
             // accordionControlElement6
             // 
             this.accordionControlElement6.Appearance.Default.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement6.Appearance.Default.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.accordionControlElement6.Appearance.Default.Options.UseBackColor = true;
             this.accordionControlElement6.Appearance.Default.Options.UseFont = true;
             this.accordionControlElement6.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
@@ -252,7 +253,7 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.accordionControlElement6.Name = "accordionControlElement6";
             this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "              직원관리";
+            this.accordionControlElement6.Text = "직원관리";
             // 
             // panelControl1
             // 
@@ -327,6 +328,7 @@
             this.Name = "AdminScreen";
             this.Text = "관리자모드";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.AdminScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl2)).EndInit();
