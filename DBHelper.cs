@@ -10,6 +10,7 @@ using DevExpress.Xpo.DB;
 using DevExpress.XtraCharts.Native;
 using System.Windows.Forms;
 using System.Drawing;
+using DevExpress.Utils.Html.Internal;
 
 namespace Smart_POS_X
 {
@@ -20,6 +21,8 @@ namespace Smart_POS_X
         public string DB { get; set; }
         public string ID { get; set; }
         public string PWD { get; set; }
+        public string values { get; set; }
+        public bool result { get; set; }
         static public SqlConnection sqlConnection { get; set; }
 
         public void DBStart()
@@ -61,6 +64,12 @@ namespace Smart_POS_X
             sd.Fill(DS, "Table");
 
             DataTable DT = DS.Tables[0];
+
+            if (DT.Rows.Count == 1 && DT.Columns.Count == 1)
+            {
+                values = DT.Rows[0][0].ToString();
+                result = DT.Rows[0][0].ToString() == "1" ? true : false;
+            }
 
             sqlConnection.Close();
             return DT;
