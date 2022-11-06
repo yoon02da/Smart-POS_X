@@ -51,6 +51,17 @@ namespace Smart_POS_X.UI
 
         private void btn_Admin_Click(object sender, EventArgs e)
         {
+
+            DBHelper DB = new DBHelper();
+            DB.Exec($"Login_LoginUser '{txt_ID.Text}' ,'{txt_Password.Text}'");
+
+            if (DB.result == false)
+            {
+                MessageBox.Show("ID, 비밀번호를 재확인 해주십시오.");
+                return;
+            }
+
+
             AdminScreen admin = new AdminScreen();
             if(admin.ShowDialog() == DialogResult.OK)
             {

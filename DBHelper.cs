@@ -11,6 +11,7 @@ using DevExpress.XtraCharts.Native;
 using System.Windows.Forms;
 using System.Drawing;
 using DevExpress.Utils.Html.Internal;
+using System.Runtime.Remoting.Messaging;
 
 namespace Smart_POS_X
 {
@@ -62,6 +63,9 @@ namespace Smart_POS_X
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
             sd.Fill(DS, "Table");
+
+
+            if (DS == null) return null;
 
             DataTable DT = DS.Tables[0];
 

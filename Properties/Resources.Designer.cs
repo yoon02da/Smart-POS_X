@@ -73,26 +73,6 @@ namespace Smart_POS_X.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
         /// </summary>
-        internal static System.Drawing.Bitmap administrator_3552__1_ {
-            get {
-                object obj = ResourceManager.GetObject("administrator_3552 (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
-        internal static System.Drawing.Bitmap administrator_3552__2_ {
-            get {
-                object obj = ResourceManager.GetObject("administrator_3552 (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap 형식의 지역화된 리소스를 찾습니다.
-        /// </summary>
         internal static System.Drawing.Bitmap POS_이미지 {
             get {
                 object obj = ResourceManager.GetObject("POS 이미지", resourceCulture);

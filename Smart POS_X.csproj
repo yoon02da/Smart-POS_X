@@ -234,12 +234,6 @@
     <None Include="Resources\administrator_3552.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\administrator_3552 %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\administrator_3552 %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\POS 이미지.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -146,7 +146,7 @@
             // 
             this.tablePanel2.SetColumn(this.pictureEdit1, 0);
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit1.EditValue = global::Smart_POS_X.Properties.Resources.administrator_3552__2_;
+            this.pictureEdit1.EditValue = global::Smart_POS_X.Properties.Resources.administrator_3552;
             this.pictureEdit1.Location = new System.Drawing.Point(0, 0);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit1.Name = "pictureEdit1";
