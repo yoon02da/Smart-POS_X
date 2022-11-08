@@ -1,6 +1,7 @@
 ﻿using DevExpress.Utils.Extensions;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
+using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraPrinting.Export;
 using System;
 using System.Collections.Generic;
@@ -21,12 +22,13 @@ namespace Smart_POS_X.UI
         private int MenuSelect {get; set;}
         private MenuList MenuSelecter { get; set; }
 
+      //  public int FocuseTextBox
+
         DataTable MenuTable = new DataTable();
         public OrderScreen()
         {
             InitializeComponent();
             Menu_reset();
-
         }
 
         private void simpleButton13_Click(object sender, EventArgs e)
@@ -74,8 +76,6 @@ namespace Smart_POS_X.UI
                         control.Text = DR[1].ToString();
                 }
             }
-
-
         }
 
         private void Menu_reset()
@@ -95,13 +95,24 @@ namespace Smart_POS_X.UI
         private void Menu_Click(object sender, EventArgs e)
         {
             string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
+            if (MenuName == "-") return;
 
             DBHelper DBh = new DBHelper();
-
             DataTable DT = DBh.Exec($"OrderScreen_S02 '{MenuName}'");
 
-            var MenuNameTemp = DT.Rows[0]["Menu"].ToString();
-            
+            int AllAmount = 0;
+
+            if (AddMenu(DT.Rows[0]["Menu"].ToString())) //같은 메뉴가 있는경우 거짓
+            {
+                lbl_AllAmount.Text = AllAmount.ToString();
+                MenuTable.Merge(DT);
+                gridControl1.DataSource = MenuTable;
+            }
+           
+            AllMountCal();
+        }
+
+        private bool AddMenu(string MenuNameTemp) {
             foreach (DataRow DR in MenuTable.Rows)
             {
                 if (MenuNameTemp == DR["Menu"].ToString())
@@ -112,20 +123,37 @@ namespace Smart_POS_X.UI
                     DR["Price"] = QTYNUM * PriceNUM;
 
                     gridControl1.DataSource = MenuTable;
-                    return;
+                    return false;
                 }
             }
-
-            MenuTable.Merge(DT);
-            gridControl1.DataSource = MenuTable;
-
+            return true;
         }
 
-        private void gridControl2_Click(object sender, EventArgs e)
+        private void AllMountCal() 
+        {
+            int AllAmount = 0;
+            foreach (DataRow DR in MenuTable.Rows)
+            {
+                int PriceSUM = Int32.Parse(DR["Price"].ToString());
+                AllAmount += PriceSUM;
+            }
+
+            lbl_AllAmount.Text = AllAmount.ToString();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            string Num = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
+        }
+
+        private void textEdit1_Properties_Click(object sender, EventArgs e)
         {
 
         }
 
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

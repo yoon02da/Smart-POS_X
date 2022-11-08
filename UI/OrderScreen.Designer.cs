@@ -38,10 +38,10 @@
             this.bar7 = new DevExpress.XtraBars.Bar();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
-            this.lbl_Remain = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_Receive = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_Discount = new DevExpress.XtraEditors.LabelControl();
-            this.lbl_Pay = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.lbl_AllAmount = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -109,6 +109,10 @@
             this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
@@ -198,10 +202,10 @@
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
-            this.tablePanel4.Controls.Add(this.lbl_Remain);
-            this.tablePanel4.Controls.Add(this.lbl_Receive);
-            this.tablePanel4.Controls.Add(this.lbl_Discount);
-            this.tablePanel4.Controls.Add(this.lbl_Pay);
+            this.tablePanel4.Controls.Add(this.textEdit4);
+            this.tablePanel4.Controls.Add(this.textEdit3);
+            this.tablePanel4.Controls.Add(this.textEdit2);
+            this.tablePanel4.Controls.Add(this.textEdit1);
             this.tablePanel4.Controls.Add(this.lbl_AllAmount);
             this.tablePanel4.Controls.Add(this.labelControl5);
             this.tablePanel4.Controls.Add(this.labelControl4);
@@ -222,81 +226,50 @@
             this.tablePanel4.Size = new System.Drawing.Size(536, 744);
             this.tablePanel4.TabIndex = 2;
             // 
-            // lbl_Remain
+            // textEdit4
             // 
-            this.lbl_Remain.Appearance.BackColor = System.Drawing.Color.White;
-            this.lbl_Remain.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.lbl_Remain.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Remain.Appearance.Options.UseBackColor = true;
-            this.lbl_Remain.Appearance.Options.UseBorderColor = true;
-            this.lbl_Remain.Appearance.Options.UseFont = true;
-            this.lbl_Remain.Appearance.Options.UseTextOptions = true;
-            this.lbl_Remain.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.lbl_Remain.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.lbl_Remain, 1);
-            this.lbl_Remain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_Remain.Location = new System.Drawing.Point(274, 602);
-            this.lbl_Remain.Margin = new System.Windows.Forms.Padding(6);
-            this.lbl_Remain.Name = "lbl_Remain";
-            this.tablePanel4.SetRow(this.lbl_Remain, 4);
-            this.lbl_Remain.Size = new System.Drawing.Size(256, 136);
-            this.lbl_Remain.TabIndex = 10;
+            this.tablePanel4.SetColumn(this.textEdit4, 1);
+            this.textEdit4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit4.Location = new System.Drawing.Point(271, 599);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.AutoHeight = false;
+            this.tablePanel4.SetRow(this.textEdit4, 4);
+            this.textEdit4.Size = new System.Drawing.Size(262, 142);
+            this.textEdit4.TabIndex = 9;
             // 
-            // lbl_Receive
+            // textEdit3
             // 
-            this.lbl_Receive.Appearance.BackColor = System.Drawing.Color.White;
-            this.lbl_Receive.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Receive.Appearance.Options.UseBackColor = true;
-            this.lbl_Receive.Appearance.Options.UseFont = true;
-            this.lbl_Receive.Appearance.Options.UseTextOptions = true;
-            this.lbl_Receive.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.lbl_Receive.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.lbl_Receive, 1);
-            this.lbl_Receive.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_Receive.Location = new System.Drawing.Point(274, 453);
-            this.lbl_Receive.Margin = new System.Windows.Forms.Padding(6);
-            this.lbl_Receive.Name = "lbl_Receive";
-            this.tablePanel4.SetRow(this.lbl_Receive, 3);
-            this.lbl_Receive.Size = new System.Drawing.Size(256, 137);
-            this.lbl_Receive.TabIndex = 9;
+            this.tablePanel4.SetColumn(this.textEdit3, 1);
+            this.textEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit3.Location = new System.Drawing.Point(271, 450);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.AutoHeight = false;
+            this.tablePanel4.SetRow(this.textEdit3, 3);
+            this.textEdit3.Size = new System.Drawing.Size(262, 143);
+            this.textEdit3.TabIndex = 8;
             // 
-            // lbl_Discount
+            // textEdit2
             // 
-            this.lbl_Discount.Appearance.BackColor = System.Drawing.Color.White;
-            this.lbl_Discount.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Discount.Appearance.Options.UseBackColor = true;
-            this.lbl_Discount.Appearance.Options.UseFont = true;
-            this.lbl_Discount.Appearance.Options.UseTextOptions = true;
-            this.lbl_Discount.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.lbl_Discount.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.lbl_Discount, 1);
-            this.lbl_Discount.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_Discount.Location = new System.Drawing.Point(274, 304);
-            this.lbl_Discount.Margin = new System.Windows.Forms.Padding(6);
-            this.lbl_Discount.Name = "lbl_Discount";
-            this.tablePanel4.SetRow(this.lbl_Discount, 2);
-            this.lbl_Discount.Size = new System.Drawing.Size(256, 137);
-            this.lbl_Discount.TabIndex = 8;
+            this.tablePanel4.SetColumn(this.textEdit2, 1);
+            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit2.Location = new System.Drawing.Point(271, 301);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.AutoHeight = false;
+            this.tablePanel4.SetRow(this.textEdit2, 2);
+            this.textEdit2.Size = new System.Drawing.Size(262, 143);
+            this.textEdit2.TabIndex = 7;
             // 
-            // lbl_Pay
+            // textEdit1
             // 
-            this.lbl_Pay.Appearance.BackColor = System.Drawing.Color.White;
-            this.lbl_Pay.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.lbl_Pay.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Pay.Appearance.Options.UseBackColor = true;
-            this.lbl_Pay.Appearance.Options.UseBorderColor = true;
-            this.lbl_Pay.Appearance.Options.UseFont = true;
-            this.lbl_Pay.Appearance.Options.UseTextOptions = true;
-            this.lbl_Pay.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
-            this.lbl_Pay.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.tablePanel4.SetColumn(this.lbl_Pay, 1);
-            this.lbl_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_Pay.Location = new System.Drawing.Point(274, 155);
-            this.lbl_Pay.Margin = new System.Windows.Forms.Padding(6);
-            this.lbl_Pay.Name = "lbl_Pay";
-            this.tablePanel4.SetRow(this.lbl_Pay, 1);
-            this.lbl_Pay.Size = new System.Drawing.Size(256, 137);
-            this.lbl_Pay.TabIndex = 7;
+            this.tablePanel4.SetColumn(this.textEdit1, 1);
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit1.Location = new System.Drawing.Point(271, 152);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AutoHeight = false;
+            this.textEdit1.Properties.Click += new System.EventHandler(this.textEdit1_Properties_Click);
+            this.tablePanel4.SetRow(this.textEdit1, 1);
+            this.textEdit1.Size = new System.Drawing.Size(262, 143);
+            this.textEdit1.TabIndex = 6;
             // 
             // lbl_AllAmount
             // 
@@ -323,7 +296,7 @@
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl5, 0);
-            this.labelControl5.Location = new System.Drawing.Point(6, 627);
+            this.labelControl5.Location = new System.Drawing.Point(6, 611);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
@@ -337,7 +310,7 @@
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl4, 0);
-            this.labelControl4.Location = new System.Drawing.Point(6, 478);
+            this.labelControl4.Location = new System.Drawing.Point(6, 462);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
@@ -351,7 +324,7 @@
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl3, 0);
-            this.labelControl3.Location = new System.Drawing.Point(6, 329);
+            this.labelControl3.Location = new System.Drawing.Point(6, 313);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
@@ -365,7 +338,7 @@
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
-            this.labelControl2.Location = new System.Drawing.Point(6, 180);
+            this.labelControl2.Location = new System.Drawing.Point(6, 164);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
@@ -573,6 +546,7 @@
             this.simpleButton2.Size = new System.Drawing.Size(167, 174);
             this.simpleButton2.TabIndex = 1;
             this.simpleButton2.Text = "2";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // simpleButton1
             // 
@@ -587,6 +561,18 @@
             this.simpleButton1.Size = new System.Drawing.Size(167, 174);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "1";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton6.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton7.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton8.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton9.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton10.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton11.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.simpleButton12.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // tablePanel5
             // 
@@ -1200,6 +1186,8 @@
             this.QTY});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridView1.OptionsView.ShowIndicator = false;
             // 
             // Menu
             // 
@@ -1248,6 +1236,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
@@ -1315,10 +1307,6 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
         private DevExpress.Utils.Layout.TablePanel tablePanel4;
-        private DevExpress.XtraEditors.LabelControl lbl_Remain;
-        private DevExpress.XtraEditors.LabelControl lbl_Receive;
-        private DevExpress.XtraEditors.LabelControl lbl_Discount;
-        private DevExpress.XtraEditors.LabelControl lbl_Pay;
         private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl4;
@@ -1342,5 +1330,9 @@
         public DevExpress.XtraGrid.Columns.GridColumn Menu;
         public DevExpress.XtraGrid.Columns.GridColumn Price;
         public DevExpress.XtraGrid.Columns.GridColumn QTY;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }
