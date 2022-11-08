@@ -47,7 +47,7 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
-            this.txt_SellingCode = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
@@ -60,7 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_SellingCode.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
@@ -77,6 +77,7 @@
             this.btn_ReInput.Size = new System.Drawing.Size(91, 28);
             this.btn_ReInput.TabIndex = 3;
             this.btn_ReInput.Text = "재입력";
+            this.btn_ReInput.Click += new System.EventHandler(this.btn_ReInput_Click);
             // 
             // btn_Enter
             // 
@@ -184,7 +185,6 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "총 결제 금액";
-            this.gridColumn4.FieldName = "TotalPay";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 0;
@@ -192,7 +192,6 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "현금 결제";
-            this.gridColumn5.FieldName = "CashPay";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 1;
@@ -200,7 +199,6 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "포인트 결제";
-            this.gridColumn6.FieldName = "PointPay";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 2;
@@ -208,7 +206,6 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "날짜";
-            this.gridColumn7.FieldName = "CreateTime";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 3;
@@ -216,7 +213,6 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "책임자";
-            this.gridColumn8.FieldName = "CreateUser";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 4;
@@ -253,7 +249,6 @@
             this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn1.Caption = "주문 목록";
-            this.gridColumn1.FieldName = "MenuName";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -261,7 +256,6 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "금액";
-            this.gridColumn2.FieldName = "SellingPrice";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -271,7 +265,6 @@
             this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn3.Caption = "개수";
-            this.gridColumn3.FieldName = "SellingCount";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -282,7 +275,7 @@
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
-            this.tablePanel4.Controls.Add(this.txt_SellingCode);
+            this.tablePanel4.Controls.Add(this.textEdit1);
             this.tablePanel4.Controls.Add(this.labelControl2);
             this.tablePanel4.Location = new System.Drawing.Point(25, 63);
             this.tablePanel4.Name = "tablePanel4";
@@ -292,16 +285,16 @@
             this.tablePanel4.Size = new System.Drawing.Size(383, 24);
             this.tablePanel4.TabIndex = 12;
             // 
-            // txt_SellingCode
+            // textEdit1
             // 
-            this.tablePanel4.SetColumn(this.txt_SellingCode, 1);
-            this.txt_SellingCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_SellingCode.Location = new System.Drawing.Point(115, 0);
-            this.txt_SellingCode.Margin = new System.Windows.Forms.Padding(0);
-            this.txt_SellingCode.Name = "txt_SellingCode";
-            this.tablePanel4.SetRow(this.txt_SellingCode, 0);
-            this.txt_SellingCode.Size = new System.Drawing.Size(268, 22);
-            this.txt_SellingCode.TabIndex = 1;
+            this.tablePanel4.SetColumn(this.textEdit1, 1);
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit1.Location = new System.Drawing.Point(115, 0);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(0);
+            this.textEdit1.Name = "textEdit1";
+            this.tablePanel4.SetRow(this.textEdit1, 0);
+            this.textEdit1.Size = new System.Drawing.Size(268, 22);
+            this.textEdit1.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -385,7 +378,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.txt_SellingCode.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
@@ -418,6 +411,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraEditors.TextEdit txt_SellingCode;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
     }
 }
