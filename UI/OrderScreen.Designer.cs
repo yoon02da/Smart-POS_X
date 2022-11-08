@@ -36,6 +36,7 @@
             this.bar9 = new DevExpress.XtraBars.Bar();
             this.bar8 = new DevExpress.XtraBars.Bar();
             this.bar7 = new DevExpress.XtraBars.Bar();
+            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
             this.lbl_Remain = new DevExpress.XtraEditors.LabelControl();
             this.lbl_Receive = new DevExpress.XtraEditors.LabelControl();
@@ -60,14 +61,6 @@
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl2 = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel7 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_POS_End = new DevExpress.XtraEditors.SimpleButton();
@@ -106,24 +99,28 @@
             this.simpleButton15 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton14 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton13 = new DevExpress.XtraEditors.SimpleButton();
-            this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
+            this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.Menu = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.QTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
+            this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
-            this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).BeginInit();
             this.tablePanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).BeginInit();
             this.tablePanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
-            this.tablePanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
+            this.tablePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tileGroup1
@@ -177,6 +174,24 @@
             this.bar7.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar7.Text = "Tools";
             // 
+            // tablePanel2
+            // 
+            this.tablePanel1.SetColumn(this.tablePanel2, 0);
+            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
+            this.tablePanel2.Controls.Add(this.tablePanel4);
+            this.tablePanel2.Controls.Add(this.tablePanel3);
+            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel2.Location = new System.Drawing.Point(6, 774);
+            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel2.Name = "tablePanel2";
+            this.tablePanel1.SetRow(this.tablePanel2, 1);
+            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
+            this.tablePanel2.Size = new System.Drawing.Size(1096, 756);
+            this.tablePanel2.TabIndex = 2;
+            // 
             // tablePanel4
             // 
             this.tablePanel2.SetColumn(this.tablePanel4, 0);
@@ -195,7 +210,7 @@
             this.tablePanel4.Controls.Add(this.labelControl1);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel4.Location = new System.Drawing.Point(6, 6);
-            this.tablePanel4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel4.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel2.SetRow(this.tablePanel4, 0);
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -221,7 +236,7 @@
             this.tablePanel4.SetColumn(this.lbl_Remain, 1);
             this.lbl_Remain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Remain.Location = new System.Drawing.Point(274, 602);
-            this.lbl_Remain.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Remain.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Remain.Name = "lbl_Remain";
             this.tablePanel4.SetRow(this.lbl_Remain, 4);
             this.lbl_Remain.Size = new System.Drawing.Size(256, 136);
@@ -239,7 +254,7 @@
             this.tablePanel4.SetColumn(this.lbl_Receive, 1);
             this.lbl_Receive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Receive.Location = new System.Drawing.Point(274, 453);
-            this.lbl_Receive.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Receive.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Receive.Name = "lbl_Receive";
             this.tablePanel4.SetRow(this.lbl_Receive, 3);
             this.lbl_Receive.Size = new System.Drawing.Size(256, 137);
@@ -257,7 +272,7 @@
             this.tablePanel4.SetColumn(this.lbl_Discount, 1);
             this.lbl_Discount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Discount.Location = new System.Drawing.Point(274, 304);
-            this.lbl_Discount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Discount.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Discount.Name = "lbl_Discount";
             this.tablePanel4.SetRow(this.lbl_Discount, 2);
             this.lbl_Discount.Size = new System.Drawing.Size(256, 137);
@@ -277,7 +292,7 @@
             this.tablePanel4.SetColumn(this.lbl_Pay, 1);
             this.lbl_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_Pay.Location = new System.Drawing.Point(274, 155);
-            this.lbl_Pay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_Pay.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_Pay.Name = "lbl_Pay";
             this.tablePanel4.SetRow(this.lbl_Pay, 1);
             this.lbl_Pay.Size = new System.Drawing.Size(256, 137);
@@ -297,7 +312,7 @@
             this.tablePanel4.SetColumn(this.lbl_AllAmount, 1);
             this.lbl_AllAmount.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lbl_AllAmount.Location = new System.Drawing.Point(274, 6);
-            this.lbl_AllAmount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lbl_AllAmount.Margin = new System.Windows.Forms.Padding(6);
             this.lbl_AllAmount.Name = "lbl_AllAmount";
             this.tablePanel4.SetRow(this.lbl_AllAmount, 0);
             this.lbl_AllAmount.Size = new System.Drawing.Size(256, 137);
@@ -309,7 +324,7 @@
             this.labelControl5.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl5, 0);
             this.labelControl5.Location = new System.Drawing.Point(6, 627);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl5, 4);
@@ -323,7 +338,7 @@
             this.labelControl4.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl4, 0);
             this.labelControl4.Location = new System.Drawing.Point(6, 478);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl4, 3);
@@ -337,7 +352,7 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl3, 0);
             this.labelControl3.Location = new System.Drawing.Point(6, 329);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl3, 2);
@@ -351,7 +366,7 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
             this.labelControl2.Location = new System.Drawing.Point(6, 180);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl2, 1);
@@ -365,7 +380,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl1, 0);
             this.labelControl1.Location = new System.Drawing.Point(6, 31);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(6);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl1, 0);
@@ -394,7 +409,7 @@
             this.tablePanel3.Controls.Add(this.simpleButton1);
             this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel3.Location = new System.Drawing.Point(554, 6);
-            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel2.SetRow(this.tablePanel3, 0);
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -412,7 +427,7 @@
             this.tablePanel3.SetColumn(this.simpleButton12, 2);
             this.simpleButton12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton12.Location = new System.Drawing.Point(363, 564);
-            this.simpleButton12.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton12.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton12.Name = "simpleButton12";
             this.tablePanel3.SetRow(this.simpleButton12, 3);
             this.simpleButton12.Size = new System.Drawing.Size(167, 174);
@@ -426,7 +441,7 @@
             this.tablePanel3.SetColumn(this.simpleButton11, 1);
             this.simpleButton11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton11.Location = new System.Drawing.Point(185, 564);
-            this.simpleButton11.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton11.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton11.Name = "simpleButton11";
             this.tablePanel3.SetRow(this.simpleButton11, 3);
             this.simpleButton11.Size = new System.Drawing.Size(167, 174);
@@ -440,7 +455,7 @@
             this.tablePanel3.SetColumn(this.simpleButton10, 0);
             this.simpleButton10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton10.Location = new System.Drawing.Point(6, 564);
-            this.simpleButton10.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton10.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton10.Name = "simpleButton10";
             this.tablePanel3.SetRow(this.simpleButton10, 3);
             this.simpleButton10.Size = new System.Drawing.Size(167, 174);
@@ -454,7 +469,7 @@
             this.tablePanel3.SetColumn(this.simpleButton9, 2);
             this.simpleButton9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton9.Location = new System.Drawing.Point(363, 378);
-            this.simpleButton9.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton9.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton9.Name = "simpleButton9";
             this.tablePanel3.SetRow(this.simpleButton9, 2);
             this.simpleButton9.Size = new System.Drawing.Size(167, 174);
@@ -468,7 +483,7 @@
             this.tablePanel3.SetColumn(this.simpleButton8, 1);
             this.simpleButton8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton8.Location = new System.Drawing.Point(185, 378);
-            this.simpleButton8.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton8.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton8.Name = "simpleButton8";
             this.tablePanel3.SetRow(this.simpleButton8, 2);
             this.simpleButton8.Size = new System.Drawing.Size(167, 174);
@@ -482,7 +497,7 @@
             this.tablePanel3.SetColumn(this.simpleButton7, 0);
             this.simpleButton7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton7.Location = new System.Drawing.Point(6, 378);
-            this.simpleButton7.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton7.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton7.Name = "simpleButton7";
             this.tablePanel3.SetRow(this.simpleButton7, 2);
             this.simpleButton7.Size = new System.Drawing.Size(167, 174);
@@ -496,7 +511,7 @@
             this.tablePanel3.SetColumn(this.simpleButton6, 2);
             this.simpleButton6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton6.Location = new System.Drawing.Point(363, 192);
-            this.simpleButton6.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton6.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton6.Name = "simpleButton6";
             this.tablePanel3.SetRow(this.simpleButton6, 1);
             this.simpleButton6.Size = new System.Drawing.Size(167, 174);
@@ -510,7 +525,7 @@
             this.tablePanel3.SetColumn(this.simpleButton5, 1);
             this.simpleButton5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton5.Location = new System.Drawing.Point(185, 192);
-            this.simpleButton5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton5.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton5.Name = "simpleButton5";
             this.tablePanel3.SetRow(this.simpleButton5, 1);
             this.simpleButton5.Size = new System.Drawing.Size(167, 174);
@@ -524,7 +539,7 @@
             this.tablePanel3.SetColumn(this.simpleButton4, 0);
             this.simpleButton4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton4.Location = new System.Drawing.Point(6, 192);
-            this.simpleButton4.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton4.Name = "simpleButton4";
             this.tablePanel3.SetRow(this.simpleButton4, 1);
             this.simpleButton4.Size = new System.Drawing.Size(167, 174);
@@ -538,7 +553,7 @@
             this.tablePanel3.SetColumn(this.simpleButton3, 2);
             this.simpleButton3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton3.Location = new System.Drawing.Point(363, 6);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton3.Name = "simpleButton3";
             this.tablePanel3.SetRow(this.simpleButton3, 0);
             this.simpleButton3.Size = new System.Drawing.Size(167, 174);
@@ -552,7 +567,7 @@
             this.tablePanel3.SetColumn(this.simpleButton2, 1);
             this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton2.Location = new System.Drawing.Point(185, 6);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton2.Name = "simpleButton2";
             this.tablePanel3.SetRow(this.simpleButton2, 0);
             this.simpleButton2.Size = new System.Drawing.Size(167, 174);
@@ -566,117 +581,12 @@
             this.tablePanel3.SetColumn(this.simpleButton1, 0);
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton1.Location = new System.Drawing.Point(6, 6);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton1.Name = "simpleButton1";
             this.tablePanel3.SetRow(this.simpleButton1, 0);
             this.simpleButton1.Size = new System.Drawing.Size(167, 174);
             this.simpleButton1.TabIndex = 0;
             this.simpleButton1.Text = "1";
-            // 
-            // gridControl2
-            // 
-            this.tablePanel1.SetColumn(this.gridControl2, 0);
-            this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.gridControl2.Location = new System.Drawing.Point(6, 6);
-            this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.gridControl2.Name = "gridControl2";
-            this.tablePanel1.SetRow(this.gridControl2, 0);
-            this.gridControl2.Size = new System.Drawing.Size(1096, 756);
-            this.gridControl2.TabIndex = 1;
-            this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2,
-            this.gridView1});
-            // 
-            // gridView2
-            // 
-            this.gridView2.Appearance.HeaderPanel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridView2.Appearance.HeaderPanel.Options.UseFont = true;
-            this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
-            this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4});
-            this.gridView2.DetailHeight = 747;
-            this.gridView2.GridControl = this.gridControl2;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.AllowHtmlDrawGroups = false;
-            this.gridView2.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.False;
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            this.gridView2.OptionsView.ShowIndicator = false;
-            this.gridView2.RowHeight = 21;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn1.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn1.Caption = "No.";
-            this.gridColumn1.MinWidth = 37;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 130;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.Caption = "메뉴명";
-            this.gridColumn2.MinWidth = 37;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 531;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn3.Caption = "수량";
-            this.gridColumn3.MinWidth = 37;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 139;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.gridColumn4.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.gridColumn4.Caption = "가격";
-            this.gridColumn4.MinWidth = 37;
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 293;
-            // 
-            // gridView1
-            // 
-            this.gridView1.DetailHeight = 747;
-            this.gridView1.GridControl = this.gridControl2;
-            this.gridView1.Name = "gridView1";
-            // 
-            // tablePanel1
-            // 
-            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel1.Controls.Add(this.tablePanel5);
-            this.tablePanel1.Controls.Add(this.tablePanel2);
-            this.tablePanel1.Controls.Add(this.gridControl2);
-            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel1.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tablePanel1.Name = "tablePanel1";
-            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(2216, 1536);
-            this.tablePanel1.TabIndex = 3;
             // 
             // tablePanel5
             // 
@@ -687,7 +597,7 @@
             this.tablePanel5.Controls.Add(this.tablePanel6);
             this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel5.Location = new System.Drawing.Point(1114, 6);
-            this.tablePanel5.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tablePanel5.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel5.Name = "tablePanel5";
             this.tablePanel1.SetRow(this.tablePanel5, 0);
             this.tablePanel5.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
@@ -740,6 +650,7 @@
             this.btn_POS_End.Size = new System.Drawing.Size(201, 166);
             this.btn_POS_End.TabIndex = 34;
             this.btn_POS_End.Text = "POS 종료";
+            this.btn_POS_End.Click += new System.EventHandler(this.btn_POS_End_Click);
             // 
             // btn_SalesSelect
             // 
@@ -931,6 +842,7 @@
             this.tablePanel6.SetRow(this.Menu20, 4);
             this.Menu20.Size = new System.Drawing.Size(201, 209);
             this.Menu20.TabIndex = 24;
+            this.Menu20.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu19
             // 
@@ -942,6 +854,7 @@
             this.tablePanel6.SetRow(this.Menu19, 4);
             this.Menu19.Size = new System.Drawing.Size(201, 209);
             this.Menu19.TabIndex = 23;
+            this.Menu19.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu18
             // 
@@ -953,6 +866,7 @@
             this.tablePanel6.SetRow(this.Menu18, 4);
             this.Menu18.Size = new System.Drawing.Size(201, 209);
             this.Menu18.TabIndex = 22;
+            this.Menu18.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu17
             // 
@@ -964,6 +878,7 @@
             this.tablePanel6.SetRow(this.Menu17, 4);
             this.Menu17.Size = new System.Drawing.Size(201, 209);
             this.Menu17.TabIndex = 21;
+            this.Menu17.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu16
             // 
@@ -975,6 +890,7 @@
             this.tablePanel6.SetRow(this.Menu16, 4);
             this.Menu16.Size = new System.Drawing.Size(201, 209);
             this.Menu16.TabIndex = 20;
+            this.Menu16.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu15
             // 
@@ -986,6 +902,7 @@
             this.tablePanel6.SetRow(this.Menu15, 3);
             this.Menu15.Size = new System.Drawing.Size(201, 207);
             this.Menu15.TabIndex = 19;
+            this.Menu15.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu14
             // 
@@ -997,6 +914,7 @@
             this.tablePanel6.SetRow(this.Menu14, 3);
             this.Menu14.Size = new System.Drawing.Size(201, 207);
             this.Menu14.TabIndex = 18;
+            this.Menu14.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu13
             // 
@@ -1008,6 +926,7 @@
             this.tablePanel6.SetRow(this.Menu13, 3);
             this.Menu13.Size = new System.Drawing.Size(201, 207);
             this.Menu13.TabIndex = 17;
+            this.Menu13.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu12
             // 
@@ -1019,6 +938,7 @@
             this.tablePanel6.SetRow(this.Menu12, 3);
             this.Menu12.Size = new System.Drawing.Size(201, 207);
             this.Menu12.TabIndex = 16;
+            this.Menu12.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu11
             // 
@@ -1030,6 +950,7 @@
             this.tablePanel6.SetRow(this.Menu11, 3);
             this.Menu11.Size = new System.Drawing.Size(201, 207);
             this.Menu11.TabIndex = 15;
+            this.Menu11.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu10
             // 
@@ -1041,6 +962,7 @@
             this.tablePanel6.SetRow(this.Menu10, 2);
             this.Menu10.Size = new System.Drawing.Size(201, 207);
             this.Menu10.TabIndex = 14;
+            this.Menu10.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu9
             // 
@@ -1052,6 +974,7 @@
             this.tablePanel6.SetRow(this.Menu9, 2);
             this.Menu9.Size = new System.Drawing.Size(201, 207);
             this.Menu9.TabIndex = 13;
+            this.Menu9.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu8
             // 
@@ -1063,6 +986,7 @@
             this.tablePanel6.SetRow(this.Menu8, 2);
             this.Menu8.Size = new System.Drawing.Size(201, 207);
             this.Menu8.TabIndex = 12;
+            this.Menu8.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu7
             // 
@@ -1074,6 +998,7 @@
             this.tablePanel6.SetRow(this.Menu7, 2);
             this.Menu7.Size = new System.Drawing.Size(201, 207);
             this.Menu7.TabIndex = 11;
+            this.Menu7.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu6
             // 
@@ -1085,6 +1010,7 @@
             this.tablePanel6.SetRow(this.Menu6, 2);
             this.Menu6.Size = new System.Drawing.Size(201, 207);
             this.Menu6.TabIndex = 10;
+            this.Menu6.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu5
             // 
@@ -1096,6 +1022,7 @@
             this.tablePanel6.SetRow(this.Menu5, 1);
             this.Menu5.Size = new System.Drawing.Size(201, 207);
             this.Menu5.TabIndex = 9;
+            this.Menu5.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu4
             // 
@@ -1107,6 +1034,7 @@
             this.tablePanel6.SetRow(this.Menu4, 1);
             this.Menu4.Size = new System.Drawing.Size(201, 207);
             this.Menu4.TabIndex = 8;
+            this.Menu4.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu3
             // 
@@ -1118,6 +1046,7 @@
             this.tablePanel6.SetRow(this.Menu3, 1);
             this.Menu3.Size = new System.Drawing.Size(201, 207);
             this.Menu3.TabIndex = 7;
+            this.Menu3.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu2
             // 
@@ -1129,6 +1058,7 @@
             this.tablePanel6.SetRow(this.Menu2, 1);
             this.Menu2.Size = new System.Drawing.Size(201, 207);
             this.Menu2.TabIndex = 6;
+            this.Menu2.Click += new System.EventHandler(this.Menu_Click);
             // 
             // Menu1
             // 
@@ -1140,6 +1070,7 @@
             this.tablePanel6.SetRow(this.Menu1, 1);
             this.Menu1.Size = new System.Drawing.Size(201, 207);
             this.Menu1.TabIndex = 5;
+            this.Menu1.Click += new System.EventHandler(this.Menu_Click);
             // 
             // simpleButton17
             // 
@@ -1226,23 +1157,81 @@
             this.simpleButton13.Text = "COFFEE";
             this.simpleButton13.Click += new System.EventHandler(this.simpleButton13_Click);
             // 
-            // tablePanel2
+            // tablePanel1
             // 
-            this.tablePanel1.SetColumn(this.tablePanel2, 0);
-            this.tablePanel2.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            this.tablePanel1.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 55F)});
-            this.tablePanel2.Controls.Add(this.tablePanel4);
-            this.tablePanel2.Controls.Add(this.tablePanel3);
-            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel2.Location = new System.Drawing.Point(6, 774);
-            this.tablePanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.tablePanel2.Name = "tablePanel2";
-            this.tablePanel1.SetRow(this.tablePanel2, 1);
-            this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            this.tablePanel1.Controls.Add(this.gridControl1);
+            this.tablePanel1.Controls.Add(this.tablePanel5);
+            this.tablePanel1.Controls.Add(this.tablePanel2);
+            this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel1.Location = new System.Drawing.Point(0, 0);
+            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel1.Name = "tablePanel1";
+            this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F)});
-            this.tablePanel2.Size = new System.Drawing.Size(1096, 756);
-            this.tablePanel2.TabIndex = 2;
+            this.tablePanel1.Size = new System.Drawing.Size(2216, 1536);
+            this.tablePanel1.TabIndex = 3;
+            // 
+            // gridControl1
+            // 
+            this.tablePanel1.SetColumn(this.gridControl1, 0);
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(3, 3);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.tablePanel1.SetRow(this.gridControl1, 0);
+            this.gridControl1.Size = new System.Drawing.Size(1102, 762);
+            this.gridControl1.TabIndex = 4;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.GroupPanel.BackColor = System.Drawing.Color.DimGray;
+            this.gridView1.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.AntiqueWhite;
+            this.gridView1.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.DimGray;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.Menu,
+            this.Price,
+            this.QTY});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            // 
+            // Menu
+            // 
+            this.Menu.Caption = "메뉴";
+            this.Menu.FieldName = "Menu";
+            this.Menu.MinWidth = 40;
+            this.Menu.Name = "Menu";
+            this.Menu.Visible = true;
+            this.Menu.VisibleIndex = 0;
+            this.Menu.Width = 150;
+            // 
+            // Price
+            // 
+            this.Price.AppearanceCell.BackColor = System.Drawing.Color.White;
+            this.Price.AppearanceCell.Options.UseBackColor = true;
+            this.Price.Caption = "가격";
+            this.Price.FieldName = "Price";
+            this.Price.MinWidth = 40;
+            this.Price.Name = "Price";
+            this.Price.Visible = true;
+            this.Price.VisibleIndex = 1;
+            this.Price.Width = 150;
+            // 
+            // QTY
+            // 
+            this.QTY.Caption = "개수";
+            this.QTY.FieldName = "QTY";
+            this.QTY.MinWidth = 40;
+            this.QTY.Name = "QTY";
+            this.QTY.Visible = true;
+            this.QTY.VisibleIndex = 2;
+            this.QTY.Width = 150;
             // 
             // OrderScreen
             // 
@@ -1250,28 +1239,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2216, 1536);
             this.Controls.Add(this.tablePanel1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "OrderScreen";
             this.Text = "SmartPOS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
+            this.tablePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
-            this.tablePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel7)).EndInit();
             this.tablePanel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel6)).EndInit();
             this.tablePanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
-            this.tablePanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
+            this.tablePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1285,35 +1273,9 @@
         private DevExpress.XtraBars.Bar bar9;
         private DevExpress.XtraBars.Bar bar8;
         private DevExpress.XtraBars.Bar bar7;
-        private DevExpress.Utils.Layout.TablePanel tablePanel4;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
-        private DevExpress.XtraGrid.GridControl gridControl2;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton12;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton simpleButton4;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.LabelControl lbl_Remain;
-        private DevExpress.XtraEditors.LabelControl lbl_Receive;
-        private DevExpress.XtraEditors.LabelControl lbl_Discount;
-        private DevExpress.XtraEditors.LabelControl lbl_Pay;
-        private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
+        private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.Utils.Layout.TablePanel tablePanel7;
         private DevExpress.XtraEditors.SimpleButton btn_POS_End;
@@ -1352,9 +1314,33 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton15;
         private DevExpress.XtraEditors.SimpleButton simpleButton14;
         private DevExpress.XtraEditors.SimpleButton simpleButton13;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.Utils.Layout.TablePanel tablePanel4;
+        private DevExpress.XtraEditors.LabelControl lbl_Remain;
+        private DevExpress.XtraEditors.LabelControl lbl_Receive;
+        private DevExpress.XtraEditors.LabelControl lbl_Discount;
+        private DevExpress.XtraEditors.LabelControl lbl_Pay;
+        private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.Utils.Layout.TablePanel tablePanel3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton9;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton3;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        public DevExpress.XtraGrid.Columns.GridColumn Menu;
+        public DevExpress.XtraGrid.Columns.GridColumn Price;
+        public DevExpress.XtraGrid.Columns.GridColumn QTY;
     }
 }
