@@ -126,6 +126,14 @@ namespace Smart_POS_X.UI
 
         }
 
+        private void btn_ReceipeSelect_Click(object sender, EventArgs e)
+        {
+            ReceiptPopUp receipt = new ReceiptPopUp();
 
+            if (receipt.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

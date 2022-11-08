@@ -16,21 +16,17 @@ namespace Smart_POS_X.UI
         public ReceiptPopUp()
         {
             InitializeComponent();
+
         }
 
         private void btn_Enter_Click(object sender, EventArgs e)
         {
+            DBHelper DB = new DBHelper();
+            DataTable DT = DB.Exec($"ReceiptSelct_S01 '{txt_SellingCode.Text}'");
 
-        }
-
-        private void txt_ReceiptNo_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_ReInput_Click(object sender, EventArgs e)
-        {
-
+            gridControl1.DataSource = DT;
+            gridControl2.DataSource = DT;
+                 
         }
     }
 }
