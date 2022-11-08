@@ -114,6 +114,12 @@
     <Compile Include="POP UP\PaymentPopUp.Designer.cs">
       <DependentUpon>PaymentPopUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="POP UP\ReceiptPrintPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POP UP\ReceiptPrintPopUp.Designer.cs">
+      <DependentUpon>ReceiptPrintPopUp.cs</DependentUpon>
+    </Compile>
     <Compile Include="POP UP\SalesManagedPopUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="POP UP\PaymentPopUp.resx">
       <DependentUpon>PaymentPopUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POP UP\ReceiptPrintPopUp.resx">
+      <DependentUpon>ReceiptPrintPopUp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POP UP\SalesManagedPopUp.resx">
       <DependentUpon>SalesManagedPopUp.cs</DependentUpon>

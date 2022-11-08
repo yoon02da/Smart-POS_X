@@ -66,7 +66,7 @@ namespace Smart_POS_X
 
             DataTable DT = DS.Tables[0];
 
-            if (DT.Rows.Count == 1 && DT.Columns.Count == 1)
+            if (DT.Rows.Count > 0 && DT.Columns.Count > 0)
             {
                 values = DT.Rows[0][0].ToString();
                 result = DT.Rows[0][0].ToString() == "1" ? true : false;
