@@ -43,6 +43,7 @@ namespace Smart_POS_X.UI
 
                // if (DT.Rows[0])
             }
+            DB.DBSend();
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)

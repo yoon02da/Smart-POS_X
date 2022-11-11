@@ -751,6 +751,7 @@
             this.btn_Pay.Size = new System.Drawing.Size(172, 107);
             this.btn_Pay.TabIndex = 27;
             this.btn_Pay.Text = "멤버십 관리";
+            this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // btn_ReceipeSelect
             // 

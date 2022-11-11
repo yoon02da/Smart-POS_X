@@ -20,6 +20,7 @@ namespace Smart_POS_X.UI
 {
     public partial class OrderScreen : DevExpress.XtraEditors.XtraForm
     {
+        DBHelper DB = new DBHelper();
         private int MenuSelect { get; set; }
         private MenuList MenuSelecter { get; set; }
         private SelectSwitch SelectSwitch { get; set; }
@@ -65,8 +66,7 @@ namespace Smart_POS_X.UI
 
         private void Menu_Setting()
         {
-            DBHelper DBh = new DBHelper();
-            DataTable DT = DBh.Exec($"OrderScreen_S01 '{MenuSelecter.ToString().ToUpper()}'"); // 1.커피,2.논커피,3.스무디,4.샌드위치,5.기타.
+            DataTable DT = DB.Exec($"OrderScreen_S01 '{MenuSelecter.ToString().ToUpper()}'"); // 1.커피,2.논커피,3.스무디,4.샌드위치,5.기타.
                                                                                                //메뉴순번 , 메뉴 이름 받아야함
             Menu_reset();
 
@@ -100,10 +100,11 @@ namespace Smart_POS_X.UI
             string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
             if (MenuName == "-") return;
 
-            DBHelper DBh = new DBHelper();
-            DataTable DT = DBh.Exec($"OrderScreen_S02 '{MenuName}'");
+            DataTable DT = DB.Exec($"OrderScreen_S02 '{MenuName}'");
 
             int AllAmount = 0;
+
+            if (DT.Rows[0]["Menu"].ToString() == String.Empty) return;
 
             if (AddMenu(DT.Rows[0]["Menu"].ToString())) //같은 메뉴가 있는경우 거짓
             {
@@ -148,13 +149,6 @@ namespace Smart_POS_X.UI
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             string Num = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
-
-            //if(Num == "C")
-            //
-            //
-            //if(Num == "OK")
-
-
             switch (SelectSwitch)
             {
                 case SelectSwitch.Payment:
@@ -194,11 +188,13 @@ namespace Smart_POS_X.UI
 
                 textEdit4.Text = Amount_remaining.ToString();
 
-                if (Amount_remaining > 0)
+                if (Amount_remaining == 0)
                 {
                     MessageBox.Show("결제 되었습니다.");
                     PayInvoice();
-                    textEdit4.ReadOnly = true;
+
+                    Reset();
+
                 }
                 else
                 {
@@ -214,9 +210,24 @@ namespace Smart_POS_X.UI
 
         private void PayInvoice()
         { //결제가 완료되는 경우..
+            string SellingCode = DB.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit3.Text}','0'").Rows[0]["SEQ"].ToString();
+
+            foreach (DataRow ROW in MenuTable.Rows)
+                DB.SQL($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ) " +
+                             $"VALUES ( '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' )");
+        }
+        private void Reset() {
+            gridControl1.DataSource = null;
+
+            lbl_AllAmount.Text = String.Empty;
+            textEdit1.Text = String.Empty;
+            textEdit2.Text = String.Empty;
+            textEdit3.Text = String.Empty;
+            textEdit4.Text = String.Empty;
+
+            MenuTable = null;
 
         }
-
         private void textEdit1_Properties_Click(object sender, EventArgs e)
         {
 
@@ -284,15 +295,14 @@ namespace Smart_POS_X.UI
             ReceiptPopUp ReceiptPopUp = new ReceiptPopUp();
             if (ReceiptPopUp.ShowDialog() == DialogResult.OK)
             {
-                DBHelper dBHelper = new DBHelper();
-                dBHelper.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit3}','{}'");
-                /*
-                 @MemberCode	NVARCHAR(255)
-                 @TotalPay		NVARCHAR(255)
-                 @Received		NVARCHAR(255)
-                 @CashPay		NVARCHAR(255)
-                 */
+              
+
             }
+        }
+
+        private void btn_Pay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
