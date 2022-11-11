@@ -39,12 +39,10 @@
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
             this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.lbl_AllAmount = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -110,7 +108,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
@@ -203,12 +200,10 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
             this.tablePanel4.Controls.Add(this.textEdit4);
-            this.tablePanel4.Controls.Add(this.textEdit3);
             this.tablePanel4.Controls.Add(this.textEdit2);
             this.tablePanel4.Controls.Add(this.textEdit1);
             this.tablePanel4.Controls.Add(this.lbl_AllAmount);
             this.tablePanel4.Controls.Add(this.labelControl5);
-            this.tablePanel4.Controls.Add(this.labelControl4);
             this.tablePanel4.Controls.Add(this.labelControl3);
             this.tablePanel4.Controls.Add(this.labelControl2);
             this.tablePanel4.Controls.Add(this.labelControl1);
@@ -234,23 +229,11 @@
             this.textEdit4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Properties.AutoHeight = false;
+            this.textEdit4.Properties.ReadOnly = true;
             this.tablePanel4.SetRow(this.textEdit4, 4);
             this.textEdit4.Size = new System.Drawing.Size(224, 98);
             this.textEdit4.TabIndex = 9;
             this.textEdit4.Click += new System.EventHandler(this.textEdit4_Click);
-            // 
-            // textEdit3
-            // 
-            this.tablePanel4.SetColumn(this.textEdit3, 1);
-            this.textEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit3.Location = new System.Drawing.Point(236, 302);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.AutoHeight = false;
-            this.tablePanel4.SetRow(this.textEdit3, 3);
-            this.textEdit3.Size = new System.Drawing.Size(224, 96);
-            this.textEdit3.TabIndex = 8;
-            this.textEdit3.Click += new System.EventHandler(this.textEdit3_Click);
             // 
             // textEdit2
             // 
@@ -273,7 +256,6 @@
             this.textEdit1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.AutoHeight = false;
-            this.textEdit1.Properties.Click += new System.EventHandler(this.textEdit1_Properties_Click);
             this.tablePanel4.SetRow(this.textEdit1, 1);
             this.textEdit1.Size = new System.Drawing.Size(224, 96);
             this.textEdit1.TabIndex = 6;
@@ -309,23 +291,9 @@
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl5, 4);
-            this.labelControl5.Size = new System.Drawing.Size(220, 76);
+            this.labelControl5.Size = new System.Drawing.Size(220, 77);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "받을금액";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.tablePanel4.SetColumn(this.labelControl4, 0);
-            this.labelControl4.Location = new System.Drawing.Point(6, 306);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(6);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
-            this.tablePanel4.SetRow(this.labelControl4, 3);
-            this.labelControl4.Size = new System.Drawing.Size(220, 76);
-            this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "받은금액";
             // 
             // labelControl3
             // 
@@ -701,7 +669,6 @@
             this.btn_ObjectPlus.Size = new System.Drawing.Size(172, 106);
             this.btn_ObjectPlus.TabIndex = 30;
             this.btn_ObjectPlus.Text = "상품추가";
-            this.btn_ObjectPlus.Click += new System.EventHandler(this.btn_ObjectPlus_Click);
             // 
             // btn_Plus
             // 
@@ -751,7 +718,6 @@
             this.btn_Pay.Size = new System.Drawing.Size(172, 107);
             this.btn_Pay.TabIndex = 27;
             this.btn_Pay.Text = "멤버십 관리";
-            this.btn_Pay.Click += new System.EventHandler(this.btn_Pay_Click);
             // 
             // btn_ReceipeSelect
             // 
@@ -779,6 +745,8 @@
             this.tablePanel7.SetRow(this.btn_MemberShip, 0);
             this.btn_MemberShip.Size = new System.Drawing.Size(172, 107);
             this.btn_MemberShip.TabIndex = 29;
+            this.btn_MemberShip.Text = "리셋";
+            this.btn_MemberShip.Click += new System.EventHandler(this.btn_MemberShip_Click);
             // 
             // tablePanel6
             // 
@@ -1255,7 +1223,6 @@
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
@@ -1327,7 +1294,6 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel4;
         private DevExpress.XtraEditors.LabelControl lbl_AllAmount;
         private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -1349,7 +1315,6 @@
         public DevExpress.XtraGrid.Columns.GridColumn Price;
         public DevExpress.XtraGrid.Columns.GridColumn QTY;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
     }

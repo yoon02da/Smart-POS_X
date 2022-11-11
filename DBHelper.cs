@@ -23,6 +23,7 @@ namespace Smart_POS_X
         public string PWD { get; set; }
         public string values { get; set; }
         public bool result { get; set; }
+        public DataRow dataRow { get; set; }
         static public SqlConnection sqlConnection { get; set; }
 
         public void DBStart()
@@ -40,24 +41,6 @@ namespace Smart_POS_X
         {
             sqlConnection.Close();
         }
-        public bool DBCheckConnection() 
-        {
-            sqlConnection.Open();
-            if (sqlConnection.State == ConnectionState.Open)
-            {
-                MessageBox.Show("연결되었습니다.");
-
-                sqlConnection.Close();
-                return true;
-            }
-            else
-            {
-                MessageBox.Show("실패하였습니다.");
-
-                sqlConnection.Close();
-                return false;
-            }
-        }
 
         public DataTable Exec(string SQL) {
             SqlCommand CMD = new SqlCommand();
@@ -69,7 +52,12 @@ namespace Smart_POS_X
 
             sd.Fill(DS, "Table");
 
-            if (DS.Tables.Count == 0) return null;
+            if (DS.Tables.Count == 0)
+            {
+                result = false;
+                return null;
+            }
+            result = true;
 
             DataTable DT = DS.Tables[0];
 
@@ -91,14 +79,65 @@ namespace Smart_POS_X
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
 
-
             sd.Fill(DS, "Table");
 
-            if (DS.Tables.Count == 0) return null;
+            if (DS.Tables.Count == 0)
+            {
+                result = false;
+                return null; 
+            }
+            result = true;
 
             DataTable DT = DS.Tables[0];
 
+            if (DT.Rows.Count == 1)
+            { 
+                dataRow = DT.Rows[0]; 
+            }
+
             return DT;
         }
+
+        public bool TRAN(List<string> strings) 
+        {
+            SqlCommand CMD = new SqlCommand();
+            CMD.Connection = sqlConnection;
+
+            SqlTransaction tran = sqlConnection.BeginTransaction();
+            CMD.Transaction = tran; // 현재사용할트랜잭션객체지정
+            try
+            {
+                foreach (string sql in strings)
+                {
+                    CMD.CommandText = sql;// 쿼리지정
+                    CMD.ExecuteNonQuery(); // 실행
+                }
+                tran.Commit(); // 트랜잭션commit
+                return true;
+            }
+            catch (Exception ex)
+            {
+                tran.Rollback(); // 에러발생시rollback
+                return false;
+            }
+        }
+
+        public bool DBCheckConnection()
+        {
+            sqlConnection.Open();
+            if (sqlConnection.State == ConnectionState.Open)
+            {
+                MessageBox.Show("연결되었습니다.");
+                sqlConnection.Close();
+                return true;
+            }
+            else
+            {
+                MessageBox.Show("실패하였습니다.");
+                sqlConnection.Close();
+                return false;
+            }
+        }
+
     }
 }

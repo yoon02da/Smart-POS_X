@@ -21,12 +21,9 @@ namespace Smart_POS_X.UI
     public partial class OrderScreen : DevExpress.XtraEditors.XtraForm
     {
         DBHelper DB = new DBHelper();
-        private int MenuSelect { get; set; }
         private MenuList MenuSelecter { get; set; }
         private SelectSwitch SelectSwitch { get; set; }
-
-        //  public int FocuseTextBox
-
+        DataRow selectedrow = null;
         DataTable MenuTable = new DataTable();
         public OrderScreen()
         {
@@ -74,20 +71,15 @@ namespace Smart_POS_X.UI
             {
                 if (control == null) continue;
                 foreach (DataRow DR in DT.Rows)
-                {
                     if (control.Name.ToString() == DR[0].ToString())
                         control.Text = DR[1].ToString();
-                }
             }
         }
 
         private void Menu_reset()
         {
             foreach (SimpleButton control in tablePanel6.Controls)
-            {
-                if (control.Name.Contains("Menu"))
-                    control.Text = "-";
-            }
+                if (control.Name.Contains("Menu")) control.Text = string.Empty;
         }
 
         private void btn_POS_End_Click(object sender, EventArgs e)
@@ -98,7 +90,7 @@ namespace Smart_POS_X.UI
         private void Menu_Click(object sender, EventArgs e)
         {
             string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
-            if (MenuName == "-") return;
+            if (MenuName == string.Empty) return;
 
             DataTable DT = DB.Exec($"OrderScreen_S02 '{MenuName}'");
 
@@ -112,7 +104,6 @@ namespace Smart_POS_X.UI
                 MenuTable.Merge(DT);
                 gridControl1.DataSource = MenuTable;
             }
-
             AllMountCal();
         }
 
@@ -142,7 +133,6 @@ namespace Smart_POS_X.UI
                 int PriceSUM = Int32.Parse(DR["Price"].ToString());
                 AllAmount += PriceSUM;
             }
-
             lbl_AllAmount.Text = AllAmount.ToString();
         }
 
@@ -157,44 +147,28 @@ namespace Smart_POS_X.UI
                 case SelectSwitch.Sale:
                     KeyPadInput(textEdit2, SelectSwitch, Num);
                     break;
-                case SelectSwitch.Aamount_received:
-                    KeyPadInput(textEdit3, SelectSwitch, Num);
-                    break;
                 case SelectSwitch.Aamount_remaining:
                     KeyPadInput(textEdit4, SelectSwitch, Num);
                     break;
                 default:
                     break;
             }
-
         }
-
-
         private void KeyPadInput(TextEdit textEdit, SelectSwitch selectSwitch, String Num)
         {
             if (Num == "C")
             {
+                if (textEdit.Text.Length == 0) return;
                 textEdit.Text = textEdit.Text.Substring(0, textEdit.Text.Length - 1);
+                return;
             }
             if (Num == "OK")
             {//결제금액-(할인금액+받은금액)
-                int? All = Int32.Parse(lbl_AllAmount.Text == String.Empty ? "0" : lbl_AllAmount.Text);
-                int? Payment = Int32.Parse(textEdit1.Text == String.Empty ? "0" : textEdit1.Text);
-                int? Sale = Int32.Parse(textEdit2.Text == String.Empty ? "0" : textEdit2.Text);
-                int? Amount_received = Int32.Parse(textEdit3.Text == String.Empty ? "0" : textEdit3.Text);
-                int? Amount_remaining = Int32.Parse(textEdit4.Text == String.Empty ? "0" : textEdit4.Text);
-
-                Amount_remaining = All - (Payment - (Sale + Amount_received));
-
-                textEdit4.Text = Amount_remaining.ToString();
-
-                if (Amount_remaining == 0)
+                if (TotalAmount() == 0)
                 {
                     MessageBox.Show("결제 되었습니다.");
                     PayInvoice();
-
                     Reset();
-
                 }
                 else
                 {
@@ -202,15 +176,27 @@ namespace Smart_POS_X.UI
                     return;
                 }
             }
-            else
-            {
+            else 
                 textEdit.Text += Num;
-            }
+        }
+
+        private int? TotalAmount() 
+        {
+            int? All = Int32.Parse(lbl_AllAmount.Text == String.Empty ? "0" : lbl_AllAmount.Text);
+            int? Payment = Int32.Parse(textEdit1.Text == String.Empty ? "0" : textEdit1.Text);
+            int? Sale = Int32.Parse(textEdit2.Text == String.Empty ? "0" : textEdit2.Text);
+
+            int? Amount_remaining = 0;
+            Amount_remaining = All - (Payment + Sale + Sale);
+
+            textEdit4.Text = Amount_remaining.ToString();
+
+            return Amount_remaining;
         }
 
         private void PayInvoice()
         { //결제가 완료되는 경우..
-            string SellingCode = DB.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit3.Text}','0'").Rows[0]["SEQ"].ToString();
+            string SellingCode = DB.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit2.Text}','0'").Rows[0]["SEQ"].ToString();
 
             foreach (DataRow ROW in MenuTable.Rows)
                 DB.SQL($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ) " +
@@ -222,22 +208,10 @@ namespace Smart_POS_X.UI
             lbl_AllAmount.Text = String.Empty;
             textEdit1.Text = String.Empty;
             textEdit2.Text = String.Empty;
-            textEdit3.Text = String.Empty;
             textEdit4.Text = String.Empty;
 
-            MenuTable = null;
-
+            MenuTable.Clear();
         }
-        private void textEdit1_Properties_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_ReceipeSelect_Click(object sender, EventArgs e)
         {
             ReceiptPopUp receipt = new ReceiptPopUp();
@@ -255,7 +229,6 @@ namespace Smart_POS_X.UI
 
         private void textEdit2_Click(object sender, EventArgs e)
         {
-
             SelectSwitch = SelectSwitch.Sale;
         }
 
@@ -269,29 +242,15 @@ namespace Smart_POS_X.UI
             SelectSwitch = SelectSwitch.Aamount_remaining;
         }
 
-        private void btn_ObjectPlus_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_ObjectMinus_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             MenuTable.Clear();
         }
 
         public DataRow DR { get; set; } = null;
-        private void gridView1_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e)
-        {
-            //DR = ((System.Data.DataRowView)((DevExpress.XtraGrid.Views.Base.ColumnView)sender).FocusedRowObject).Row;
-        }
 
         private void btn_Minus_Click(object sender, EventArgs e)
         {
-
             ReceiptPopUp ReceiptPopUp = new ReceiptPopUp();
             if (ReceiptPopUp.ShowDialog() == DialogResult.OK)
             {
@@ -300,9 +259,22 @@ namespace Smart_POS_X.UI
             }
         }
 
-        private void btn_Pay_Click(object sender, EventArgs e)
+        private void btn_MemberShip_Click(object sender, EventArgs e)
         {
+            Reset();
+        }
 
+        private void btn_ObjectMinus_Click(object sender, EventArgs e)
+        {
+            gridView1.DeleteRow(0);
+            MenuTable.Rows.Remove(selectedrow);
+            gridControl1.DataSource = MenuTable;
+            TotalAmount();
+        } 
+        private void gridView1_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e)
+        {
+            if (MenuTable.Rows.Count == 1) return;
+            selectedrow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
         }
     }
 }
