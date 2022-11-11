@@ -72,12 +72,13 @@ namespace Smart_POS_X.UI
 
             if (DB.result == true)
             {
+                this.Close();
                 ReceiptPrintPopUp print = new ReceiptPrintPopUp();
                 print.i = txt_SellingCode.Text;
-
-                this.Hide();
-                print.Show();
-                
+                if (print.ShowDialog() == DialogResult.OK)
+                {
+                    
+                }            
             }
              
         }
