@@ -14,18 +14,19 @@ namespace Smart_POS_X.UI
 {
     public partial class ReceiptPopUp : DevExpress.XtraEditors.XtraForm
     {
-
+        DBHelper DB = new DBHelper();
         public ReceiptPopUp()
         {
             InitializeComponent();
 
-
+           gridControl1.DataSource =  DB.SQL("SELECT MAX(SellingCode) as MenuName " +
+               ",sum(SellingPrice * SellingCount)  as SellingPrice ,count(*) as SellingCount " +
+               "FROM POSSellRecord GROUP BY SellingCode");
 
         }
 
         private void btn_Enter_Click(object sender, EventArgs e)
         {
-            DBHelper DB = new DBHelper();
             DB.Exec($"ReceiptSelct_S03 '{txt_SellingCode.Text}'");
 
             if (DB.result == true)
@@ -69,7 +70,6 @@ namespace Smart_POS_X.UI
 
         private void btn_Print_Click(object sender, EventArgs e)
         {
-            DBHelper DB = new DBHelper();
             DB.Exec($"ReceiptSelct_S03 '{txt_SellingCode.Text}'");
 
             if (DB.result == true)

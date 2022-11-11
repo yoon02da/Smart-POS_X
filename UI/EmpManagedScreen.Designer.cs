@@ -31,9 +31,6 @@
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.txt_EmpCode = new DevExpress.XtraEditors.TextEdit();
-            this.cbo_WorkState = new DevExpress.XtraEditors.LookUpEdit();
-            this.cbo_WorkGroup = new DevExpress.XtraEditors.LookUpEdit();
-            this.cbo_Job = new DevExpress.XtraEditors.LookUpEdit();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
@@ -56,14 +53,14 @@
             this.btn_Delete = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Add = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Save = new DevExpress.XtraEditors.SimpleButton();
+            this.cbo_WorkState = new Smart_POS_X.UserControl.Combo();
+            this.cbo_WorkGroup = new Smart_POS_X.UserControl.Combo();
+            this.cbo_Job = new Smart_POS_X.UserControl.Combo();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EmpCode.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_WorkState.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_WorkGroup.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_Job.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
@@ -107,10 +104,10 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 5F)});
-            this.tablePanel3.Controls.Add(this.txt_EmpCode);
             this.tablePanel3.Controls.Add(this.cbo_WorkState);
             this.tablePanel3.Controls.Add(this.cbo_WorkGroup);
             this.tablePanel3.Controls.Add(this.cbo_Job);
+            this.tablePanel3.Controls.Add(this.txt_EmpCode);
             this.tablePanel3.Controls.Add(this.labelControl4);
             this.tablePanel3.Controls.Add(this.labelControl3);
             this.tablePanel3.Controls.Add(this.labelControl2);
@@ -127,79 +124,21 @@
             // 
             // txt_EmpCode
             // 
-            this.tablePanel3.SetColumn(this.txt_EmpCode, 1);
             this.txt_EmpCode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txt_EmpCode.Location = new System.Drawing.Point(99, 10);
             this.txt_EmpCode.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
             this.txt_EmpCode.Name = "txt_EmpCode";
             this.txt_EmpCode.Properties.AutoHeight = false;
-            this.tablePanel3.SetRow(this.txt_EmpCode, 0);
             this.txt_EmpCode.Size = new System.Drawing.Size(124, 26);
             this.txt_EmpCode.TabIndex = 7;
-            // 
-            // cbo_WorkState
-            // 
-            this.tablePanel3.SetColumn(this.cbo_WorkState, 10);
-            this.cbo_WorkState.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_WorkState.Location = new System.Drawing.Point(805, 10);
-            this.cbo_WorkState.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.cbo_WorkState.Name = "cbo_WorkState";
-            this.cbo_WorkState.Properties.AutoHeight = false;
-            this.cbo_WorkState.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel3.SetRow(this.cbo_WorkState, 0);
-            this.cbo_WorkState.Size = new System.Drawing.Size(124, 26);
-            this.cbo_WorkState.TabIndex = 6;
-            // 
-            // cbo_WorkGroup
-            // 
-            this.tablePanel3.SetColumn(this.cbo_WorkGroup, 7);
-            this.cbo_WorkGroup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_WorkGroup.Location = new System.Drawing.Point(570, 10);
-            this.cbo_WorkGroup.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.cbo_WorkGroup.Name = "cbo_WorkGroup";
-            this.cbo_WorkGroup.Properties.AutoHeight = false;
-            this.cbo_WorkGroup.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.cbo_WorkGroup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.tablePanel3.SetRow(this.cbo_WorkGroup, 0);
-            this.cbo_WorkGroup.Size = new System.Drawing.Size(124, 26);
-            this.cbo_WorkGroup.TabIndex = 5;
-            // 
-            // cbo_Job
-            // 
-            this.tablePanel3.SetColumn(this.cbo_Job, 4);
-            this.cbo_Job.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_Job.EditValue = "NAME";
-            this.cbo_Job.Location = new System.Drawing.Point(334, 10);
-            this.cbo_Job.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.cbo_Job.Name = "cbo_Job";
-            this.cbo_Job.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cbo_Job.Properties.Appearance.Options.UseForeColor = true;
-            this.cbo_Job.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.DarkGray;
-            this.cbo_Job.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.cbo_Job.Properties.AutoHeight = false;
-            this.cbo_Job.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.cbo_Job.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_Job.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NAME", "NAME", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Center, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CODE", "CODE", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.cbo_Job.Properties.DisplayMember = "NAME";
-            this.cbo_Job.Properties.NullText = "";
-            this.tablePanel3.SetRow(this.cbo_Job, 0);
-            this.cbo_Job.Size = new System.Drawing.Size(124, 26);
-            this.cbo_Job.TabIndex = 4;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.tablePanel3.SetColumn(this.labelControl4, 0);
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl4.Location = new System.Drawing.Point(3, 3);
             this.labelControl4.Name = "labelControl4";
-            this.tablePanel3.SetRow(this.labelControl4, 0);
             this.labelControl4.Size = new System.Drawing.Size(93, 40);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "사원번호";
@@ -208,11 +147,9 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.tablePanel3.SetColumn(this.labelControl3, 3);
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl3.Location = new System.Drawing.Point(238, 3);
             this.labelControl3.Name = "labelControl3";
-            this.tablePanel3.SetRow(this.labelControl3, 0);
             this.labelControl3.Size = new System.Drawing.Size(93, 40);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "직급";
@@ -221,11 +158,9 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.tablePanel3.SetColumn(this.labelControl2, 6);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl2.Location = new System.Drawing.Point(474, 3);
             this.labelControl2.Name = "labelControl2";
-            this.tablePanel3.SetRow(this.labelControl2, 0);
             this.labelControl2.Size = new System.Drawing.Size(93, 40);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "근무조";
@@ -234,11 +169,9 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.tablePanel3.SetColumn(this.labelControl1, 9);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl1.Location = new System.Drawing.Point(709, 3);
             this.labelControl1.Name = "labelControl1";
-            this.tablePanel3.SetRow(this.labelControl1, 0);
             this.labelControl1.Size = new System.Drawing.Size(93, 40);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "근무상태";
@@ -440,6 +373,38 @@
             this.btn_Save.TabIndex = 0;
             this.btn_Save.Text = "저장";
             // 
+            // cbo_WorkState
+            // 
+            this.cbo_WorkState.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cbo_WorkState.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbo_WorkState.Location = new System.Drawing.Point(805, 10);
+            this.cbo_WorkState.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.cbo_WorkState.Name = "cbo_WorkState";
+            this.cbo_WorkState.Size = new System.Drawing.Size(124, 26);
+            this.cbo_WorkState.TabIndex = 10;
+            // 
+            // cbo_WorkGroup
+            // 
+            this.cbo_WorkGroup.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cbo_WorkGroup.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbo_WorkGroup.Location = new System.Drawing.Point(570, 10);
+            this.cbo_WorkGroup.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.cbo_WorkGroup.Name = "cbo_WorkGroup";
+            this.cbo_WorkGroup.Size = new System.Drawing.Size(124, 26);
+            this.cbo_WorkGroup.TabIndex = 9;
+            // 
+            // cbo_Job
+            // 
+            this.cbo_Job.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tablePanel3.SetColumn(this.cbo_Job, 4);
+            this.cbo_Job.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbo_Job.Location = new System.Drawing.Point(334, 10);
+            this.cbo_Job.Margin = new System.Windows.Forms.Padding(0, 10, 0, 10);
+            this.cbo_Job.Name = "cbo_Job";
+            this.tablePanel3.SetRow(this.cbo_Job, 0);
+            this.cbo_Job.Size = new System.Drawing.Size(124, 26);
+            this.cbo_Job.TabIndex = 8;
+            // 
             // EmpManagedScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -456,9 +421,6 @@
             this.tablePanel3.ResumeLayout(false);
             this.tablePanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_EmpCode.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_WorkState.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_WorkGroup.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_Job.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
@@ -488,14 +450,14 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private DevExpress.XtraEditors.LookUpEdit cbo_WorkState;
-        private DevExpress.XtraEditors.LookUpEdit cbo_WorkGroup;
-        private DevExpress.XtraEditors.LookUpEdit cbo_Job;
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.TextEdit txt_EmpCode;
         private DevExpress.XtraEditors.SimpleButton btn_Select;
+        private UserControl.Combo cbo_WorkState;
+        private UserControl.Combo cbo_WorkGroup;
+        private UserControl.Combo cbo_Job;
     }
 }

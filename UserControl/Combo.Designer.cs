@@ -28,47 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cbo_Job = new DevExpress.XtraEditors.LookUpEdit();
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_Job.Properties)).BeginInit();
+            this.cbo = new DevExpress.XtraEditors.LookUpEdit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo.Properties)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbo_Job
+            // cbo
             // 
-            this.cbo_Job.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo_Job.EditValue = "NAME";
-            this.cbo_Job.Location = new System.Drawing.Point(0, 0);
-            this.cbo_Job.Margin = new System.Windows.Forms.Padding(0);
-            this.cbo_Job.Name = "cbo_Job";
-            this.cbo_Job.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cbo_Job.Properties.Appearance.Options.UseForeColor = true;
-            this.cbo_Job.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.Transparent;
-            this.cbo_Job.Properties.AppearanceDropDown.Options.UseBackColor = true;
-            this.cbo_Job.Properties.AutoHeight = false;
-            this.cbo_Job.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.cbo_Job.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbo.EditValue = "NAME";
+            this.cbo.Location = new System.Drawing.Point(0, 0);
+            this.cbo.Margin = new System.Windows.Forms.Padding(0);
+            this.cbo.Name = "cbo";
+            this.cbo.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.cbo.Properties.Appearance.Options.UseForeColor = true;
+            this.cbo.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.Transparent;
+            this.cbo.Properties.AppearanceDropDown.Options.UseBackColor = true;
+            this.cbo.Properties.AutoHeight = false;
+            this.cbo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
+            this.cbo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo_Job.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            this.cbo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NAME", "NAME", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CODE", "CODE", 20, DevExpress.Utils.FormatType.None, "", false, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
-            this.cbo_Job.Properties.DisplayMember = "NAME";
-            this.cbo_Job.Properties.NullText = "";
-            this.cbo_Job.Size = new System.Drawing.Size(576, 417);
-            this.cbo_Job.TabIndex = 5;
+            this.cbo.Properties.DisplayMember = "NAME";
+            this.cbo.Properties.NullText = "";
+            this.cbo.Size = new System.Drawing.Size(576, 417);
+            this.cbo.TabIndex = 5;
             // 
             // Combo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cbo_Job);
+            this.Controls.Add(this.cbo);
             this.Name = "Combo";
             this.Size = new System.Drawing.Size(576, 417);
-            ((System.ComponentModel.ISupportInitialize)(this.cbo_Job.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cbo.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private DevExpress.XtraEditors.LookUpEdit cbo_Job;
+        public DevExpress.XtraEditors.LookUpEdit cbo;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using DevExpress.XtraEditors;
 using DevExpress.XtraGrid;
 using DevExpress.XtraReports.Design;
+using Smart_POS_X.UserControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -58,13 +59,13 @@ namespace Smart_POS_X.UI
 
             DBHelper DB = new DBHelper();
 
-            cbo_Job.Properties.DataSource = DB.Exec($"CODE_SELECT '직급','Y'");
-            cbo_WorkGroup.Properties.DataSource = DB.Exec($"CODE_SELECT '근무조','Y'");
-            cbo_WorkState.Properties.DataSource = DB.Exec($"CODE_SELECT '근무상태','Y'");
+            cbo_Job.cbo.Properties.DataSource = DB.Exec($"CODE_SELECT '직급','Y'");
+            cbo_WorkGroup.cbo.Properties.DataSource = DB.Exec($"CODE_SELECT '근무조','Y'");
+            cbo_WorkState.cbo.Properties.DataSource = DB.Exec($"CODE_SELECT '근무상태','Y'");
 
-            cbo_Job.Properties.DisplayMember = "NAME";
-            cbo_WorkGroup.Properties.DisplayMember = "NAME";
-            cbo_WorkState.Properties.DisplayMember = "NAME";
+            cbo_Job.cbo.Properties.DisplayMember = "NAME";
+            cbo_WorkGroup.cbo.Properties.DisplayMember = "NAME";
+            cbo_WorkState.cbo.Properties.DisplayMember = "NAME";
         }
     }
 }
