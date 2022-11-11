@@ -80,7 +80,9 @@ namespace Smart_POS_X.UI
                     
                 }            
             }
-             
+            else
+                MessageBox.Show("영수증 번호 오류입니다.");
+
         }
     }
 }

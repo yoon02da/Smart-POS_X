@@ -35,6 +35,21 @@ namespace Smart_POS_X.POP_UP
         private void ReceiptPrintPopUp_Load(object sender, EventArgs e)
         {
             lbl_SellingCode.Text = i;
+
+            DBHelper DB = new DBHelper();
+            DB.Exec($"ReceiptSelct_S03 '{lbl_SellingCode.Text}'");
+
+            if (DB.result == true)
+            {
+
+                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{lbl_SellingCode.Text}'");
+                DataTable DT2 = DB.Exec($"ReceiptSelct_S02 '{lbl_SellingCode.Text}'");
+
+                gridControl1.DataSource = DT1;
+                gridControl2.DataSource = DT2;
+            }
+            else
+                MessageBox.Show("영수증 번호 오류입니다.");
         }
     }
 }
