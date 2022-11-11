@@ -32,6 +32,14 @@ namespace Smart_POS_X
 
             sqlConnection = DBConn;
         }
+        public DBHelper()
+        {
+             
+        }
+        public void DBSend()
+        {
+            sqlConnection.Close();
+        }
         public bool DBCheckConnection() 
         {
             sqlConnection.Open();
@@ -52,14 +60,13 @@ namespace Smart_POS_X
         }
 
         public DataTable Exec(string SQL) {
-            sqlConnection.Open();
-
             SqlCommand CMD = new SqlCommand();
             CMD.Connection = sqlConnection;
             CMD.CommandText = $"EXEC {SQL}";
 
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
+
             sd.Fill(DS, "Table");
 
             if (DS.Tables.Count == 0) return null;
@@ -72,25 +79,25 @@ namespace Smart_POS_X
                 result = DT.Rows[0][0].ToString() == "1" ? true : false;
             }
 
-            sqlConnection.Close();
             return DT;
         }
 
         public DataTable SQL(string SQL)
         {
-            sqlConnection.Open();
-
             SqlCommand CMD = new SqlCommand();
             CMD.Connection = sqlConnection;
             CMD.CommandText = SQL;
 
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
+
+
             sd.Fill(DS, "Table");
+
+            if (DS.Tables.Count == 0) return null;
 
             DataTable DT = DS.Tables[0];
 
-            sqlConnection.Close();
             return DT;
         }
     }
