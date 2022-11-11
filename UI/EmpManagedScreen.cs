@@ -14,8 +14,10 @@ using System.Windows.Forms;
 
 namespace Smart_POS_X.UI
 {
+
     public partial class EmpManagedScreen : DevExpress.XtraEditors.XtraForm
     {
+        DBHelper DB = new DBHelper();
         public EmpManagedScreen()
         {
             InitializeComponent();
@@ -25,29 +27,21 @@ namespace Smart_POS_X.UI
 
         private void EmpManagedScreen_Load(object sender, EventArgs e)
         {
-            DBHelper DB = new DBHelper();
-            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
-
-            if (DB.result == true)
-            {
-
-                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
-
-                gridControl1.DataSource = DT1;
-            }
-
+            
         }
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            ((DataTable)gridControl1.DataSource).Clear();
-            DBHelper DB = new DBHelper();
-            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+            var azzz = ((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0];
+
+            var a =DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0]}'" +
+                $", '{((DataRowView)cbo_WorkGroup.cbo.EditValue).Row.ItemArray[0]}', '{((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]}'");
+            //((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]
 
             if (DB.result == true)
             {
 
-                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
 
                 gridControl1.DataSource = DT1;
             }

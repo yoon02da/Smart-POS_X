@@ -211,6 +211,7 @@
             // gridColumn1
             // 
             this.gridColumn1.Caption = "사원코드";
+            this.gridColumn1.FieldName = "EmployeeCode";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -218,6 +219,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "이름";
+            this.gridColumn2.FieldName = "EmployeeName";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -225,6 +227,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "직급";
+            this.gridColumn3.FieldName = "EmployeeJob";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -232,6 +235,7 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "근무조";
+            this.gridColumn9.FieldName = "WorkGroup";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 3;
@@ -239,6 +243,7 @@
             // gridColumn10
             // 
             this.gridColumn10.Caption = "근무상태";
+            this.gridColumn10.FieldName = "WorkStatus";
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 4;
@@ -246,6 +251,7 @@
             // gridColumn8
             // 
             this.gridColumn8.Caption = "나이";
+            this.gridColumn8.FieldName = "EmployeeAge";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 5;
@@ -253,6 +259,7 @@
             // gridColumn4
             // 
             this.gridColumn4.Caption = "주소";
+            this.gridColumn4.FieldName = "Address";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 6;
@@ -260,6 +267,7 @@
             // gridColumn7
             // 
             this.gridColumn7.Caption = "이메일";
+            this.gridColumn7.FieldName = "EmployeeEmail";
             this.gridColumn7.Name = "gridColumn7";
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 7;
@@ -267,6 +275,7 @@
             // gridColumn11
             // 
             this.gridColumn11.Caption = "비고";
+            this.gridColumn11.FieldName = "Comments";
             this.gridColumn11.Name = "gridColumn11";
             this.gridColumn11.Visible = true;
             this.gridColumn11.VisibleIndex = 8;
@@ -274,6 +283,7 @@
             // gridColumn5
             // 
             this.gridColumn5.Caption = "ID";
+            this.gridColumn5.FieldName = "UserID";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 9;
@@ -281,6 +291,7 @@
             // gridColumn6
             // 
             this.gridColumn6.Caption = "PW";
+            this.gridColumn6.FieldName = "UserPW";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 10;
