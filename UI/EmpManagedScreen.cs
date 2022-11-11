@@ -32,11 +32,9 @@ namespace Smart_POS_X.UI
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            var azzz = ((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0];
+            var z = cbo_Job.Code;
 
-            var a =DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0]}'" +
-                $", '{((DataRowView)cbo_WorkGroup.cbo.EditValue).Row.ItemArray[0]}', '{((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]}'");
-            //((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]
+            var a =DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
 
             if (DB.result == true)
             {
