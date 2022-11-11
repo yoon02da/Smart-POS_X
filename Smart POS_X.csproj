@@ -170,6 +170,12 @@
     <Compile Include="UI\SalesManagedScreen.Designer.cs">
       <DependentUpon>SalesManagedScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\Combo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\Combo.Designer.cs">
+      <DependentUpon>Combo.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Control\XtraUserControl1.resx">
       <DependentUpon>XtraUserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SalesManagedScreen.resx">
       <DependentUpon>SalesManagedScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\Combo.resx">
+      <DependentUpon>Combo.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">

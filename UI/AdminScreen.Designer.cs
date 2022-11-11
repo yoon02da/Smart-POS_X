@@ -257,6 +257,7 @@
             this.btnAco_Emp.Name = "btnAco_Emp";
             this.btnAco_Emp.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnAco_Emp.Text = "직원관리";
+            this.btnAco_Emp.Click += new System.EventHandler(this.btnAco_Emp_Click);
             // 
             // panelControl1
             // 

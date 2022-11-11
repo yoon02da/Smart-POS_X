@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid;
+using DevExpress.XtraReports.Design;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,7 +19,52 @@ namespace Smart_POS_X.UI
         {
             InitializeComponent();
 
+            Combo();
         }
 
+        private void EmpManagedScreen_Load(object sender, EventArgs e)
+        {
+            DBHelper DB = new DBHelper();
+            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+
+            if (DB.result == true)
+            {
+
+                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+
+                gridControl1.DataSource = DT1;
+            }
+
+        }
+
+        private void btn_Select_Click(object sender, EventArgs e)
+        {
+            ((DataTable)gridControl1.DataSource).Clear();
+            DBHelper DB = new DBHelper();
+            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+
+            if (DB.result == true)
+            {
+
+                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', {cbo_WorkGroup.Text}, {cbo_WorkState.Text}");
+
+                gridControl1.DataSource = DT1;
+            }
+
+        }
+
+        private void Combo()
+        {
+
+            DBHelper DB = new DBHelper();
+
+            cbo_Job.Properties.DataSource = DB.Exec($"CODE_SELECT '직급','Y'");
+            cbo_WorkGroup.Properties.DataSource = DB.Exec($"CODE_SELECT '근무조','Y'");
+            cbo_WorkState.Properties.DataSource = DB.Exec($"CODE_SELECT '근무상태','Y'");
+
+            cbo_Job.Properties.DisplayMember = "NAME";
+            cbo_WorkGroup.Properties.DisplayMember = "NAME";
+            cbo_WorkState.Properties.DisplayMember = "NAME";
+        }
     }
 }

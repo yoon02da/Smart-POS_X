@@ -30,5 +30,15 @@ namespace Smart_POS_X.UI
         {
             this.Close();
         }
+
+        private void btnAco_Emp_Click(object sender, EventArgs e)
+        {
+            EmpManagedScreen empManagedScreen = new EmpManagedScreen();
+            
+            if(empManagedScreen.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }

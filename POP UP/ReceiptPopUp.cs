@@ -19,6 +19,8 @@ namespace Smart_POS_X.UI
         {
             InitializeComponent();
 
+
+
         }
 
         private void btn_Enter_Click(object sender, EventArgs e)
