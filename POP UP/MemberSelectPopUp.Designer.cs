@@ -82,28 +82,28 @@
             this.tablePanel1.Location = new System.Drawing.Point(0, 0);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 30F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 30F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 50F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 40F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 40F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F)});
-            this.tablePanel1.Size = new System.Drawing.Size(432, 663);
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
+            this.tablePanel1.Size = new System.Drawing.Size(631, 786);
             this.tablePanel1.TabIndex = 12;
             // 
             // gridControl2
             // 
             this.tablePanel1.SetColumn(this.gridControl2, 1);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.Location = new System.Drawing.Point(25, 269);
+            this.gridControl2.Location = new System.Drawing.Point(35, 319);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Name = "gridControl2";
             this.tablePanel1.SetRow(this.gridControl2, 6);
-            this.gridControl2.Size = new System.Drawing.Size(383, 311);
+            this.gridControl2.Size = new System.Drawing.Size(562, 404);
             this.gridControl2.TabIndex = 14;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -155,11 +155,11 @@
             // 
             this.tablePanel1.SetColumn(this.gridControl1, 1);
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(25, 133);
+            this.gridControl1.Location = new System.Drawing.Point(35, 143);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.tablePanel1.SetRow(this.gridControl1, 5);
-            this.gridControl1.Size = new System.Drawing.Size(383, 130);
+            this.gridControl1.Size = new System.Drawing.Size(562, 170);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -217,23 +217,25 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
             this.tablePanel4.Controls.Add(this.textEdit1);
             this.tablePanel4.Controls.Add(this.labelControl2);
-            this.tablePanel4.Location = new System.Drawing.Point(25, 63);
+            this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel4.Location = new System.Drawing.Point(35, 53);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel1.SetRow(this.tablePanel4, 3);
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel4.Size = new System.Drawing.Size(383, 24);
+            this.tablePanel4.Size = new System.Drawing.Size(562, 44);
             this.tablePanel4.TabIndex = 12;
             // 
             // textEdit1
             // 
             this.tablePanel4.SetColumn(this.textEdit1, 1);
             this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(115, 0);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(0);
+            this.textEdit1.Location = new System.Drawing.Point(169, 5);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AutoHeight = false;
             this.tablePanel4.SetRow(this.textEdit1, 0);
-            this.textEdit1.Size = new System.Drawing.Size(268, 22);
+            this.textEdit1.Size = new System.Drawing.Size(393, 34);
             this.textEdit1.TabIndex = 1;
             // 
             // labelControl2
@@ -244,7 +246,7 @@
             this.labelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel4.SetRow(this.labelControl2, 0);
-            this.labelControl2.Size = new System.Drawing.Size(115, 24);
+            this.labelControl2.Size = new System.Drawing.Size(169, 44);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "전화번호 뒷자리";
             // 
@@ -254,10 +256,10 @@
             this.labelControl1.Appearance.Options.UseBackColor = true;
             this.tablePanel1.SetColumn(this.labelControl1, 1);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(25, 23);
+            this.labelControl1.Location = new System.Drawing.Point(35, 13);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 1);
-            this.labelControl1.Size = new System.Drawing.Size(383, 24);
+            this.labelControl1.Size = new System.Drawing.Size(562, 24);
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "멤버십 조회 창";
             // 
@@ -271,22 +273,23 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F)});
             this.tablePanel3.Controls.Add(this.btn_Print);
             this.tablePanel3.Controls.Add(this.btn_ReceiptCancel);
-            this.tablePanel3.Location = new System.Drawing.Point(25, 606);
+            this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel3.Location = new System.Drawing.Point(35, 739);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel1.SetRow(this.tablePanel3, 8);
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel3.Size = new System.Drawing.Size(383, 34);
+            this.tablePanel3.Size = new System.Drawing.Size(562, 34);
             this.tablePanel3.TabIndex = 10;
             // 
             // btn_Print
             // 
             this.tablePanel3.SetColumn(this.btn_Print, 3);
             this.btn_Print.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Print.Location = new System.Drawing.Point(290, 3);
+            this.btn_Print.Location = new System.Drawing.Point(425, 3);
             this.btn_Print.Name = "btn_Print";
             this.tablePanel3.SetRow(this.btn_Print, 0);
-            this.btn_Print.Size = new System.Drawing.Size(90, 28);
+            this.btn_Print.Size = new System.Drawing.Size(135, 28);
             this.btn_Print.TabIndex = 6;
             this.btn_Print.Text = "나가기";
             // 
@@ -297,7 +300,7 @@
             this.btn_ReceiptCancel.Location = new System.Drawing.Point(3, 3);
             this.btn_ReceiptCancel.Name = "btn_ReceiptCancel";
             this.tablePanel3.SetRow(this.btn_ReceiptCancel, 0);
-            this.btn_ReceiptCancel.Size = new System.Drawing.Size(128, 28);
+            this.btn_ReceiptCancel.Size = new System.Drawing.Size(191, 28);
             this.btn_ReceiptCancel.TabIndex = 8;
             this.btn_ReceiptCancel.Text = "멤버십 가입";
             // 
@@ -311,23 +314,24 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
             this.tablePanel2.Controls.Add(this.btn_Enter);
             this.tablePanel2.Controls.Add(this.btn_ReInput);
-            this.tablePanel2.Location = new System.Drawing.Point(22, 93);
+            this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel2.Location = new System.Drawing.Point(32, 100);
             this.tablePanel2.Margin = new System.Windows.Forms.Padding(0);
             this.tablePanel2.Name = "tablePanel2";
             this.tablePanel1.SetRow(this.tablePanel2, 4);
             this.tablePanel2.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel2.Size = new System.Drawing.Size(389, 34);
+            this.tablePanel2.Size = new System.Drawing.Size(568, 40);
             this.tablePanel2.TabIndex = 9;
             // 
             // btn_Enter
             // 
             this.tablePanel2.SetColumn(this.btn_Enter, 3);
             this.btn_Enter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Enter.Location = new System.Drawing.Point(295, 3);
+            this.btn_Enter.Location = new System.Drawing.Point(429, 3);
             this.btn_Enter.Name = "btn_Enter";
             this.tablePanel2.SetRow(this.btn_Enter, 0);
-            this.btn_Enter.Size = new System.Drawing.Size(91, 28);
+            this.btn_Enter.Size = new System.Drawing.Size(136, 34);
             this.btn_Enter.TabIndex = 4;
             this.btn_Enter.Text = "확인";
             // 
@@ -335,10 +339,10 @@
             // 
             this.tablePanel2.SetColumn(this.btn_ReInput, 2);
             this.btn_ReInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ReInput.Location = new System.Drawing.Point(198, 3);
+            this.btn_ReInput.Location = new System.Drawing.Point(287, 3);
             this.btn_ReInput.Name = "btn_ReInput";
             this.tablePanel2.SetRow(this.btn_ReInput, 0);
-            this.btn_ReInput.Size = new System.Drawing.Size(91, 28);
+            this.btn_ReInput.Size = new System.Drawing.Size(136, 34);
             this.btn_ReInput.TabIndex = 3;
             this.btn_ReInput.Text = "재입력";
             // 
@@ -346,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 663);
+            this.ClientSize = new System.Drawing.Size(631, 786);
             this.Controls.Add(this.tablePanel1);
             this.Name = "MemberSelectPopUp";
             this.Text = "멤버십 조회";

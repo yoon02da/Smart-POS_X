@@ -297,7 +297,7 @@
             this.Controls.Add(this.tablePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "ReceiptPrintPopUp";
-            this.Text = "ReceiptPrintPopUp";
+            this.Text = "영수증 출력";
             this.Load += new System.EventHandler(this.ReceiptPrintPopUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);

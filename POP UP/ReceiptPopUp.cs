@@ -24,10 +24,10 @@ namespace Smart_POS_X.UI
         {
             InitializeComponent();
 
-               dataTable =  DB.SQL("SELECT MAX(SellingCode) as MenuName " +
-               ",sum(SellingPrice * SellingCount)  as SellingPrice ,count(*) as SellingCount " +
-               "FROM POSSellRecord GROUP BY SellingCode");
-
+            dataTable = DB.SQL($"with AA as (SELECT MAX(SellingCode) as MenuName, " +
+                $"sum(SellingPrice) as SellingPrice, max(SellingCount) as SellingCount, " +
+                $"min(CreateTime) as CreateTime FROM POSSellRecord GROUP BY SellingCode, " +
+                $"CONVERT(char(10), CreateTime, 23)) select* from AA order by AA.CreateTime");
 
             gridControl1.DataSource = dataTable;
         }

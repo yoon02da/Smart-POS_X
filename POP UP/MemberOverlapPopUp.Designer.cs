@@ -59,19 +59,19 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 5F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 26F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 10F)});
-            this.tablePanel1.Size = new System.Drawing.Size(432, 252);
+            this.tablePanel1.Size = new System.Drawing.Size(520, 335);
             this.tablePanel1.TabIndex = 0;
             // 
             // gridControl1
             // 
             this.tablePanel1.SetColumn(this.gridControl1, 1);
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(15, 38);
+            this.gridControl1.Location = new System.Drawing.Point(18, 47);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(0);
             this.gridControl1.Name = "gridControl1";
             this.tablePanel1.SetRow(this.gridControl1, 3);
-            this.gridControl1.Size = new System.Drawing.Size(403, 204);
+            this.gridControl1.Size = new System.Drawing.Size(485, 278);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -112,11 +112,11 @@
             // 
             this.tablePanel1.SetColumn(this.labelControl1, 1);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(15, 10);
+            this.labelControl1.Location = new System.Drawing.Point(18, 10);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 1);
-            this.labelControl1.Size = new System.Drawing.Size(403, 23);
+            this.labelControl1.Size = new System.Drawing.Size(485, 32);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "고객을 선택해주세요.";
             // 
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(432, 252);
+            this.ClientSize = new System.Drawing.Size(520, 335);
             this.Controls.Add(this.tablePanel1);
             this.Name = "MemberOverlapPopUp";
             this.Text = "중복된 고객 성함";
