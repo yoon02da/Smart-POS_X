@@ -17,5 +17,6 @@ namespace Smart_POS_X.POP_UP
         {
             InitializeComponent();
         }
+
     }
 }

@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -45,11 +48,11 @@
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_Enter = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ReInput = new DevExpress.XtraEditors.SimpleButton();
-            this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
+            this.tablePanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
@@ -59,9 +62,6 @@
             this.tablePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
-            this.tablePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tablePanel1
@@ -92,6 +92,46 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F)});
             this.tablePanel1.Size = new System.Drawing.Size(432, 348);
             this.tablePanel1.TabIndex = 13;
+            // 
+            // tablePanel5
+            // 
+            this.tablePanel1.SetColumn(this.tablePanel5, 1);
+            this.tablePanel5.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
+            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
+            this.tablePanel5.Controls.Add(this.textEdit2);
+            this.tablePanel5.Controls.Add(this.labelControl3);
+            this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel5.Location = new System.Drawing.Point(25, 93);
+            this.tablePanel5.Name = "tablePanel5";
+            this.tablePanel1.SetRow(this.tablePanel5, 4);
+            this.tablePanel5.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
+            this.tablePanel5.Size = new System.Drawing.Size(383, 24);
+            this.tablePanel5.TabIndex = 14;
+            // 
+            // textEdit2
+            // 
+            this.tablePanel5.SetColumn(this.textEdit2, 1);
+            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit2.Location = new System.Drawing.Point(115, 0);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(0);
+            this.textEdit2.Name = "textEdit2";
+            this.tablePanel5.SetRow(this.textEdit2, 0);
+            this.textEdit2.Size = new System.Drawing.Size(268, 22);
+            this.textEdit2.TabIndex = 1;
+            // 
+            // labelControl3
+            // 
+            this.tablePanel5.SetColumn(this.labelControl3, 0);
+            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl3.Location = new System.Drawing.Point(0, 0);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(0);
+            this.labelControl3.Name = "labelControl3";
+            this.tablePanel5.SetRow(this.labelControl3, 0);
+            this.labelControl3.Size = new System.Drawing.Size(115, 24);
+            this.labelControl3.TabIndex = 0;
+            this.labelControl3.Text = "전화번호";
             // 
             // gridControl1
             // 
@@ -284,46 +324,6 @@
             this.btn_ReInput.TabIndex = 3;
             this.btn_ReInput.Text = "재입력";
             // 
-            // tablePanel5
-            // 
-            this.tablePanel1.SetColumn(this.tablePanel5, 1);
-            this.tablePanel5.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
-            new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
-            this.tablePanel5.Controls.Add(this.textEdit2);
-            this.tablePanel5.Controls.Add(this.labelControl3);
-            this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel5.Location = new System.Drawing.Point(25, 93);
-            this.tablePanel5.Name = "tablePanel5";
-            this.tablePanel1.SetRow(this.tablePanel5, 4);
-            this.tablePanel5.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel5.Size = new System.Drawing.Size(383, 24);
-            this.tablePanel5.TabIndex = 14;
-            // 
-            // textEdit2
-            // 
-            this.tablePanel5.SetColumn(this.textEdit2, 1);
-            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit2.Location = new System.Drawing.Point(115, 0);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(0);
-            this.textEdit2.Name = "textEdit2";
-            this.tablePanel5.SetRow(this.textEdit2, 0);
-            this.textEdit2.Size = new System.Drawing.Size(268, 22);
-            this.textEdit2.TabIndex = 1;
-            // 
-            // labelControl3
-            // 
-            this.tablePanel5.SetColumn(this.labelControl3, 0);
-            this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(0, 0);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(0);
-            this.labelControl3.Name = "labelControl3";
-            this.tablePanel5.SetRow(this.labelControl3, 0);
-            this.labelControl3.Size = new System.Drawing.Size(115, 24);
-            this.labelControl3.TabIndex = 0;
-            this.labelControl3.Text = "전화번호";
-            // 
             // MemberJoinPopUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -335,6 +335,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             this.tablePanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
+            this.tablePanel5.ResumeLayout(false);
+            this.tablePanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
@@ -345,10 +349,6 @@
             this.tablePanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
             this.tablePanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
-            this.tablePanel5.ResumeLayout(false);
-            this.tablePanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
