@@ -18,6 +18,12 @@ namespace Smart_POS_X.POP_UP
 
         DataTable dataTable = new DataTable();
 
+        public string MemberName { get; set; }
+        public string MemberPhoneNumber { get; set; }
+        public string PresentPoint { get; set;}
+        public string CumulativePoint { get; set; }
+        public DataTable DataTable { get; set;
+        }
         public MemberJoinPopUp()
         {
             InitializeComponent();
@@ -25,6 +31,32 @@ namespace Smart_POS_X.POP_UP
 
         private void btn_Join_Click(object sender, EventArgs e)
         {
+            DataTable = DB.Exec($"MemberJoin_I01 '{txt_MemName.Text}','{txt_PhoneNum.Text}'");
+
+            if (DB.result)
+            {
+                gridControl1.DataSource = DataTable;
+            }
+            else
+            {
+
+                if (DataTable.Rows[0][0].ToString() == "ER")
+                    MessageBox.Show("중복고객이 있습니다.");
+                DataTable.Clear();
+                gridControl1.DataSource = DataTable;
+            } 
+             
+        }
+           
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btn_ReInput_Click(object sender, EventArgs e)
+        {
+            txt_MemName.Text = string.Empty;
+            txt_PhoneNum.Text = string.Empty;
 
         }
     }

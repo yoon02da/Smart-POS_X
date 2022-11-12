@@ -30,7 +30,7 @@
         {
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.tablePanel5 = new DevExpress.Utils.Layout.TablePanel();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_PhoneNum = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -39,24 +39,24 @@
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tablePanel4 = new DevExpress.Utils.Layout.TablePanel();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.txt_MemName = new DevExpress.XtraEditors.TextEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Join = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
             this.btn_ReInput = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Join = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).BeginInit();
             this.tablePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PhoneNum.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
             this.tablePanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MemName.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
@@ -98,7 +98,7 @@
             this.tablePanel5.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
-            this.tablePanel5.Controls.Add(this.textEdit2);
+            this.tablePanel5.Controls.Add(this.txt_PhoneNum);
             this.tablePanel5.Controls.Add(this.labelControl3);
             this.tablePanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel5.Location = new System.Drawing.Point(27, 93);
@@ -109,17 +109,17 @@
             this.tablePanel5.Size = new System.Drawing.Size(422, 34);
             this.tablePanel5.TabIndex = 14;
             // 
-            // textEdit2
+            // txt_PhoneNum
             // 
-            this.tablePanel5.SetColumn(this.textEdit2, 1);
-            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit2.Location = new System.Drawing.Point(127, 5);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.AutoHeight = false;
-            this.tablePanel5.SetRow(this.textEdit2, 0);
-            this.textEdit2.Size = new System.Drawing.Size(295, 24);
-            this.textEdit2.TabIndex = 1;
+            this.tablePanel5.SetColumn(this.txt_PhoneNum, 1);
+            this.txt_PhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_PhoneNum.Location = new System.Drawing.Point(127, 5);
+            this.txt_PhoneNum.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.txt_PhoneNum.Name = "txt_PhoneNum";
+            this.txt_PhoneNum.Properties.AutoHeight = false;
+            this.tablePanel5.SetRow(this.txt_PhoneNum, 0);
+            this.txt_PhoneNum.Size = new System.Drawing.Size(295, 24);
+            this.txt_PhoneNum.TabIndex = 1;
             // 
             // labelControl3
             // 
@@ -166,6 +166,7 @@
             this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn1.Caption = "고객명";
+            this.gridColumn1.FieldName = "MemberName";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
@@ -173,6 +174,7 @@
             // gridColumn2
             // 
             this.gridColumn2.Caption = "전화번호";
+            this.gridColumn2.FieldName = "PhoneNumber";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
@@ -180,6 +182,7 @@
             // gridColumn3
             // 
             this.gridColumn3.Caption = "보유 포인트";
+            this.gridColumn3.FieldName = "PresentPoint";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
@@ -187,6 +190,7 @@
             // gridColumn9
             // 
             this.gridColumn9.Caption = "누적 포인트";
+            this.gridColumn9.FieldName = "CumulativePoint";
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
             this.gridColumn9.VisibleIndex = 3;
@@ -197,7 +201,7 @@
             this.tablePanel4.Columns.AddRange(new DevExpress.Utils.Layout.TablePanelColumn[] {
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
-            this.tablePanel4.Controls.Add(this.textEdit1);
+            this.tablePanel4.Controls.Add(this.txt_MemName);
             this.tablePanel4.Controls.Add(this.labelControl2);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel4.Location = new System.Drawing.Point(27, 53);
@@ -208,17 +212,17 @@
             this.tablePanel4.Size = new System.Drawing.Size(422, 34);
             this.tablePanel4.TabIndex = 12;
             // 
-            // textEdit1
+            // txt_MemName
             // 
-            this.tablePanel4.SetColumn(this.textEdit1, 1);
-            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit1.Location = new System.Drawing.Point(127, 5);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.AutoHeight = false;
-            this.tablePanel4.SetRow(this.textEdit1, 0);
-            this.textEdit1.Size = new System.Drawing.Size(295, 24);
-            this.textEdit1.TabIndex = 1;
+            this.tablePanel4.SetColumn(this.txt_MemName, 1);
+            this.txt_MemName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_MemName.Location = new System.Drawing.Point(127, 5);
+            this.txt_MemName.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.txt_MemName.Name = "txt_MemName";
+            this.txt_MemName.Properties.AutoHeight = false;
+            this.tablePanel4.SetRow(this.txt_MemName, 0);
+            this.txt_MemName.Size = new System.Drawing.Size(295, 24);
+            this.txt_MemName.TabIndex = 1;
             // 
             // labelControl2
             // 
@@ -273,18 +277,7 @@
             this.btn_Cancel.Size = new System.Drawing.Size(100, 28);
             this.btn_Cancel.TabIndex = 6;
             this.btn_Cancel.Text = "나가기";
-            // 
-            // btn_Join
-            // 
-            this.tablePanel2.SetColumn(this.btn_Join, 3);
-            this.btn_Join.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Join.Location = new System.Drawing.Point(324, 3);
-            this.btn_Join.Name = "btn_Join";
-            this.tablePanel2.SetRow(this.btn_Join, 0);
-            this.btn_Join.Size = new System.Drawing.Size(101, 34);
-            this.btn_Join.TabIndex = 8;
-            this.btn_Join.Text = "가입";
-            this.btn_Join.Click += new System.EventHandler(this.btn_Join_Click);
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // tablePanel2
             // 
@@ -316,6 +309,19 @@
             this.btn_ReInput.Size = new System.Drawing.Size(101, 34);
             this.btn_ReInput.TabIndex = 3;
             this.btn_ReInput.Text = "재입력";
+            this.btn_ReInput.Click += new System.EventHandler(this.btn_ReInput_Click);
+            // 
+            // btn_Join
+            // 
+            this.tablePanel2.SetColumn(this.btn_Join, 3);
+            this.btn_Join.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Join.Location = new System.Drawing.Point(324, 3);
+            this.btn_Join.Name = "btn_Join";
+            this.tablePanel2.SetRow(this.btn_Join, 0);
+            this.btn_Join.Size = new System.Drawing.Size(101, 34);
+            this.btn_Join.TabIndex = 8;
+            this.btn_Join.Text = "가입";
+            this.btn_Join.Click += new System.EventHandler(this.btn_Join_Click);
             // 
             // MemberJoinPopUp
             // 
@@ -331,13 +337,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel5)).EndInit();
             this.tablePanel5.ResumeLayout(false);
             this.tablePanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_PhoneNum.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).EndInit();
             this.tablePanel4.ResumeLayout(false);
             this.tablePanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txt_MemName.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).EndInit();
@@ -356,7 +362,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.Utils.Layout.TablePanel tablePanel4;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit txt_MemName;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
@@ -365,7 +371,7 @@
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
         private DevExpress.XtraEditors.SimpleButton btn_ReInput;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit txt_PhoneNum;
         private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

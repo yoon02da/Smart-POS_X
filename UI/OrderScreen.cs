@@ -19,6 +19,7 @@ using DevExpress.XtraPrinting;
 using static Smart_POS_X.Enum;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using DevExpress.BarCodes;
+using Smart_POS_X.POP_UP;
 
 namespace Smart_POS_X.UI
 {
@@ -288,6 +289,16 @@ namespace Smart_POS_X.UI
 
         private void pictureEdit1_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btn_Pay_Click(object sender, EventArgs e)
+        {
+            MemberSelectPopUp memberSelect = new MemberSelectPopUp();
+
+            if (memberSelect.ShowDialog() == DialogResult.OK)
+            {
+
+            }
         }
     }
 }

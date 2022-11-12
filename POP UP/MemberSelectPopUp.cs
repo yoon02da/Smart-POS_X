@@ -17,5 +17,15 @@ namespace Smart_POS_X.POP_UP
         {
             InitializeComponent();
         }
+
+        private void btn_MemJoin_Click(object sender, EventArgs e)
+        {
+            MemberJoinPopUp joinPopUp = new MemberJoinPopUp();
+
+            if (joinPopUp.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
     }
 }
