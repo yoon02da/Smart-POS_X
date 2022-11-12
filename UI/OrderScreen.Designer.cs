@@ -65,7 +65,6 @@
             this.btn_SalesSelect = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Reset = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ObjectMinus = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_ObjectPlus = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Plus = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Minus = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Pay = new DevExpress.XtraEditors.SimpleButton();
@@ -103,6 +102,7 @@
             this.Menu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Price = new DevExpress.XtraGrid.Columns.GridColumn();
             this.QTY = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel2)).BeginInit();
             this.tablePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel4)).BeginInit();
@@ -122,6 +122,7 @@
             this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tileGroup1
@@ -585,11 +586,11 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F)});
+            this.tablePanel7.Controls.Add(this.pictureEdit1);
             this.tablePanel7.Controls.Add(this.btn_POS_End);
             this.tablePanel7.Controls.Add(this.btn_SalesSelect);
             this.tablePanel7.Controls.Add(this.btn_Reset);
             this.tablePanel7.Controls.Add(this.btn_ObjectMinus);
-            this.tablePanel7.Controls.Add(this.btn_ObjectPlus);
             this.tablePanel7.Controls.Add(this.btn_Plus);
             this.tablePanel7.Controls.Add(this.btn_Minus);
             this.tablePanel7.Controls.Add(this.btn_Pay);
@@ -663,19 +664,6 @@
             this.btn_ObjectMinus.TabIndex = 31;
             this.btn_ObjectMinus.Text = "상품삭제";
             this.btn_ObjectMinus.Click += new System.EventHandler(this.btn_ObjectMinus_Click);
-            // 
-            // btn_ObjectPlus
-            // 
-            this.btn_ObjectPlus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_ObjectPlus.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_ObjectPlus, 0);
-            this.btn_ObjectPlus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ObjectPlus.Location = new System.Drawing.Point(9, 140);
-            this.btn_ObjectPlus.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
-            this.btn_ObjectPlus.Name = "btn_ObjectPlus";
-            this.tablePanel7.SetRow(this.btn_ObjectPlus, 1);
-            this.btn_ObjectPlus.Size = new System.Drawing.Size(172, 106);
-            this.btn_ObjectPlus.TabIndex = 30;
             // 
             // btn_Plus
             // 
@@ -1213,6 +1201,19 @@
             this.QTY.VisibleIndex = 2;
             this.QTY.Width = 150;
             // 
+            // pictureEdit1
+            // 
+            this.tablePanel7.SetColumn(this.pictureEdit1, 0);
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureEdit1.Location = new System.Drawing.Point(3, 132);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.tablePanel7.SetRow(this.pictureEdit1, 1);
+            this.pictureEdit1.Size = new System.Drawing.Size(184, 122);
+            this.pictureEdit1.TabIndex = 35;
+            this.pictureEdit1.EditValueChanged += new System.EventHandler(this.pictureEdit1_EditValueChanged);
+            this.pictureEdit1.Click += new System.EventHandler(this.pictureEdit1_Click);
+            // 
             // OrderScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -1243,6 +1244,7 @@
             this.tablePanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1265,7 +1267,6 @@
         private DevExpress.XtraEditors.SimpleButton btn_SalesSelect;
         private DevExpress.XtraEditors.SimpleButton btn_Reset;
         private DevExpress.XtraEditors.SimpleButton btn_ObjectMinus;
-        private DevExpress.XtraEditors.SimpleButton btn_ObjectPlus;
         private DevExpress.XtraEditors.SimpleButton btn_Plus;
         private DevExpress.XtraEditors.SimpleButton btn_Minus;
         private DevExpress.XtraEditors.SimpleButton btn_Pay;
@@ -1323,5 +1324,6 @@
         private DevExpress.XtraEditors.TextEdit textEdit4;
         private DevExpress.XtraEditors.TextEdit textEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }

@@ -26,12 +26,6 @@ namespace Smart_POS_X
             dbHelper.ID = "sa";
             dbHelper.PWD = "tmakxmvhtm";
             dbHelper.DBStart(); 
-            /*
-             예제
-            string a = "Y";
-            var DT1 = dbHelper.Exec($"CODE_Select '카테고리','{a}'"); //테스트
-            var DT2 = dbHelper.SQL("SELECT * FROM CODE"); //테스트
-            */
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

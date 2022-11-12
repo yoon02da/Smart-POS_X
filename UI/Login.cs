@@ -1,5 +1,6 @@
 ﻿using DevExpress.XtraCharts.Native;
 using DevExpress.XtraEditors;
+using DevExpress.XtraScheduler.Services.Implementation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,23 +37,18 @@ namespace Smart_POS_X.UI
                 return;
             }
 
+            this.Visible = false;
             OrderScreen order = new OrderScreen();
-            if (order.ShowDialog() == DialogResult.OK)
-            {
-               
-
-               // if (DT.Rows[0])
-            }
+            order.ShowDialog();
+            this.Visible = true;
+            
             DB.DBSend();
         }
 
-        private void btn_Cancel_Click(object sender, EventArgs e)
-            =>this.Close();
-        
+        private void btn_Cancel_Click(object sender, EventArgs e) =>this.Close();
 
         private void btn_Admin_Click(object sender, EventArgs e)
         {
-
             DBHelper DB = new DBHelper();
             DB.Exec($"Login_LoginUser '{txt_ID.Text}' ,'{txt_Password.Text}'");
 

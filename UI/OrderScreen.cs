@@ -3,6 +3,7 @@ using DevExpress.Utils.Extensions;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraPrinting.BarCode;
 using DevExpress.XtraPrinting.Export;
 using System;
 using System.Collections.Generic;
@@ -14,8 +15,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.XtraPrinting;
 using static Smart_POS_X.Enum;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using DevExpress.BarCodes;
 
 namespace Smart_POS_X.UI
 {
@@ -273,6 +276,32 @@ namespace Smart_POS_X.UI
             MenuTable.AcceptChanges();
             if (MenuTable.Rows.Count == 0) return;
             selectedrow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
+        }
+
+        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void pictureEdit1_Click(object sender, EventArgs e)
+        {
+            this.pictureEdit1.Image = null;
+
+            BarCode barCode = new BarCode();
+            barCode.Symbology = Symbology.QRCode;
+            barCode.CodeText = "https://www.devexpress.com/";
+            barCode.BackColor = Color.White;
+            barCode.ForeColor = Color.Black;
+            barCode.RotationAngle = 0;
+            barCode.CodeBinaryData = Encoding.Default.GetBytes(barCode.CodeText);
+            barCode.Options.QRCode.CompactionMode = DevExpress.BarCodes.QRCodeCompactionMode.Byte;
+            barCode.Options.QRCode.ErrorLevel = QRCodeErrorLevel.Q;
+            barCode.Options.QRCode.ShowCodeText = false;
+            barCode.DpiX = 72;
+            barCode.DpiY = 72;
+            barCode.Module = 2f;
+
+            this.pictureEdit1.Image = barCode.BarCodeImage;
+
         }
     }
 }
