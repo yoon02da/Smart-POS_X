@@ -32,16 +32,14 @@ namespace Smart_POS_X.UI
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            var z = cbo_Job.Code;
-
-            var a =DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
+            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
 
             if (DB.result == true)
             {
 
-                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
+                //DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
 
-                gridControl1.DataSource = DT1;
+                //gridControl1.DataSource = DT1;
             }
 
         }

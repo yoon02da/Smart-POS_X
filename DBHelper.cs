@@ -50,7 +50,16 @@ namespace Smart_POS_X
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
 
-            sd.Fill(DS, "Table");
+            try
+            {
+                sd.Fill(DS, "Table");
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show($"{ex}");
+                result = false;
+                return null;
+            }
 
             if (DS.Tables.Count == 0)
             {
@@ -79,7 +88,16 @@ namespace Smart_POS_X
             SqlDataAdapter sd = new SqlDataAdapter(CMD);
             DataSet DS = new DataSet();
 
-            sd.Fill(DS, "Table");
+            try
+            {
+                sd.Fill(DS, "Table");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{ex}");
+                result = false;
+                return null;
+            }
 
             if (DS.Tables.Count == 0)
             {
@@ -117,11 +135,11 @@ namespace Smart_POS_X
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 tran.Rollback(); // 에러발생시rollback
                 return false;
             }
         }
-
         public bool DBCheckConnection()
         {
             sqlConnection.Open();

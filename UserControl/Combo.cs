@@ -43,7 +43,7 @@ namespace Smart_POS_X.UserControl
 
         private void lookUpEdit1_Properties_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
-            Code = this.cbo.EditValue.ToString() ?? "-999";
+            Code = this.cbo.EditValue as string;
         }
     }
 }

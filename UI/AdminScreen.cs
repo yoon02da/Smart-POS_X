@@ -40,5 +40,10 @@ namespace Smart_POS_X.UI
 
             }
         }
+
+        private void btnAco_Menu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

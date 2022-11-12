@@ -1,4 +1,6 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraPrinting.Export;
 using Smart_POS_X.POP_UP;
 using System;
 using System.Collections.Generic;
@@ -15,14 +17,19 @@ namespace Smart_POS_X.UI
     public partial class ReceiptPopUp : DevExpress.XtraEditors.XtraForm
     {
         DBHelper DB = new DBHelper();
+        DataTable DT1 = new DataTable();   
+        
+        DataTable dataTable = new DataTable();   
         public ReceiptPopUp()
         {
             InitializeComponent();
 
-           gridControl1.DataSource =  DB.SQL("SELECT MAX(SellingCode) as MenuName " +
+               dataTable =  DB.SQL("SELECT MAX(SellingCode) as MenuName " +
                ",sum(SellingPrice * SellingCount)  as SellingPrice ,count(*) as SellingCount " +
                "FROM POSSellRecord GROUP BY SellingCode");
 
+
+            gridControl1.DataSource = dataTable;
         }
 
         private void btn_Enter_Click(object sender, EventArgs e)
@@ -32,7 +39,7 @@ namespace Smart_POS_X.UI
             if (DB.result == true)
             {
 
-                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_SellingCode.Text}'");
+                DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_SellingCode.Text}'");
                 DataTable DT2 = DB.Exec($"ReceiptSelct_S02 '{txt_SellingCode.Text}'");
 
                 gridControl1.DataSource = DT1;
@@ -60,7 +67,11 @@ namespace Smart_POS_X.UI
         {
             if (MessageBox.Show("환불을 진행하시겠습니까?", "환불알림", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-               //환불 로직
+                //환불 로직
+                DB.Exec($"refund_CUD '{selectrow.Field<string>("d")}'");
+
+
+
             }
             else
             {
@@ -85,6 +96,13 @@ namespace Smart_POS_X.UI
             else
                 MessageBox.Show("영수증 번호 오류입니다.");
 
+        }
+        DataRow selectrow;
+        private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            dataTable.AcceptChanges();
+            if (dataTable.Rows.Count == 0) return;
+            selectrow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
         }
     }
 }

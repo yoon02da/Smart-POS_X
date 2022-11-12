@@ -21,7 +21,7 @@ namespace Smart_POS_X
         static void Main()
         {
             DBHelper dbHelper = new DBHelper();
-            DBHelper.IP = "172.20.10.7,1433";//"172.20.10.7,1433";  127.0.0.1
+            DBHelper.IP = "127.0.0.1";//"172.20.10.7,1433";  127.0.0.1 "172.20.10.7,1433";
             dbHelper.DB = "Master";
             dbHelper.ID = "sa";
             dbHelper.PWD = "tmakxmvhtm";

@@ -21,7 +21,6 @@ namespace Smart_POS_X
             Dessert,
             ETC
         }
-
         public enum SelectSwitch
         {
             Payment,

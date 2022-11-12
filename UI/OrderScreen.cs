@@ -11,6 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Smart_POS_X.Enum;
@@ -89,7 +90,7 @@ namespace Smart_POS_X.UI
 
         private void Menu_Click(object sender, EventArgs e)
         {
-            string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((System.Windows.Forms.Control)sender).AccessibilityObject).Name;
+            string MenuName = ((DevExpress.Accessibility.BaseAccessibleObject)((Control)sender).AccessibilityObject).Name;
             if (MenuName == string.Empty) return;
 
             DataTable DT = DB.Exec($"OrderScreen_S02 '{MenuName}'");
@@ -187,20 +188,19 @@ namespace Smart_POS_X.UI
             int? Sale = Int32.Parse(textEdit2.Text == String.Empty ? "0" : textEdit2.Text);
 
             int? Amount_remaining = 0;
-            Amount_remaining = All - (Payment + Sale + Sale);
+            Amount_remaining = All - (Payment + Sale);
 
             textEdit4.Text = Amount_remaining.ToString();
 
             return Amount_remaining;
         }
-
         private void PayInvoice()
-        { //결제가 완료되는 경우..
+        { //결제가 완료되는 경우.. 맴버쉽 완성시 추가..
             string SellingCode = DB.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit2.Text}','0'").Rows[0]["SEQ"].ToString();
 
             foreach (DataRow ROW in MenuTable.Rows)
-                DB.SQL($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ) " +
-                             $"VALUES ( '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' )");
+                DB.SQL($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ,CreateUser, CreateTime) " +
+                             $"VALUES ( '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' ,'POP',GETDATE() )");
         }
         private void Reset() {
             gridControl1.DataSource = null;
@@ -247,8 +247,6 @@ namespace Smart_POS_X.UI
             MenuTable.Clear();
         }
 
-        public DataRow DR { get; set; } = null;
-
         private void btn_Minus_Click(object sender, EventArgs e)
         {
             ReceiptPopUp ReceiptPopUp = new ReceiptPopUp();
@@ -263,17 +261,17 @@ namespace Smart_POS_X.UI
         {
             Reset();
         }
-
         private void btn_ObjectMinus_Click(object sender, EventArgs e)
         {
-            gridView1.DeleteRow(0);
-            MenuTable.Rows.Remove(selectedrow);
-            gridControl1.DataSource = MenuTable;
+            gridView1.DeleteRow(gridView1.FocusedRowHandle);
+            MenuTable.AcceptChanges();
+            AllMountCal();
             TotalAmount();
         } 
         private void gridView1_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e)
         {
-            if (MenuTable.Rows.Count == 1) return;
+            MenuTable.AcceptChanges();
+            if (MenuTable.Rows.Count == 0) return;
             selectedrow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
         }
     }
