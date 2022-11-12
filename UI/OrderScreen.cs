@@ -33,6 +33,10 @@ namespace Smart_POS_X.UI
         {
             InitializeComponent();
             Menu_reset();
+
+
+            Tools tools = new Tools();
+            this.pictureEdit1.Image = tools.Barcode("WWW.naver.com").BarCodeImage;
         }
 
         private void simpleButton13_Click(object sender, EventArgs e)
@@ -284,24 +288,6 @@ namespace Smart_POS_X.UI
 
         private void pictureEdit1_Click(object sender, EventArgs e)
         {
-            this.pictureEdit1.Image = null;
-
-            BarCode barCode = new BarCode();
-            barCode.Symbology = Symbology.QRCode;
-            barCode.CodeText = "https://www.devexpress.com/";
-            barCode.BackColor = Color.White;
-            barCode.ForeColor = Color.Black;
-            barCode.RotationAngle = 0;
-            barCode.CodeBinaryData = Encoding.Default.GetBytes(barCode.CodeText);
-            barCode.Options.QRCode.CompactionMode = DevExpress.BarCodes.QRCodeCompactionMode.Byte;
-            barCode.Options.QRCode.ErrorLevel = QRCodeErrorLevel.Q;
-            barCode.Options.QRCode.ShowCodeText = false;
-            barCode.DpiX = 72;
-            barCode.DpiY = 72;
-            barCode.Module = 2f;
-
-            this.pictureEdit1.Image = barCode.BarCodeImage;
-
         }
     }
 }
