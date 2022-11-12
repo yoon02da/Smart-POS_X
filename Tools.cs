@@ -10,7 +10,7 @@ namespace Smart_POS_X
 {
     internal class Tools
     {
-
+        //TEST
         public BarCode Barcode(string context)
         {
             /*
