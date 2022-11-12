@@ -43,10 +43,9 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
-            this.btn_Print = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_ReceiptCancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Join = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel2 = new DevExpress.Utils.Layout.TablePanel();
-            this.btn_Enter = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ReInput = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
@@ -254,8 +253,7 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F)});
-            this.tablePanel3.Controls.Add(this.btn_Print);
-            this.tablePanel3.Controls.Add(this.btn_ReceiptCancel);
+            this.tablePanel3.Controls.Add(this.btn_Cancel);
             this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel3.Location = new System.Drawing.Point(27, 354);
             this.tablePanel3.Name = "tablePanel3";
@@ -265,27 +263,28 @@
             this.tablePanel3.Size = new System.Drawing.Size(422, 34);
             this.tablePanel3.TabIndex = 10;
             // 
-            // btn_Print
+            // btn_Cancel
             // 
-            this.tablePanel3.SetColumn(this.btn_Print, 3);
-            this.btn_Print.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Print.Location = new System.Drawing.Point(320, 3);
-            this.btn_Print.Name = "btn_Print";
-            this.tablePanel3.SetRow(this.btn_Print, 0);
-            this.btn_Print.Size = new System.Drawing.Size(100, 28);
-            this.btn_Print.TabIndex = 6;
-            this.btn_Print.Text = "나가기";
+            this.tablePanel3.SetColumn(this.btn_Cancel, 3);
+            this.btn_Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Cancel.Location = new System.Drawing.Point(320, 3);
+            this.btn_Cancel.Name = "btn_Cancel";
+            this.tablePanel3.SetRow(this.btn_Cancel, 0);
+            this.btn_Cancel.Size = new System.Drawing.Size(100, 28);
+            this.btn_Cancel.TabIndex = 6;
+            this.btn_Cancel.Text = "나가기";
             // 
-            // btn_ReceiptCancel
+            // btn_Join
             // 
-            this.tablePanel3.SetColumn(this.btn_ReceiptCancel, 2);
-            this.btn_ReceiptCancel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ReceiptCancel.Location = new System.Drawing.Point(214, 3);
-            this.btn_ReceiptCancel.Name = "btn_ReceiptCancel";
-            this.tablePanel3.SetRow(this.btn_ReceiptCancel, 0);
-            this.btn_ReceiptCancel.Size = new System.Drawing.Size(100, 28);
-            this.btn_ReceiptCancel.TabIndex = 8;
-            this.btn_ReceiptCancel.Text = "확인";
+            this.tablePanel2.SetColumn(this.btn_Join, 3);
+            this.btn_Join.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Join.Location = new System.Drawing.Point(324, 3);
+            this.btn_Join.Name = "btn_Join";
+            this.tablePanel2.SetRow(this.btn_Join, 0);
+            this.btn_Join.Size = new System.Drawing.Size(101, 34);
+            this.btn_Join.TabIndex = 8;
+            this.btn_Join.Text = "가입";
+            this.btn_Join.Click += new System.EventHandler(this.btn_Join_Click);
             // 
             // tablePanel2
             // 
@@ -295,8 +294,8 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
-            this.tablePanel2.Controls.Add(this.btn_Enter);
             this.tablePanel2.Controls.Add(this.btn_ReInput);
+            this.tablePanel2.Controls.Add(this.btn_Join);
             this.tablePanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel2.Location = new System.Drawing.Point(24, 130);
             this.tablePanel2.Margin = new System.Windows.Forms.Padding(0);
@@ -306,17 +305,6 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
             this.tablePanel2.Size = new System.Drawing.Size(428, 40);
             this.tablePanel2.TabIndex = 9;
-            // 
-            // btn_Enter
-            // 
-            this.tablePanel2.SetColumn(this.btn_Enter, 3);
-            this.btn_Enter.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Enter.Location = new System.Drawing.Point(324, 3);
-            this.btn_Enter.Name = "btn_Enter";
-            this.tablePanel2.SetRow(this.btn_Enter, 0);
-            this.btn_Enter.Size = new System.Drawing.Size(101, 34);
-            this.btn_Enter.TabIndex = 4;
-            this.btn_Enter.Text = "확인";
             // 
             // btn_ReInput
             // 
@@ -372,10 +360,9 @@
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.Utils.Layout.TablePanel tablePanel3;
-        private DevExpress.XtraEditors.SimpleButton btn_Print;
-        private DevExpress.XtraEditors.SimpleButton btn_ReceiptCancel;
+        private DevExpress.XtraEditors.SimpleButton btn_Cancel;
+        private DevExpress.XtraEditors.SimpleButton btn_Join;
         private DevExpress.Utils.Layout.TablePanel tablePanel2;
-        private DevExpress.XtraEditors.SimpleButton btn_Enter;
         private DevExpress.XtraEditors.SimpleButton btn_ReInput;
         private DevExpress.Utils.Layout.TablePanel tablePanel5;
         private DevExpress.XtraEditors.TextEdit textEdit2;
