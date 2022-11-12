@@ -35,33 +35,27 @@
             // cbo
             // 
             this.cbo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbo.EditValue = "NAME";
             this.cbo.Location = new System.Drawing.Point(0, 0);
-            this.cbo.Margin = new System.Windows.Forms.Padding(0);
             this.cbo.Name = "cbo";
-            this.cbo.Properties.Appearance.ForeColor = System.Drawing.Color.Black;
-            this.cbo.Properties.Appearance.Options.UseForeColor = true;
-            this.cbo.Properties.AppearanceDropDown.BackColor = System.Drawing.Color.Transparent;
-            this.cbo.Properties.AppearanceDropDown.Options.UseBackColor = true;
             this.cbo.Properties.AutoHeight = false;
-            this.cbo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.cbo.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbo.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("NAME", "NAME", 20, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("CODE", "CODE")});
             this.cbo.Properties.DisplayMember = "NAME";
-            this.cbo.Properties.NullText = "";
-            this.cbo.Size = new System.Drawing.Size(576, 417);
-            this.cbo.TabIndex = 5;
+            this.cbo.Properties.ValueMember = "CODE";
+            this.cbo.Properties.DataSourceChanged += new System.EventHandler(this.lookUpEdit1_Properties_DataSourceChanged);
+            this.cbo.Properties.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.lookUpEdit1_Properties_EditValueChanging);
+            this.cbo.Size = new System.Drawing.Size(1070, 890);
+            this.cbo.TabIndex = 0;
             // 
             // Combo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.cbo);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Combo";
-            this.Size = new System.Drawing.Size(576, 417);
+            this.Size = new System.Drawing.Size(1070, 890);
+            this.Load += new System.EventHandler(this.Combo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cbo.Properties)).EndInit();
             this.ResumeLayout(false);
 

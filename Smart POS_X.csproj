@@ -49,6 +49,9 @@
   <PropertyGroup>
     <SignManifests>false</SignManifests>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DevExpress.BonusSkins.v22.1" />
     <Reference Include="DevExpress.Charts.v22.1.Core, Version=22.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
@@ -82,12 +85,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control\XtraUserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Control\XtraUserControl1.Designer.cs">
-      <DependentUpon>XtraUserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="DBHelper.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="POP UP\MemberJoinPopUp.cs">
@@ -176,9 +173,6 @@
     <Compile Include="UserControl\Combo.Designer.cs">
       <DependentUpon>Combo.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Control\XtraUserControl1.resx">
-      <DependentUpon>XtraUserControl1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="POP UP\MemberJoinPopUp.resx">
       <DependentUpon>MemberJoinPopUp.cs</DependentUpon>
     </EmbeddedResource>

@@ -32,18 +32,14 @@ namespace Smart_POS_X.UI
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            var azzz = ((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0];
-
-            var a =DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{((DataRowView)cbo_Job.cbo.EditValue).Row.ItemArray[0]}'" +
-                $", '{((DataRowView)cbo_WorkGroup.cbo.EditValue).Row.ItemArray[0]}', '{((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]}'");
-            //((DataRowView)cbo_WorkState.cbo.EditValue).Row.ItemArray[0]
+            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
 
             if (DB.result == true)
             {
 
-                DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
+                //DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
 
-                gridControl1.DataSource = DT1;
+                //gridControl1.DataSource = DT1;
             }
 
         }

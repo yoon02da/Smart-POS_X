@@ -228,6 +228,10 @@
             this.textEdit4.Location = new System.Drawing.Point(236, 402);
             this.textEdit4.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit4.Properties.Appearance.Options.UseFont = true;
+            this.textEdit4.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textEdit4.Properties.AppearanceReadOnly.Options.UseBackColor = true;
             this.textEdit4.Properties.AutoHeight = false;
             this.textEdit4.Properties.ReadOnly = true;
             this.tablePanel4.SetRow(this.textEdit4, 4);
@@ -242,6 +246,8 @@
             this.textEdit2.Location = new System.Drawing.Point(236, 202);
             this.textEdit2.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.AutoHeight = false;
             this.tablePanel4.SetRow(this.textEdit2, 2);
             this.textEdit2.Size = new System.Drawing.Size(224, 96);
@@ -255,6 +261,8 @@
             this.textEdit1.Location = new System.Drawing.Point(236, 102);
             this.textEdit1.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.AutoHeight = false;
             this.tablePanel4.SetRow(this.textEdit1, 1);
             this.textEdit1.Size = new System.Drawing.Size(224, 96);
@@ -265,7 +273,7 @@
             // 
             this.lbl_AllAmount.Appearance.BackColor = System.Drawing.Color.White;
             this.lbl_AllAmount.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.lbl_AllAmount.Appearance.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_AllAmount.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_AllAmount.Appearance.Options.UseBackColor = true;
             this.lbl_AllAmount.Appearance.Options.UseBorderColor = true;
             this.lbl_AllAmount.Appearance.Options.UseFont = true;
@@ -291,7 +299,7 @@
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl5, 4);
-            this.labelControl5.Size = new System.Drawing.Size(220, 77);
+            this.labelControl5.Size = new System.Drawing.Size(220, 80);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "받을금액";
             // 
@@ -305,7 +313,7 @@
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl3, 2);
-            this.labelControl3.Size = new System.Drawing.Size(220, 76);
+            this.labelControl3.Size = new System.Drawing.Size(220, 79);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "할인금액";
             // 
@@ -319,7 +327,7 @@
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Padding = new System.Windows.Forms.Padding(19, 0, 19, 0);
             this.tablePanel4.SetRow(this.labelControl2, 1);
-            this.labelControl2.Size = new System.Drawing.Size(220, 76);
+            this.labelControl2.Size = new System.Drawing.Size(220, 79);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "결제금액";
             // 
@@ -668,7 +676,6 @@
             this.tablePanel7.SetRow(this.btn_ObjectPlus, 1);
             this.btn_ObjectPlus.Size = new System.Drawing.Size(172, 106);
             this.btn_ObjectPlus.TabIndex = 30;
-            this.btn_ObjectPlus.Text = "상품추가";
             // 
             // btn_Plus
             // 
@@ -685,7 +692,6 @@
             this.tablePanel7.SetRow(this.btn_Plus, 0);
             this.btn_Plus.Size = new System.Drawing.Size(172, 107);
             this.btn_Plus.TabIndex = 25;
-            this.btn_Plus.Text = "승인";
             // 
             // btn_Minus
             // 
