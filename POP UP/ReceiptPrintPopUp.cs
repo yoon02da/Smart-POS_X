@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraReports.UI;
 using DevExpress.XtraScheduler.Animation;
 using Smart_POS_X.UI;
 using System;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
 
 namespace Smart_POS_X.POP_UP
 {
@@ -21,7 +23,6 @@ namespace Smart_POS_X.POP_UP
             InitializeComponent();
 
         }
-
         private void btn_Print_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -41,7 +42,6 @@ namespace Smart_POS_X.POP_UP
 
             if (DB.result == true)
             {
-
                 DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{lbl_SellingCode.Text}'");
                 DataTable DT2 = DB.Exec($"ReceiptSelct_S02 '{lbl_SellingCode.Text}'");
 

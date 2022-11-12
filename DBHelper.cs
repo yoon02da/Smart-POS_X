@@ -30,12 +30,7 @@ namespace Smart_POS_X
         {
             string con = $"Data Source={IP};Initial Catalog={DB};User ID={ID};Password={PWD}";
             SqlConnection DBConn = new SqlConnection(con);
-
             sqlConnection = DBConn;
-        }
-        public DBHelper()
-        {
-             
         }
         public void DBSend()
         {

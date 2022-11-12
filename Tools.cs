@@ -17,7 +17,7 @@ namespace Smart_POS_X
              pictureEdit1에 바코드 이미지를 넣는 예제
              */
             BarCode barCode = new BarCode();
-            barCode.Symbology = Symbology.QRCode;
+            barCode.Symbology = Symbology.Code39;
             barCode.CodeText = context;
             barCode.BackColor = Color.White;
             barCode.ForeColor = Color.SteelBlue;
