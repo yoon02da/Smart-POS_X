@@ -1,4 +1,7 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Base;
+using DevExpress.XtraPrinting.Export;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -41,26 +44,36 @@ namespace Smart_POS_X.POP_UP
 
             }
         }
-
+        DataRow datarow;
         private void btn_Enter_Click(object sender, EventArgs e)
         {
             DT1 = DB.Exec($"MemberSelect_S01 '{txt_num.Text}'");
 
-            if (DT1.Rows.Count == 1)
-            {
-               
-                //DT2 = DB.Exec($"ReceiptSelct_S02 '{txt_num.Text}'");
+            //gridControl2.DataSource = DT2;
 
-                gridControl1.DataSource = DT1;
-                //gridControl2.DataSource = DT2;
-            }
-            else
-                MessageBox.Show("전화번호를 확인하세요.");
+            gridControl1.DataSource = DT1;
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void gridView2_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
+        {
+            //DT1.AcceptChanges();
+            //if (DT1.Rows.Count == 0) return;
+            //datarow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
+        }
+
+        private void gridView1_FocusedRowChanged(object sender, FocusedRowChangedEventArgs e)
+        {
+            DT1.AcceptChanges();
+            if (DT1.Rows.Count == 0) return;
+            datarow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
+
+            if(datarow == null)return; 
+            gridControl2.DataSource = DB.Exec($"MemberSelect_S03 '{datarow.Field<string>("MemberCode")}'");
         }
     }
 }
