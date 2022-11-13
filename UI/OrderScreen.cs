@@ -20,6 +20,8 @@ using static Smart_POS_X.Enum;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using DevExpress.BarCodes;
 using Smart_POS_X.POP_UP;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+using TextEdit = DevExpress.XtraEditors.TextEdit;
 
 namespace Smart_POS_X.UI
 {
@@ -49,18 +51,22 @@ namespace Smart_POS_X.UI
                         control.Text = DR[1].ToString();
             }
         }
+        string SellingCode = string.Empty;
+        string memberPoint = string.Empty;
         private void PayInvoice()
-        { //결제가 완료되는 경우.. 맴버쉽 완성시 추가..
-            string SellingCode = DB.Exec($"OrderScreen_I01 '-','{textEdit1.Text}','{textEdit2.Text}','0'").Rows[0]["SEQ"].ToString();
-
+        {
+            var Scode = SellingCodeMember == string.Empty ? "-" : SellingCodeMember;
+            DataTable dt = DB.Exec($"OrderScreen_I01 '{Scode}','{lbl_AllAmount.Text}','{textEdit1.Text}','{textEdit2.Text}'");
+            SellingCode = dt.Rows[0]["SEQ"].ToString(); 
+            btn_ReceipeSelect.Text = "Point"+dt.Rows[0]["MemberPoint"].ToString();
             Tools tools = new Tools();
             this.pictureEdit1.Image = tools.Barcode(SellingCode).BarCodeImage;
 
             List<string> list = new List<string>(); 
 
             foreach (DataRow ROW in MenuTable.Rows)
-                list.Add ($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ,CreateUser, CreateTime) " +
-                             $"VALUES ( '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' ,'POP',GETDATE() )");
+                list.Add ($"INSERT INTO POSSellRecord (MemberCode, SellingCode ,SellingDetail ,SellingPrice ,SellingCount ,CreateUser, CreateTime) " +
+                             $"VALUES ('{Scode}', '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' ,'POP',GETDATE() )");
 
             if (DB.TRAN(list) == false) MessageBox.Show("결제 오류 발생");
         }
@@ -132,6 +138,8 @@ namespace Smart_POS_X.UI
             int? Amount_remaining = 0;
             Amount_remaining = All - (Payment + Sale);
 
+            textEdit1.Text = Payment.ToString();
+            textEdit2.Text = Sale.ToString();
             textEdit4.Text = Amount_remaining.ToString();
 
             return Amount_remaining;
@@ -145,6 +153,7 @@ namespace Smart_POS_X.UI
             textEdit4.Text = String.Empty;
 
             MenuTable.Clear();
+
         }
         //이벤트 영역
         #region
@@ -257,8 +266,14 @@ namespace Smart_POS_X.UI
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             MenuTable.Clear();
-        } 
-        private void btn_MemberShip_Click(object sender, EventArgs e)=>Reset();
+        }
+        private void btn_MemberShip_Click(object sender, EventArgs e)
+        {
+            Reset();
+
+            SellingCode = string.Empty;
+            btn_ReceipeSelect.Text = string.Empty;
+        }
 
         /*그리드 이벤트*/
         private void btn_ObjectMinus_Click(object sender, EventArgs e)
@@ -282,14 +297,18 @@ namespace Smart_POS_X.UI
         private void pictureEdit1_Click(object sender, EventArgs e)
         {
         }
+        string SellingCodeMember = string.Empty;
 
         private void btn_Pay_Click(object sender, EventArgs e)
         {
             MemberSelectPopUp memberSelect = new MemberSelectPopUp();
-
-            if (memberSelect.ShowDialog() == DialogResult.OK)
+            memberSelect.SellingCode = SellingCodeMember;
+            memberSelect.ShowDialog();
+            if(memberSelect.res == DialogResult.OK)
             {
+                btn_Name.Text = memberSelect.dataRowSelect.Field<string>("MemberName");
 
+                SellingCodeMember = memberSelect.dataRowSelect.Field<string>("MemberCode");
             }
         }
         #endregion

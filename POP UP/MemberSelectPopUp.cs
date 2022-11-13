@@ -2,6 +2,7 @@
 using DevExpress.XtraGrid;
 using DevExpress.XtraGrid.Views.Base;
 using DevExpress.XtraPrinting.Export;
+using Smart_POS_X.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,16 +20,9 @@ namespace Smart_POS_X.POP_UP
         DBHelper DB = new DBHelper();
         DataTable DT1 = new DataTable();
         DataTable DT2 = new DataTable();
-
-        public string MemberName { get; set; }
-        public string PhoneNumber { get; set; }
-        public string PresentPoint { get; set; }
-        public string CumulativePoint { get; set; }
-        public string MemberCode { get; set; }
-        public string SellingCode { get; set; }
-        public string TotalPay { get; set; }
-        public string PointPay { get; set; }
-        public string AddPoint { get; set; }
+        public DataRow dataRowSelect = null;
+        public DialogResult res;
+        public string SellingCode { get; set; } 
 
         public MemberSelectPopUp()
         {
@@ -56,6 +50,10 @@ namespace Smart_POS_X.POP_UP
 
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
+            dataRowSelect = datarow;
+            res = DialogResult.OK;
+
+
             this.Close();
         }
 
@@ -72,8 +70,19 @@ namespace Smart_POS_X.POP_UP
             if (DT1.Rows.Count == 0) return;
             datarow = ((DataRowView)((ColumnView)sender).FocusedRowObject).Row;
 
-            if(datarow == null)return; 
-            gridControl2.DataSource = DB.Exec($"MemberSelect_S03 '{datarow.Field<string>("MemberCode")}'");
+
+
+            if(datarow == null)return;
+
+            SellingCode = datarow.Field<string>("MemberCode");
+            gridControl2.DataSource = DB.Exec($"MemberSelect_S03 '{SellingCode}'");
+             
+        }
+
+        private void gridControl1_DoubleClick(object sender, EventArgs e)
+        {
+         //   dataRowSelect = datarow;
+         //   this.Close();
         }
     }
 }

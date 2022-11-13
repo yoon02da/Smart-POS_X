@@ -32,7 +32,7 @@ namespace Smart_POS_X.POP_UP
         {
             DataTable = DB.Exec($"MemberJoin_I01 '{txt_MemName.Text}','{txt_PhoneNum.Text}'");
 
-            if (DB.result)
+            if (DataTable.Rows.Count == 1)
             {
                 gridControl1.DataSource = DataTable;
             }

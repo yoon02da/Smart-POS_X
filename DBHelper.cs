@@ -116,7 +116,9 @@ namespace Smart_POS_X
             SqlCommand CMD = new SqlCommand();
             CMD.Connection = sqlConnection;
 
-            sqlConnection.Open();
+            if(sqlConnection.State == ConnectionState.Closed)
+                sqlConnection.Open();
+            
 
             SqlTransaction tran = sqlConnection.BeginTransaction();
             CMD.Transaction = tran; // 현재사용할트랜잭션객체지정

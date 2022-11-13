@@ -66,16 +66,8 @@ namespace Smart_POS_X.UI
         private void btn_ReceiptCancel_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("환불을 진행하시겠습니까?", "환불알림", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                //환불 로직
-                DB.Exec($"refund_CUD '{selectrow.Field<string>("d")}'");
-
-
-
-            }
-            else
-            {
-
+            { //환불 로직
+                DB.Exec($"refund_CUD '{txt_SellingCode.Text}'"); 
             }
         }
 
