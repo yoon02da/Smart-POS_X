@@ -44,9 +44,13 @@ namespace Smart_POS_X.POP_UP
             {
                 DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{lbl_SellingCode.Text}'");
                 DataTable DT2 = DB.Exec($"ReceiptSelct_S02 '{lbl_SellingCode.Text}'");
+                Tools tools = new Tools();
 
                 gridControl1.DataSource = DT1;
                 gridControl2.DataSource = DT2;
+                // this.pictureEdit1.Image = tools.Barcode(SellingCode).BarCodeImage;
+                pictureEdit1.Image = tools.Barcode(lbl_SellingCode.Text).BarCodeImage;
+
             }
             else
                 MessageBox.Show("영수증 번호 오류입니다.");
