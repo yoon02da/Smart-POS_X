@@ -56,9 +56,13 @@ namespace Smart_POS_X.UI
             Tools tools = new Tools();
             this.pictureEdit1.Image = tools.Barcode(SellingCode).BarCodeImage;
 
+            List<string> list = new List<string>(); 
+
             foreach (DataRow ROW in MenuTable.Rows)
-                DB.SQL($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ,CreateUser, CreateTime) " +
+                list.Add ($"INSERT INTO POSSellRecord ( SellingCode ,SellingDetail ,SellingPrice ,SellingCount ,CreateUser, CreateTime) " +
                              $"VALUES ( '{SellingCode}' ,'{ROW["Menu"]}' ,'{ROW["Price"]}' ,'{ROW["QTY"]}' ,'POP',GETDATE() )");
+
+            if (DB.TRAN(list) == false) MessageBox.Show("결제 오류 발생");
         }
         private void MenuRelord()
         {
