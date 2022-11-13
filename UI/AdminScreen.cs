@@ -46,13 +46,6 @@ namespace Smart_POS_X.UI
             tools.ControlInControl(panelControl1, from);
         }
 
-        private void btnAco_DashBoard_Click(object sender, EventArgs e)
-        {
-            EmpManagedScreen empManagedScreen = new EmpManagedScreen();
-            Tools tools = new Tools();
-            tools.ControlInControl(panelControl1, empManagedScreen);
-        }
-
         private void btnAco_Sales_Click(object sender, EventArgs e)
         {
             SalesManagedScreen salesManaged = new SalesManagedScreen();

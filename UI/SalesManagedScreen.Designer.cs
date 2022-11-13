@@ -196,7 +196,7 @@
             this.tablePanel1.SetRow(this.labelControl5, 5);
             this.labelControl5.Size = new System.Drawing.Size(294, 22);
             this.labelControl5.TabIndex = 4;
-            this.labelControl5.Text = "시간별 매출 랭킹";
+            this.labelControl5.Text = "시간별 매출";
             // 
             // labelControl4
             // 
@@ -215,7 +215,7 @@
             this.tablePanel1.SetRow(this.labelControl4, 5);
             this.labelControl4.Size = new System.Drawing.Size(294, 22);
             this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "일 매출 그래프";
+            this.labelControl4.Text = "전일 대비 매출";
             // 
             // labelControl3
             // 
@@ -272,7 +272,7 @@
             this.tablePanel1.SetRow(this.labelControl1, 1);
             this.labelControl1.Size = new System.Drawing.Size(294, 22);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "주 매출 그래프";
+            this.labelControl1.Text = "시간별 아메리카노 판매";
             // 
             // SalesManagedScreen
             // 
