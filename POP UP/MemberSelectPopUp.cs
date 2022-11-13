@@ -83,6 +83,6 @@ namespace Smart_POS_X.POP_UP
         {
          //   dataRowSelect = datarow;
          //   this.Close();
-        }
+        }       
     }
 }
