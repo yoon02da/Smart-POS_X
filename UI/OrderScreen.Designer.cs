@@ -66,7 +66,7 @@
             this.btn_SalesSelect = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Reset = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ObjectMinus = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_Plus = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Name = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Minus = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Pay = new DevExpress.XtraEditors.SimpleButton();
             this.btn_ReceipeSelect = new DevExpress.XtraEditors.SimpleButton();
@@ -591,7 +591,7 @@
             this.tablePanel7.Controls.Add(this.btn_SalesSelect);
             this.tablePanel7.Controls.Add(this.btn_Reset);
             this.tablePanel7.Controls.Add(this.btn_ObjectMinus);
-            this.tablePanel7.Controls.Add(this.btn_Plus);
+            this.tablePanel7.Controls.Add(this.btn_Name);
             this.tablePanel7.Controls.Add(this.btn_Minus);
             this.tablePanel7.Controls.Add(this.btn_Pay);
             this.tablePanel7.Controls.Add(this.btn_ReceipeSelect);
@@ -681,21 +681,21 @@
             this.btn_ObjectMinus.Text = "상품삭제";
             this.btn_ObjectMinus.Click += new System.EventHandler(this.btn_ObjectMinus_Click);
             // 
-            // btn_Plus
+            // btn_Name
             // 
-            this.btn_Plus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.btn_Plus.Appearance.Options.UseFont = true;
-            this.btn_Plus.Appearance.Options.UseTextOptions = true;
-            this.btn_Plus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.btn_Plus.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel7.SetColumn(this.btn_Plus, 0);
-            this.btn_Plus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Plus.Location = new System.Drawing.Point(9, 11);
-            this.btn_Plus.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
-            this.btn_Plus.Name = "btn_Plus";
-            this.tablePanel7.SetRow(this.btn_Plus, 0);
-            this.btn_Plus.Size = new System.Drawing.Size(172, 107);
-            this.btn_Plus.TabIndex = 25;
+            this.btn_Name.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Name.Appearance.Options.UseFont = true;
+            this.btn_Name.Appearance.Options.UseTextOptions = true;
+            this.btn_Name.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btn_Name.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.tablePanel7.SetColumn(this.btn_Name, 0);
+            this.btn_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Name.Location = new System.Drawing.Point(9, 11);
+            this.btn_Name.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
+            this.btn_Name.Name = "btn_Name";
+            this.tablePanel7.SetRow(this.btn_Name, 0);
+            this.btn_Name.Size = new System.Drawing.Size(172, 107);
+            this.btn_Name.TabIndex = 25;
             // 
             // btn_Minus
             // 
@@ -742,7 +742,6 @@
             this.tablePanel7.SetRow(this.btn_ReceipeSelect, 0);
             this.btn_ReceipeSelect.Size = new System.Drawing.Size(172, 107);
             this.btn_ReceipeSelect.TabIndex = 28;
-            this.btn_ReceipeSelect.Click += new System.EventHandler(this.btn_ReceipeSelect_Click);
             // 
             // btn_MemberShip
             // 
@@ -1271,7 +1270,7 @@
         private DevExpress.XtraEditors.SimpleButton btn_SalesSelect;
         private DevExpress.XtraEditors.SimpleButton btn_Reset;
         private DevExpress.XtraEditors.SimpleButton btn_ObjectMinus;
-        private DevExpress.XtraEditors.SimpleButton btn_Plus;
+        private DevExpress.XtraEditors.SimpleButton btn_Name;
         private DevExpress.XtraEditors.SimpleButton btn_Minus;
         private DevExpress.XtraEditors.SimpleButton btn_Pay;
         private DevExpress.XtraEditors.SimpleButton btn_ReceipeSelect;

@@ -13,8 +13,6 @@ namespace Smart_POS_X
 {
     internal class Tools
     {
-        //TEST
-
         public XtraForm ControlInControl(PanelControl baseFrom, DevExpress.XtraEditors.XtraForm targetFrom) {
            // EmpManagedScreen empManagedScreen = new EmpManagedScreen();
             targetFrom.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -47,9 +48,9 @@
             this.tablePanel3 = new DevExpress.Utils.Layout.TablePanel();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Print = new DevExpress.XtraEditors.SimpleButton();
-            this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -58,7 +59,6 @@
             this.tablePanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).BeginInit();
             this.tablePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tablePanel1
@@ -79,26 +79,40 @@
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 30F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 7F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 30F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 125F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 62F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F)});
             this.tablePanel1.Size = new System.Drawing.Size(802, 1414);
             this.tablePanel1.TabIndex = 12;
+            // 
+            // pictureEdit1
+            // 
+            this.tablePanel1.SetColumn(this.pictureEdit1, 1);
+            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureEdit1.Location = new System.Drawing.Point(26, 1052);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
+            this.pictureEdit1.Name = "pictureEdit1";
+            this.pictureEdit1.Properties.NullText = " ";
+            this.pictureEdit1.Properties.Padding = new System.Windows.Forms.Padding(5);
+            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.tablePanel1.SetRow(this.pictureEdit1, 4);
+            this.pictureEdit1.Size = new System.Drawing.Size(750, 154);
+            this.pictureEdit1.TabIndex = 36;
             // 
             // gridControl2
             // 
             this.tablePanel1.SetColumn(this.gridControl2, 1);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl2.Location = new System.Drawing.Point(23, 779);
+            this.gridControl2.Location = new System.Drawing.Point(23, 695);
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl2.Name = "gridControl2";
             this.tablePanel1.SetRow(this.gridControl2, 3);
-            this.gridControl2.Size = new System.Drawing.Size(756, 422);
+            this.gridControl2.Size = new System.Drawing.Size(756, 340);
             this.gridControl2.TabIndex = 14;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -175,12 +189,12 @@
             this.tablePanel1.SetColumn(this.gridControl1, 1);
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl1.Location = new System.Drawing.Point(23, 56);
+            this.gridControl1.Location = new System.Drawing.Point(23, 108);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl1.Name = "gridControl1";
             this.tablePanel1.SetRow(this.gridControl1, 2);
-            this.gridControl1.Size = new System.Drawing.Size(756, 711);
+            this.gridControl1.Size = new System.Drawing.Size(756, 575);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -242,13 +256,14 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 70F)});
             this.tablePanel4.Controls.Add(this.lbl_SellingCode);
             this.tablePanel4.Controls.Add(this.labelControl2);
+            this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel4.Location = new System.Drawing.Point(23, 26);
             this.tablePanel4.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel1.SetRow(this.tablePanel4, 1);
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel4.Size = new System.Drawing.Size(756, 18);
+            this.tablePanel4.Size = new System.Drawing.Size(756, 70);
             this.tablePanel4.TabIndex = 12;
             // 
             // lbl_SellingCode
@@ -261,7 +276,7 @@
             this.lbl_SellingCode.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_SellingCode.Name = "lbl_SellingCode";
             this.tablePanel4.SetRow(this.lbl_SellingCode, 0);
-            this.lbl_SellingCode.Size = new System.Drawing.Size(529, 18);
+            this.lbl_SellingCode.Size = new System.Drawing.Size(529, 70);
             this.lbl_SellingCode.TabIndex = 1;
             // 
             // labelControl2
@@ -272,7 +287,7 @@
             this.labelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel4.SetRow(this.labelControl2, 0);
-            this.labelControl2.Size = new System.Drawing.Size(227, 18);
+            this.labelControl2.Size = new System.Drawing.Size(227, 70);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "영수증 번호";
             // 
@@ -286,13 +301,14 @@
             new DevExpress.Utils.Layout.TablePanelColumn(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 25F)});
             this.tablePanel3.Controls.Add(this.simpleButton1);
             this.tablePanel3.Controls.Add(this.btn_Print);
-            this.tablePanel3.Location = new System.Drawing.Point(23, 1338);
+            this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tablePanel3.Location = new System.Drawing.Point(23, 1223);
             this.tablePanel3.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel1.SetRow(this.tablePanel3, 5);
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel3.Size = new System.Drawing.Size(756, 50);
+            this.tablePanel3.Size = new System.Drawing.Size(756, 164);
             this.tablePanel3.TabIndex = 10;
             // 
             // simpleButton1
@@ -303,35 +319,23 @@
             this.simpleButton1.Margin = new System.Windows.Forms.Padding(6);
             this.simpleButton1.Name = "simpleButton1";
             this.tablePanel3.SetRow(this.simpleButton1, 0);
-            this.simpleButton1.Size = new System.Drawing.Size(253, 38);
+            this.simpleButton1.Size = new System.Drawing.Size(253, 152);
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "나가기";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btn_Print
             // 
+            this.tablePanel3.SetColumn(this.btn_Print, 3);
             this.btn_Print.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Print.Location = new System.Drawing.Point(574, 6);
+            this.btn_Print.Location = new System.Drawing.Point(573, 6);
             this.btn_Print.Margin = new System.Windows.Forms.Padding(6);
             this.btn_Print.Name = "btn_Print";
-            this.btn_Print.Size = new System.Drawing.Size(178, 60);
+            this.tablePanel3.SetRow(this.btn_Print, 0);
+            this.btn_Print.Size = new System.Drawing.Size(177, 152);
             this.btn_Print.TabIndex = 6;
             this.btn_Print.Text = "출력";
             this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
-            // 
-            // pictureEdit1
-            // 
-            this.tablePanel1.SetColumn(this.pictureEdit1, 1);
-            this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit1.Location = new System.Drawing.Point(26, 1218);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
-            this.pictureEdit1.Name = "pictureEdit1";
-            this.pictureEdit1.Properties.NullText = " ";
-            this.pictureEdit1.Properties.Padding = new System.Windows.Forms.Padding(5);
-            this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.tablePanel1.SetRow(this.pictureEdit1, 4);
-            this.pictureEdit1.Size = new System.Drawing.Size(750, 103);
-            this.pictureEdit1.TabIndex = 36;
             // 
             // ReceiptPrintPopUp
             // 
@@ -346,6 +350,7 @@
             this.Load += new System.EventHandler(this.ReceiptPrintPopUp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
@@ -355,7 +360,6 @@
             this.tablePanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel3)).EndInit();
             this.tablePanel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
