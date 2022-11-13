@@ -22,8 +22,7 @@ namespace Smart_POS_X.POP_UP
         public string MemberPhoneNumber { get; set; }
         public string PresentPoint { get; set;}
         public string CumulativePoint { get; set; }
-        public DataTable DataTable { get; set;
-        }
+        public DataTable DataTable { get; set;}
         public MemberJoinPopUp()
         {
             InitializeComponent();

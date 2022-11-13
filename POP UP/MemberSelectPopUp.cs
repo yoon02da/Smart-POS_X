@@ -13,6 +13,20 @@ namespace Smart_POS_X.POP_UP
 {
     public partial class MemberSelectPopUp : DevExpress.XtraEditors.XtraForm
     {
+        DBHelper DB = new DBHelper();
+        DataTable DT1 = new DataTable();
+        DataTable DT2 = new DataTable();
+
+        public string MemberName { get; set; }
+        public string PhoneNumber { get; set; }
+        public string PresentPoint { get; set; }
+        public string CumulativePoint { get; set; }
+        public string MemberCode { get; set; }
+        public string SellingCode { get; set; }
+        public string TotalPay { get; set; }
+        public string PointPay { get; set; }
+        public string AddPoint { get; set; }
+
         public MemberSelectPopUp()
         {
             InitializeComponent();
@@ -26,6 +40,27 @@ namespace Smart_POS_X.POP_UP
             {
 
             }
+        }
+
+        private void btn_Enter_Click(object sender, EventArgs e)
+        {
+            DT1 = DB.Exec($"MemberSelect_S01 '{txt_num.Text}'");
+
+            if (DT1.Rows.Count == 1)
+            {
+               
+                //DT2 = DB.Exec($"ReceiptSelct_S02 '{txt_num.Text}'");
+
+                gridControl1.DataSource = DT1;
+                //gridControl2.DataSource = DT2;
+            }
+            else
+                MessageBox.Show("전화번호를 확인하세요.");
+        }
+
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
