@@ -136,6 +136,12 @@
     <Compile Include="UI\AdminScreen.Designer.cs">
       <DependentUpon>AdminScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\DashBoardScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DashBoardScreen.Designer.cs">
+      <DependentUpon>DashBoardScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\EmpManagedScreen.cs">
       <SubType>Form</SubType>
     </Compile>

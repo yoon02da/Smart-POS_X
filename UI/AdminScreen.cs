@@ -55,9 +55,9 @@ namespace Smart_POS_X.UI
 
         private void btnAco_Sales_Click(object sender, EventArgs e)
         {
-            EmpManagedScreen empManagedScreen = new EmpManagedScreen();
+            SalesManagedScreen salesManaged = new SalesManagedScreen();
             Tools tools = new Tools();
-            tools.ControlInControl(panelControl1, empManagedScreen);
+            tools.ControlInControl(panelControl1, salesManaged);
         }
 
         private void btn_Refresh_Click(object sender, EventArgs e)
