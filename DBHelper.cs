@@ -30,12 +30,7 @@ namespace Smart_POS_X
         {
             string con = $"Data Source={IP};Initial Catalog={DB};User ID={ID};Password={PWD}";
             SqlConnection DBConn = new SqlConnection(con);
-
             sqlConnection = DBConn;
-        }
-        public DBHelper()
-        {
-             
         }
         public void DBSend()
         {
@@ -121,6 +116,8 @@ namespace Smart_POS_X
             SqlCommand CMD = new SqlCommand();
             CMD.Connection = sqlConnection;
 
+            sqlConnection.Open();
+
             SqlTransaction tran = sqlConnection.BeginTransaction();
             CMD.Transaction = tran; // 현재사용할트랜잭션객체지정
             try
@@ -128,7 +125,8 @@ namespace Smart_POS_X
                 foreach (string sql in strings)
                 {
                     CMD.CommandText = sql;// 쿼리지정
-                    CMD.ExecuteNonQuery(); // 실행
+                    if (CMD.ExecuteNonQuery() == 0) // 실행
+                        tran.Rollback();
                 }
                 tran.Commit(); // 트랜잭션commit
                 return true;

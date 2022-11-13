@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraEditors;
+﻿using DevExpress.XtraCharts.Designer.Native;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,16 +35,34 @@ namespace Smart_POS_X.UI
         private void btnAco_Emp_Click(object sender, EventArgs e)
         {
             EmpManagedScreen empManagedScreen = new EmpManagedScreen();
-            
-            if(empManagedScreen.ShowDialog() == DialogResult.OK)
-            {
-
-            }
+            Tools tools = new Tools();
+            tools.ControlInControl(panelControl1, empManagedScreen);
         }
 
         private void btnAco_Menu_Click(object sender, EventArgs e)
         {
+            MenuManagedScreen from = new MenuManagedScreen();
+            Tools tools = new Tools();
+            tools.ControlInControl(panelControl1, from);
+        }
 
+        private void btnAco_DashBoard_Click(object sender, EventArgs e)
+        {
+            EmpManagedScreen empManagedScreen = new EmpManagedScreen();
+            Tools tools = new Tools();
+            tools.ControlInControl(panelControl1, empManagedScreen);
+        }
+
+        private void btnAco_Sales_Click(object sender, EventArgs e)
+        {
+            EmpManagedScreen empManagedScreen = new EmpManagedScreen();
+            Tools tools = new Tools();
+            tools.ControlInControl(panelControl1, empManagedScreen);
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            panelControl1.Controls.Clear(); 
         }
     }
 }
