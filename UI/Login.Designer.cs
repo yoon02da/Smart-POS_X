@@ -49,7 +49,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.tablePanel1.SetColumn(this.labelControl1, 1);
@@ -65,7 +65,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.labelControl2, 1);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -84,6 +84,8 @@
             this.txt_ID.Location = new System.Drawing.Point(126, 45);
             this.txt_ID.Margin = new System.Windows.Forms.Padding(5);
             this.txt_ID.Name = "txt_ID";
+            this.txt_ID.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ID.Properties.Appearance.Options.UseFont = true;
             this.txt_ID.Properties.AutoHeight = false;
             this.txt_ID.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel1.SetRow(this.txt_ID, 1);
@@ -97,6 +99,8 @@
             this.txt_Password.Location = new System.Drawing.Point(126, 98);
             this.txt_Password.Margin = new System.Windows.Forms.Padding(5);
             this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Password.Properties.Appearance.Options.UseFont = true;
             this.txt_Password.Properties.AutoHeight = false;
             this.txt_Password.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel1.SetRow(this.txt_Password, 2);
@@ -105,6 +109,8 @@
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Cancel.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Cancel, 4);
             this.btn_Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Cancel.Location = new System.Drawing.Point(347, 98);
@@ -118,6 +124,8 @@
             // 
             // btn_Admin
             // 
+            this.btn_Admin.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Admin.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Admin, 4);
             this.btn_Admin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Admin.Location = new System.Drawing.Point(347, 151);
@@ -163,6 +171,8 @@
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.simpleButton1, 4);
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton1.Location = new System.Drawing.Point(347, 191);
@@ -190,6 +200,8 @@
             // 
             // IPset
             // 
+            this.IPset.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.IPset.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.IPset, 1);
             this.IPset.Location = new System.Drawing.Point(21, 155);
             this.IPset.Margin = new System.Windows.Forms.Padding(5);
@@ -202,6 +214,8 @@
             // 
             // btn_Login
             // 
+            this.btn_Login.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Login.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Login, 4);
             this.btn_Login.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Login.Location = new System.Drawing.Point(347, 45);

@@ -226,11 +226,15 @@
             this.textEdit4.Location = new System.Drawing.Point(127, 178);
             this.textEdit4.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit4.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textEdit4.Properties.Appearance.Options.UseFont = true;
+            this.textEdit4.Properties.Appearance.Options.UseTextOptions = true;
+            this.textEdit4.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.textEdit4.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.textEdit4.Properties.AppearanceReadOnly.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textEdit4.Properties.AppearanceReadOnly.Options.UseBackColor = true;
             this.textEdit4.Properties.AutoHeight = false;
+            this.textEdit4.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.textEdit4.Properties.ReadOnly = true;
             this.tablePanel4.SetRow(this.textEdit4, 3);
             this.textEdit4.Size = new System.Drawing.Size(121, 55);
@@ -244,9 +248,13 @@
             this.textEdit2.Location = new System.Drawing.Point(127, 119);
             this.textEdit2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
+            this.textEdit2.Properties.Appearance.Options.UseTextOptions = true;
+            this.textEdit2.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.textEdit2.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.textEdit2.Properties.AutoHeight = false;
+            this.textEdit2.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetRow(this.textEdit2, 2);
             this.textEdit2.Size = new System.Drawing.Size(121, 57);
             this.textEdit2.TabIndex = 7;
@@ -259,9 +267,13 @@
             this.textEdit1.Location = new System.Drawing.Point(127, 60);
             this.textEdit1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
+            this.textEdit1.Properties.Appearance.Options.UseTextOptions = true;
+            this.textEdit1.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.textEdit1.Properties.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.textEdit1.Properties.AutoHeight = false;
+            this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetRow(this.textEdit1, 1);
             this.textEdit1.Size = new System.Drawing.Size(121, 57);
             this.textEdit1.TabIndex = 6;
@@ -271,12 +283,13 @@
             // 
             this.lbl_AllAmount.Appearance.BackColor = System.Drawing.Color.White;
             this.lbl_AllAmount.Appearance.BorderColor = System.Drawing.Color.Black;
-            this.lbl_AllAmount.Appearance.Font = new System.Drawing.Font("굴림", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_AllAmount.Appearance.Font = new System.Drawing.Font("맑은 고딕", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.lbl_AllAmount.Appearance.Options.UseBackColor = true;
             this.lbl_AllAmount.Appearance.Options.UseBorderColor = true;
             this.lbl_AllAmount.Appearance.Options.UseFont = true;
             this.lbl_AllAmount.Appearance.Options.UseTextOptions = true;
-            this.lbl_AllAmount.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Near;
+            this.lbl_AllAmount.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.lbl_AllAmount.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.lbl_AllAmount.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel4.SetColumn(this.lbl_AllAmount, 1);
             this.lbl_AllAmount.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -618,7 +631,7 @@
             this.tablePanel7.SetColumn(this.pictureEdit1, 0);
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit1.Location = new System.Drawing.Point(5, 65);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(5);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.NullText = " ";
             this.pictureEdit1.Properties.Padding = new System.Windows.Forms.Padding(5);
@@ -631,12 +644,14 @@
             // 
             // btn_POS_End
             // 
-            this.btn_POS_End.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_POS_End.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_POS_End.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_POS_End.Appearance.Options.UseBackColor = true;
             this.btn_POS_End.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.btn_POS_End, 4);
             this.btn_POS_End.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_POS_End.Location = new System.Drawing.Point(415, 65);
-            this.btn_POS_End.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_POS_End.Margin = new System.Windows.Forms.Padding(5);
             this.btn_POS_End.Name = "btn_POS_End";
             this.tablePanel7.SetRow(this.btn_POS_End, 1);
             this.btn_POS_End.Size = new System.Drawing.Size(92, 50);
@@ -646,25 +661,29 @@
             // 
             // btn_SalesSelect
             // 
+            this.btn_SalesSelect.Appearance.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_SalesSelect.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SalesSelect.Appearance.Options.UseBackColor = true;
             this.btn_SalesSelect.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_SalesSelect, 3);
+            this.tablePanel7.SetColumn(this.btn_SalesSelect, 1);
             this.btn_SalesSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_SalesSelect.Location = new System.Drawing.Point(312, 65);
-            this.btn_SalesSelect.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_SalesSelect.Location = new System.Drawing.Point(107, 5);
+            this.btn_SalesSelect.Margin = new System.Windows.Forms.Padding(5);
             this.btn_SalesSelect.Name = "btn_SalesSelect";
-            this.tablePanel7.SetRow(this.btn_SalesSelect, 1);
+            this.tablePanel7.SetRow(this.btn_SalesSelect, 0);
             this.btn_SalesSelect.Size = new System.Drawing.Size(92, 50);
             this.btn_SalesSelect.TabIndex = 33;
             // 
             // btn_Reset
             // 
-            this.btn_Reset.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_Reset.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Reset.Appearance.Options.UseBackColor = true;
             this.btn_Reset.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_Reset, 2);
+            this.tablePanel7.SetColumn(this.btn_Reset, 3);
             this.btn_Reset.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Reset.Location = new System.Drawing.Point(210, 65);
-            this.btn_Reset.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Reset.Location = new System.Drawing.Point(312, 65);
+            this.btn_Reset.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Reset.Name = "btn_Reset";
             this.tablePanel7.SetRow(this.btn_Reset, 1);
             this.btn_Reset.Size = new System.Drawing.Size(92, 50);
@@ -674,12 +693,14 @@
             // 
             // btn_ObjectMinus
             // 
-            this.btn_ObjectMinus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ObjectMinus.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_ObjectMinus.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_ObjectMinus.Appearance.Options.UseBackColor = true;
             this.btn_ObjectMinus.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_ObjectMinus, 1);
+            this.tablePanel7.SetColumn(this.btn_ObjectMinus, 2);
             this.btn_ObjectMinus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ObjectMinus.Location = new System.Drawing.Point(107, 65);
-            this.btn_ObjectMinus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_ObjectMinus.Location = new System.Drawing.Point(210, 65);
+            this.btn_ObjectMinus.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ObjectMinus.Name = "btn_ObjectMinus";
             this.tablePanel7.SetRow(this.btn_ObjectMinus, 1);
             this.btn_ObjectMinus.Size = new System.Drawing.Size(92, 50);
@@ -689,7 +710,9 @@
             // 
             // btn_Name
             // 
+            this.btn_Name.Appearance.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_Name.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Name.Appearance.Options.UseBackColor = true;
             this.btn_Name.Appearance.Options.UseFont = true;
             this.btn_Name.Appearance.Options.UseTextOptions = true;
             this.btn_Name.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -697,7 +720,7 @@
             this.tablePanel7.SetColumn(this.btn_Name, 0);
             this.btn_Name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Name.Location = new System.Drawing.Point(5, 5);
-            this.btn_Name.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Name.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Name.Name = "btn_Name";
             this.tablePanel7.SetRow(this.btn_Name, 0);
             this.btn_Name.Size = new System.Drawing.Size(92, 50);
@@ -705,15 +728,17 @@
             // 
             // btn_Minus
             // 
-            this.btn_Minus.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
+            this.btn_Minus.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_Minus.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Minus.Appearance.Options.UseBackColor = true;
             this.btn_Minus.Appearance.Options.UseFont = true;
             this.btn_Minus.Appearance.Options.UseTextOptions = true;
             this.btn_Minus.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.btn_Minus.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
-            this.tablePanel7.SetColumn(this.btn_Minus, 1);
+            this.tablePanel7.SetColumn(this.btn_Minus, 2);
             this.btn_Minus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Minus.Location = new System.Drawing.Point(107, 5);
-            this.btn_Minus.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Minus.Location = new System.Drawing.Point(210, 5);
+            this.btn_Minus.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Minus.Name = "btn_Minus";
             this.tablePanel7.SetRow(this.btn_Minus, 0);
             this.btn_Minus.Size = new System.Drawing.Size(92, 50);
@@ -723,12 +748,14 @@
             // 
             // btn_Pay
             // 
-            this.btn_Pay.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Pay.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_Pay.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Pay.Appearance.Options.UseBackColor = true;
             this.btn_Pay.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_Pay, 2);
+            this.tablePanel7.SetColumn(this.btn_Pay, 3);
             this.btn_Pay.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Pay.Location = new System.Drawing.Point(210, 5);
-            this.btn_Pay.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_Pay.Location = new System.Drawing.Point(312, 5);
+            this.btn_Pay.Margin = new System.Windows.Forms.Padding(5);
             this.btn_Pay.Name = "btn_Pay";
             this.tablePanel7.SetRow(this.btn_Pay, 0);
             this.btn_Pay.Size = new System.Drawing.Size(92, 50);
@@ -738,25 +765,29 @@
             // 
             // btn_ReceipeSelect
             // 
+            this.btn_ReceipeSelect.Appearance.BackColor = System.Drawing.Color.AliceBlue;
             this.btn_ReceipeSelect.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ReceipeSelect.Appearance.Options.UseBackColor = true;
             this.btn_ReceipeSelect.Appearance.Options.UseFont = true;
-            this.tablePanel7.SetColumn(this.btn_ReceipeSelect, 3);
+            this.tablePanel7.SetColumn(this.btn_ReceipeSelect, 1);
             this.btn_ReceipeSelect.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ReceipeSelect.Location = new System.Drawing.Point(312, 5);
-            this.btn_ReceipeSelect.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_ReceipeSelect.Location = new System.Drawing.Point(107, 65);
+            this.btn_ReceipeSelect.Margin = new System.Windows.Forms.Padding(5);
             this.btn_ReceipeSelect.Name = "btn_ReceipeSelect";
-            this.tablePanel7.SetRow(this.btn_ReceipeSelect, 0);
+            this.tablePanel7.SetRow(this.btn_ReceipeSelect, 1);
             this.btn_ReceipeSelect.Size = new System.Drawing.Size(92, 50);
             this.btn_ReceipeSelect.TabIndex = 28;
             // 
             // btn_MemberShip
             // 
-            this.btn_MemberShip.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_MemberShip.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btn_MemberShip.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_MemberShip.Appearance.Options.UseBackColor = true;
             this.btn_MemberShip.Appearance.Options.UseFont = true;
             this.tablePanel7.SetColumn(this.btn_MemberShip, 4);
             this.btn_MemberShip.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_MemberShip.Location = new System.Drawing.Point(415, 5);
-            this.btn_MemberShip.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btn_MemberShip.Margin = new System.Windows.Forms.Padding(5);
             this.btn_MemberShip.Name = "btn_MemberShip";
             this.tablePanel7.SetRow(this.btn_MemberShip, 0);
             this.btn_MemberShip.Size = new System.Drawing.Size(92, 50);
@@ -814,10 +845,12 @@
             // 
             // Menu20
             // 
+            this.Menu20.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu20.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu20, 4);
             this.Menu20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu20.Location = new System.Drawing.Point(415, 297);
-            this.Menu20.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu20.Margin = new System.Windows.Forms.Padding(5);
             this.Menu20.Name = "Menu20";
             this.tablePanel6.SetRow(this.Menu20, 4);
             this.Menu20.Size = new System.Drawing.Size(92, 65);
@@ -826,10 +859,12 @@
             // 
             // Menu19
             // 
+            this.Menu19.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu19.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu19, 3);
             this.Menu19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu19.Location = new System.Drawing.Point(312, 297);
-            this.Menu19.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu19.Margin = new System.Windows.Forms.Padding(5);
             this.Menu19.Name = "Menu19";
             this.tablePanel6.SetRow(this.Menu19, 4);
             this.Menu19.Size = new System.Drawing.Size(92, 65);
@@ -838,10 +873,12 @@
             // 
             // Menu18
             // 
+            this.Menu18.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu18.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu18, 2);
             this.Menu18.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu18.Location = new System.Drawing.Point(210, 297);
-            this.Menu18.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu18.Margin = new System.Windows.Forms.Padding(5);
             this.Menu18.Name = "Menu18";
             this.tablePanel6.SetRow(this.Menu18, 4);
             this.Menu18.Size = new System.Drawing.Size(92, 65);
@@ -850,10 +887,12 @@
             // 
             // Menu17
             // 
+            this.Menu17.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu17.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu17, 1);
             this.Menu17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu17.Location = new System.Drawing.Point(107, 297);
-            this.Menu17.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu17.Margin = new System.Windows.Forms.Padding(5);
             this.Menu17.Name = "Menu17";
             this.tablePanel6.SetRow(this.Menu17, 4);
             this.Menu17.Size = new System.Drawing.Size(92, 65);
@@ -862,10 +901,12 @@
             // 
             // Menu16
             // 
+            this.Menu16.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu16.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu16, 0);
             this.Menu16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu16.Location = new System.Drawing.Point(5, 297);
-            this.Menu16.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu16.Margin = new System.Windows.Forms.Padding(5);
             this.Menu16.Name = "Menu16";
             this.tablePanel6.SetRow(this.Menu16, 4);
             this.Menu16.Size = new System.Drawing.Size(92, 65);
@@ -874,10 +915,12 @@
             // 
             // Menu15
             // 
+            this.Menu15.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu15.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu15, 4);
             this.Menu15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu15.Location = new System.Drawing.Point(415, 224);
-            this.Menu15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu15.Margin = new System.Windows.Forms.Padding(5);
             this.Menu15.Name = "Menu15";
             this.tablePanel6.SetRow(this.Menu15, 3);
             this.Menu15.Size = new System.Drawing.Size(92, 63);
@@ -886,10 +929,12 @@
             // 
             // Menu14
             // 
+            this.Menu14.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu14.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu14, 3);
             this.Menu14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu14.Location = new System.Drawing.Point(312, 224);
-            this.Menu14.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu14.Margin = new System.Windows.Forms.Padding(5);
             this.Menu14.Name = "Menu14";
             this.tablePanel6.SetRow(this.Menu14, 3);
             this.Menu14.Size = new System.Drawing.Size(92, 63);
@@ -898,10 +943,12 @@
             // 
             // Menu13
             // 
+            this.Menu13.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu13.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu13, 2);
             this.Menu13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu13.Location = new System.Drawing.Point(210, 224);
-            this.Menu13.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu13.Margin = new System.Windows.Forms.Padding(5);
             this.Menu13.Name = "Menu13";
             this.tablePanel6.SetRow(this.Menu13, 3);
             this.Menu13.Size = new System.Drawing.Size(92, 63);
@@ -910,10 +957,12 @@
             // 
             // Menu12
             // 
+            this.Menu12.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu12.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu12, 1);
             this.Menu12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu12.Location = new System.Drawing.Point(107, 224);
-            this.Menu12.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu12.Margin = new System.Windows.Forms.Padding(5);
             this.Menu12.Name = "Menu12";
             this.tablePanel6.SetRow(this.Menu12, 3);
             this.Menu12.Size = new System.Drawing.Size(92, 63);
@@ -922,10 +971,12 @@
             // 
             // Menu11
             // 
+            this.Menu11.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu11.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu11, 0);
             this.Menu11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu11.Location = new System.Drawing.Point(5, 224);
-            this.Menu11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu11.Margin = new System.Windows.Forms.Padding(5);
             this.Menu11.Name = "Menu11";
             this.tablePanel6.SetRow(this.Menu11, 3);
             this.Menu11.Size = new System.Drawing.Size(92, 63);
@@ -934,10 +985,12 @@
             // 
             // Menu10
             // 
+            this.Menu10.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu10.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu10, 4);
             this.Menu10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu10.Location = new System.Drawing.Point(415, 151);
-            this.Menu10.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu10.Margin = new System.Windows.Forms.Padding(5);
             this.Menu10.Name = "Menu10";
             this.tablePanel6.SetRow(this.Menu10, 2);
             this.Menu10.Size = new System.Drawing.Size(92, 63);
@@ -946,10 +999,12 @@
             // 
             // Menu9
             // 
+            this.Menu9.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu9.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu9, 3);
             this.Menu9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu9.Location = new System.Drawing.Point(312, 151);
-            this.Menu9.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu9.Margin = new System.Windows.Forms.Padding(5);
             this.Menu9.Name = "Menu9";
             this.tablePanel6.SetRow(this.Menu9, 2);
             this.Menu9.Size = new System.Drawing.Size(92, 63);
@@ -958,10 +1013,12 @@
             // 
             // Menu8
             // 
+            this.Menu8.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu8.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu8, 2);
             this.Menu8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu8.Location = new System.Drawing.Point(210, 151);
-            this.Menu8.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu8.Margin = new System.Windows.Forms.Padding(5);
             this.Menu8.Name = "Menu8";
             this.tablePanel6.SetRow(this.Menu8, 2);
             this.Menu8.Size = new System.Drawing.Size(92, 63);
@@ -970,10 +1027,12 @@
             // 
             // Menu7
             // 
+            this.Menu7.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu7.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu7, 1);
             this.Menu7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu7.Location = new System.Drawing.Point(107, 151);
-            this.Menu7.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu7.Margin = new System.Windows.Forms.Padding(5);
             this.Menu7.Name = "Menu7";
             this.tablePanel6.SetRow(this.Menu7, 2);
             this.Menu7.Size = new System.Drawing.Size(92, 63);
@@ -982,10 +1041,12 @@
             // 
             // Menu6
             // 
+            this.Menu6.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu6.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu6, 0);
             this.Menu6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu6.Location = new System.Drawing.Point(5, 151);
-            this.Menu6.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu6.Margin = new System.Windows.Forms.Padding(5);
             this.Menu6.Name = "Menu6";
             this.tablePanel6.SetRow(this.Menu6, 2);
             this.Menu6.Size = new System.Drawing.Size(92, 63);
@@ -994,10 +1055,12 @@
             // 
             // Menu5
             // 
+            this.Menu5.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu5.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu5, 4);
             this.Menu5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu5.Location = new System.Drawing.Point(415, 78);
-            this.Menu5.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu5.Margin = new System.Windows.Forms.Padding(5);
             this.Menu5.Name = "Menu5";
             this.tablePanel6.SetRow(this.Menu5, 1);
             this.Menu5.Size = new System.Drawing.Size(92, 63);
@@ -1006,10 +1069,12 @@
             // 
             // Menu4
             // 
+            this.Menu4.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu4.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu4, 3);
             this.Menu4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu4.Location = new System.Drawing.Point(312, 78);
-            this.Menu4.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu4.Margin = new System.Windows.Forms.Padding(5);
             this.Menu4.Name = "Menu4";
             this.tablePanel6.SetRow(this.Menu4, 1);
             this.Menu4.Size = new System.Drawing.Size(92, 63);
@@ -1018,10 +1083,12 @@
             // 
             // Menu3
             // 
+            this.Menu3.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu3.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu3, 2);
             this.Menu3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu3.Location = new System.Drawing.Point(210, 78);
-            this.Menu3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu3.Margin = new System.Windows.Forms.Padding(5);
             this.Menu3.Name = "Menu3";
             this.tablePanel6.SetRow(this.Menu3, 1);
             this.Menu3.Size = new System.Drawing.Size(92, 63);
@@ -1030,10 +1097,12 @@
             // 
             // Menu2
             // 
+            this.Menu2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu2.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu2, 1);
             this.Menu2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu2.Location = new System.Drawing.Point(107, 78);
-            this.Menu2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu2.Margin = new System.Windows.Forms.Padding(5);
             this.Menu2.Name = "Menu2";
             this.tablePanel6.SetRow(this.Menu2, 1);
             this.Menu2.Size = new System.Drawing.Size(92, 63);
@@ -1042,10 +1111,12 @@
             // 
             // Menu1
             // 
+            this.Menu1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu1.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.Menu1, 0);
             this.Menu1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Menu1.Location = new System.Drawing.Point(5, 78);
-            this.Menu1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Menu1.Margin = new System.Windows.Forms.Padding(5);
             this.Menu1.Name = "Menu1";
             this.tablePanel6.SetRow(this.Menu1, 1);
             this.Menu1.Size = new System.Drawing.Size(92, 63);
@@ -1055,13 +1126,13 @@
             // simpleButton17
             // 
             this.simpleButton17.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton17.Appearance.Options.UseBackColor = true;
             this.simpleButton17.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton17, 4);
             this.simpleButton17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton17.Location = new System.Drawing.Point(415, 5);
-            this.simpleButton17.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.simpleButton17.Margin = new System.Windows.Forms.Padding(5);
             this.simpleButton17.Name = "simpleButton17";
             this.tablePanel6.SetRow(this.simpleButton17, 0);
             this.simpleButton17.Size = new System.Drawing.Size(92, 63);
@@ -1072,13 +1143,13 @@
             // simpleButton16
             // 
             this.simpleButton16.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton16.Appearance.Options.UseBackColor = true;
             this.simpleButton16.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton16, 3);
             this.simpleButton16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton16.Location = new System.Drawing.Point(312, 5);
-            this.simpleButton16.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.simpleButton16.Margin = new System.Windows.Forms.Padding(5);
             this.simpleButton16.Name = "simpleButton16";
             this.tablePanel6.SetRow(this.simpleButton16, 0);
             this.simpleButton16.Size = new System.Drawing.Size(92, 63);
@@ -1089,13 +1160,13 @@
             // simpleButton15
             // 
             this.simpleButton15.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton15.Appearance.Options.UseBackColor = true;
             this.simpleButton15.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton15, 2);
             this.simpleButton15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton15.Location = new System.Drawing.Point(210, 5);
-            this.simpleButton15.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.simpleButton15.Margin = new System.Windows.Forms.Padding(5);
             this.simpleButton15.Name = "simpleButton15";
             this.tablePanel6.SetRow(this.simpleButton15, 0);
             this.simpleButton15.Size = new System.Drawing.Size(92, 63);
@@ -1106,13 +1177,13 @@
             // simpleButton14
             // 
             this.simpleButton14.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton14.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton14.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton14.Appearance.Options.UseBackColor = true;
             this.simpleButton14.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton14, 1);
             this.simpleButton14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton14.Location = new System.Drawing.Point(107, 5);
-            this.simpleButton14.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.simpleButton14.Margin = new System.Windows.Forms.Padding(5);
             this.simpleButton14.Name = "simpleButton14";
             this.tablePanel6.SetRow(this.simpleButton14, 0);
             this.simpleButton14.Size = new System.Drawing.Size(92, 63);
@@ -1123,13 +1194,13 @@
             // simpleButton13
             // 
             this.simpleButton13.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton13.Appearance.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton13.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton13.Appearance.Options.UseBackColor = true;
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton13, 0);
             this.simpleButton13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.simpleButton13.Location = new System.Drawing.Point(5, 5);
-            this.simpleButton13.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.simpleButton13.Margin = new System.Windows.Forms.Padding(5);
             this.simpleButton13.Name = "simpleButton13";
             this.tablePanel6.SetRow(this.simpleButton13, 0);
             this.simpleButton13.Size = new System.Drawing.Size(92, 63);
@@ -1174,17 +1245,28 @@
             this.gridView1.Appearance.GroupPanel.BackColor = System.Drawing.Color.DimGray;
             this.gridView1.Appearance.GroupPanel.BackColor2 = System.Drawing.Color.AntiqueWhite;
             this.gridView1.Appearance.GroupPanel.Options.UseBackColor = true;
+            this.gridView1.Appearance.HeaderPanel.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gridView1.Appearance.HeaderPanel.Options.UseFont = true;
+            this.gridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.gridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridView1.Appearance.HeaderPanel.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridView1.Appearance.Row.BackColor2 = System.Drawing.Color.DimGray;
+            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.ColumnPanelRowHeight = 0;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.Menu,
             this.Price,
             this.QTY});
             this.gridView1.DetailHeight = 164;
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridView1.FooterPanelHeight = 0;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.GroupRowHeight = 0;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsCustomization.AllowColumnMoving = false;
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
+            this.gridView1.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             this.gridView1.RowHeight = 0;
@@ -1193,10 +1275,17 @@
             // 
             // Menu
             // 
+            this.Menu.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Menu.AppearanceCell.Options.UseFont = true;
+            this.Menu.AppearanceHeader.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Menu.AppearanceHeader.Options.UseBackColor = true;
             this.Menu.Caption = "메뉴";
             this.Menu.FieldName = "Menu";
             this.Menu.MinWidth = 22;
             this.Menu.Name = "Menu";
+            this.Menu.OptionsColumn.AllowEdit = false;
+            this.Menu.OptionsColumn.AllowFocus = false;
+            this.Menu.OptionsColumn.FixedWidth = true;
             this.Menu.Visible = true;
             this.Menu.VisibleIndex = 0;
             this.Menu.Width = 81;
@@ -1204,21 +1293,44 @@
             // Price
             // 
             this.Price.AppearanceCell.BackColor = System.Drawing.Color.White;
+            this.Price.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Price.AppearanceCell.Options.UseBackColor = true;
+            this.Price.AppearanceCell.Options.UseFont = true;
+            this.Price.AppearanceCell.Options.UseTextOptions = true;
+            this.Price.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.Price.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.Price.AppearanceHeader.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Price.AppearanceHeader.Options.UseBackColor = true;
+            this.Price.AppearanceHeader.Options.UseTextOptions = true;
+            this.Price.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.Price.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.Price.Caption = "가격";
             this.Price.FieldName = "Price";
             this.Price.MinWidth = 22;
             this.Price.Name = "Price";
+            this.Price.OptionsColumn.AllowEdit = false;
+            this.Price.OptionsColumn.AllowFocus = false;
+            this.Price.OptionsColumn.FixedWidth = true;
             this.Price.Visible = true;
             this.Price.VisibleIndex = 1;
             this.Price.Width = 81;
             // 
             // QTY
             // 
+            this.QTY.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.QTY.AppearanceCell.Options.UseFont = true;
+            this.QTY.AppearanceCell.Options.UseTextOptions = true;
+            this.QTY.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.QTY.AppearanceCell.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.QTY.AppearanceHeader.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.QTY.AppearanceHeader.Options.UseBackColor = true;
             this.QTY.Caption = "개수";
             this.QTY.FieldName = "QTY";
             this.QTY.MinWidth = 22;
             this.QTY.Name = "QTY";
+            this.QTY.OptionsColumn.AllowEdit = false;
+            this.QTY.OptionsColumn.AllowFocus = false;
+            this.QTY.OptionsColumn.FixedWidth = true;
             this.QTY.Visible = true;
             this.QTY.VisibleIndex = 2;
             this.QTY.Width = 81;
