@@ -91,5 +91,19 @@ namespace Smart_POS_X.UI
             DBHelper.IP = IP.Text;
             DB.DBCheckConnection();
         }
+
+        private void toggleSwitch1_Toggled(object sender, EventArgs e)
+        {
+            if (toggleSwitch1.EditValue.ToString() == "True") {
+                DevExpress.UserSkins.BonusSkins.Register(); 
+                DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Visual Studio 2013 Dark"; 
+            }
+
+            if (toggleSwitch1.EditValue.ToString() == "False")
+            {
+                DevExpress.UserSkins.BonusSkins.Register();
+                DevExpress.LookAndFeel.UserLookAndFeel.Default.SkinName = "Visual Studio 2013 Blue";
+            }
+        }
     }
 }
