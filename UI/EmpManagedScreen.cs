@@ -21,9 +21,7 @@ namespace Smart_POS_X.UI
         public EmpManagedScreen()
         {
             InitializeComponent();
-
             Combo();
-
         }
 
         private void EmpManagedScreen_Load(object sender, EventArgs e)
@@ -37,7 +35,6 @@ namespace Smart_POS_X.UI
 
             if (DB.result == true)
             {
-
                 //DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
 
                 //gridControl1.DataSource = DT1;
@@ -65,14 +62,24 @@ namespace Smart_POS_X.UI
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
+            this.Focus();
             var dt = ((DataTable)gridControl1.DataSource);
-            dt.GetChanges();
+            var dtChanges = dt.GetChanges();
 
 
+            foreach(DataRow dr in dtChanges.Rows)   
+                DB.Exec($"EMPSelect_CUD '{dr["UserID"]}'" +           
+                    $"                 ,'{dr["UserPW"]}'" +
+                    $"                 ,'{dr["EmployeeCode"]}'" +
+                    $"                 ,'{dr["EmployeeName"]}'" +
+                    $"                 ,'{dr["EmployeeJob"]}'" +
+                    $"                 ,'{dr["EmployeeEmail"]}'" +
+                    $"                 ,'{dr["Address"]}'" +
+                    $"                 ,'{dr["EmployeeAge"]}'" +
+                    $"                 ,'{dr["WorkGroup"]}'" +
+                    $"                 ,'{dr["WorkStatus"]}'" +
+                    $"                 ,'{dr["Comments"]}'");
 
-
-
-            DB.Exec($"EMPSelect_CUD '직급','Y'");
         }
 
         private void btn_Add_Click(object sender, EventArgs e)
