@@ -384,6 +384,7 @@
             this.ClientSize = new System.Drawing.Size(475, 401);
             this.Controls.Add(this.tablePanel1);
             this.Name = "MemberJoinPopUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "멤버십 가입";
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);

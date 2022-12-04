@@ -36,22 +36,22 @@
             this.btn_Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Admin = new DevExpress.XtraEditors.SimpleButton();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
+            this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.IP = new DevExpress.XtraEditors.TextEdit();
             this.IPset = new DevExpress.XtraEditors.SimpleButton();
             this.btn_Login = new DevExpress.XtraEditors.SimpleButton();
-            this.toggleSwitch1 = new DevExpress.XtraEditors.ToggleSwitch();
             ((System.ComponentModel.ISupportInitialize)(this.txt_ID.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IP.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.tablePanel1.SetColumn(this.labelControl1, 1);
@@ -67,7 +67,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.labelControl2, 1);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -111,7 +111,7 @@
             // 
             // btn_Cancel
             // 
-            this.btn_Cancel.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Cancel.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Cancel, 4);
             this.btn_Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -126,7 +126,7 @@
             // 
             // btn_Admin
             // 
-            this.btn_Admin.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Admin.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Admin.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Admin, 4);
             this.btn_Admin.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -173,9 +173,22 @@
             this.tablePanel1.TabIndex = 7;
             this.tablePanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tablePanel1_Paint);
             // 
+            // toggleSwitch1
+            // 
+            this.tablePanel1.SetColumn(this.toggleSwitch1, 1);
+            this.toggleSwitch1.Location = new System.Drawing.Point(36, 28);
+            this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.toggleSwitch1.Name = "toggleSwitch1";
+            this.toggleSwitch1.Properties.OffText = "";
+            this.toggleSwitch1.Properties.OnText = "";
+            this.tablePanel1.SetRow(this.toggleSwitch1, 0);
+            this.toggleSwitch1.Size = new System.Drawing.Size(190, 26);
+            this.toggleSwitch1.TabIndex = 12;
+            this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled);
+            // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.simpleButton1, 4);
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -204,7 +217,7 @@
             // 
             // IPset
             // 
-            this.IPset.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.IPset.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IPset.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.IPset, 1);
             this.IPset.Location = new System.Drawing.Point(40, 321);
@@ -218,7 +231,7 @@
             // 
             // btn_Login
             // 
-            this.btn_Login.Appearance.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btn_Login.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Login.Appearance.Options.UseFont = true;
             this.tablePanel1.SetColumn(this.btn_Login, 4);
             this.btn_Login.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -231,22 +244,10 @@
             this.btn_Login.Text = "로그인";
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
-            // toggleSwitch1
-            // 
-            this.tablePanel1.SetColumn(this.toggleSwitch1, 1);
-            this.toggleSwitch1.Location = new System.Drawing.Point(36, 21);
-            this.toggleSwitch1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.toggleSwitch1.Name = "toggleSwitch1";
-            this.toggleSwitch1.Properties.OffText = "";
-            this.toggleSwitch1.Properties.OnText = "";
-            this.tablePanel1.SetRow(this.toggleSwitch1, 0);
-            this.toggleSwitch1.Size = new System.Drawing.Size(190, 40);
-            this.toggleSwitch1.TabIndex = 12;
-            this.toggleSwitch1.Toggled += new System.EventHandler(this.toggleSwitch1_Toggled);
-            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
+            this.Appearance.Options.UseFont = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(888, 465);
             this.Controls.Add(this.tablePanel1);
@@ -254,14 +255,15 @@
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("Login.IconOptions.LargeImage")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "로그인";
             ((System.ComponentModel.ISupportInitialize)(this.txt_ID.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_Password.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             this.tablePanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.IP.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleSwitch1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IP.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

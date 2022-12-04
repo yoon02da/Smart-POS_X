@@ -304,11 +304,17 @@ namespace Smart_POS_X.UI
             MemberSelectPopUp memberSelect = new MemberSelectPopUp();
             memberSelect.SellingCode = SellingCodeMember;
             memberSelect.ShowDialog();
-            if(memberSelect.res == DialogResult.OK)
+            if (memberSelect.res == DialogResult.OK)
             {
-                btn_Name.Text = memberSelect.dataRowSelect.Field<string>("MemberName");
-
-                SellingCodeMember = memberSelect.dataRowSelect.Field<string>("MemberCode");
+                if(string.IsNullOrEmpty(btn_Name.Text))
+                {
+                    memberSelect.Close();
+                }
+                else
+                {
+                    btn_Name.Text = memberSelect.dataRowSelect.Field<string>("MemberName");
+                    SellingCodeMember = memberSelect.dataRowSelect.Field<string>("MemberCode");
+                }
             }
         }
         #endregion
