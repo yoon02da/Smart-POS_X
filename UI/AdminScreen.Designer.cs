@@ -71,7 +71,7 @@
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
-            this.tablePanel1.Size = new System.Drawing.Size(1036, 493);
+            this.tablePanel1.Size = new System.Drawing.Size(1952, 985);
             this.tablePanel1.TabIndex = 0;
             // 
             // panelControl2
@@ -86,7 +86,7 @@
             this.panelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl2.Name = "panelControl2";
             this.tablePanel1.SetRow(this.panelControl2, 0);
-            this.panelControl2.Size = new System.Drawing.Size(155, 493);
+            this.panelControl2.Size = new System.Drawing.Size(293, 985);
             this.panelControl2.TabIndex = 2;
             // 
             // tablePanel2
@@ -108,7 +108,7 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 8F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 60F)});
-            this.tablePanel2.Size = new System.Drawing.Size(155, 493);
+            this.tablePanel2.Size = new System.Drawing.Size(293, 985);
             this.tablePanel2.TabIndex = 0;
             // 
             // btn_Refresh
@@ -118,11 +118,11 @@
             this.btn_Refresh.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_Refresh, 0);
             this.btn_Refresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Refresh.Location = new System.Drawing.Point(50, 138);
-            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
+            this.btn_Refresh.Location = new System.Drawing.Point(100, 292);
+            this.btn_Refresh.Margin = new System.Windows.Forms.Padding(100, 18, 100, 18);
             this.btn_Refresh.Name = "btn_Refresh";
             this.tablePanel2.SetRow(this.btn_Refresh, 3);
-            this.btn_Refresh.Size = new System.Drawing.Size(55, 13);
+            this.btn_Refresh.Size = new System.Drawing.Size(93, 29);
             this.btn_Refresh.TabIndex = 3;
             this.btn_Refresh.Text = "새로고침";
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
@@ -134,11 +134,11 @@
             this.btn_End.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_End, 0);
             this.btn_End.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_End.Location = new System.Drawing.Point(50, 105);
-            this.btn_End.Margin = new System.Windows.Forms.Padding(50, 10, 50, 10);
+            this.btn_End.Location = new System.Drawing.Point(100, 227);
+            this.btn_End.Margin = new System.Windows.Forms.Padding(100, 18, 100, 18);
             this.btn_End.Name = "btn_End";
             this.tablePanel2.SetRow(this.btn_End, 2);
-            this.btn_End.Size = new System.Drawing.Size(55, 13);
+            this.btn_End.Size = new System.Drawing.Size(93, 29);
             this.btn_End.TabIndex = 2;
             this.btn_End.Text = "종료";
             this.btn_End.Click += new System.EventHandler(this.btn_End_Click);
@@ -148,7 +148,7 @@
             this.tablePanel2.SetColumn(this.pictureEdit1, 0);
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit1.EditValue = global::Smart_POS_X.Properties.Resources.administrator_3552;
-            this.pictureEdit1.Location = new System.Drawing.Point(0, 12);
+            this.pictureEdit1.Location = new System.Drawing.Point(0, 47);
             this.pictureEdit1.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.AllowFocused = false;
@@ -158,7 +158,7 @@
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit1.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.tablePanel2.SetRow(this.pictureEdit1, 1);
-            this.pictureEdit1.Size = new System.Drawing.Size(155, 83);
+            this.pictureEdit1.Size = new System.Drawing.Size(293, 162);
             this.pictureEdit1.TabIndex = 1;
             // 
             // accordionControl1
@@ -180,13 +180,13 @@
             this.btnAco_Sales,
             this.btnAco_Menu,
             this.btnAco_Emp});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 244);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 501);
             this.accordionControl1.Margin = new System.Windows.Forms.Padding(0);
             this.accordionControl1.Name = "accordionControl1";
-            this.accordionControl1.Padding = new System.Windows.Forms.Padding(100, 100, 100, 100);
+            this.accordionControl1.Padding = new System.Windows.Forms.Padding(200, 181, 200, 181);
             this.tablePanel2.SetRow(this.accordionControl1, 5);
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Hidden;
-            this.accordionControl1.Size = new System.Drawing.Size(155, 249);
+            this.accordionControl1.Size = new System.Drawing.Size(293, 484);
             this.accordionControl1.TabIndex = 0;
             // 
             // btnAco_Sales
@@ -243,11 +243,11 @@
             this.tablePanel1.SetColumn(this.panelControl1, 1);
             this.panelControl1.Controls.Add(this.tablePanel3);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControl1.Location = new System.Drawing.Point(155, 0);
+            this.panelControl1.Location = new System.Drawing.Point(293, 0);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
             this.tablePanel1.SetRow(this.panelControl1, 0);
-            this.panelControl1.Size = new System.Drawing.Size(881, 493);
+            this.panelControl1.Size = new System.Drawing.Size(1659, 985);
             this.panelControl1.TabIndex = 1;
             // 
             // tablePanel3
@@ -259,12 +259,13 @@
             this.tablePanel3.Controls.Add(this.pictureEdit2);
             this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel3.Location = new System.Drawing.Point(0, 0);
+            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 40F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 20F)});
-            this.tablePanel3.Size = new System.Drawing.Size(881, 493);
+            this.tablePanel3.Size = new System.Drawing.Size(1659, 985);
             this.tablePanel3.TabIndex = 0;
             // 
             // pictureEdit2
@@ -272,7 +273,7 @@
             this.tablePanel3.SetColumn(this.pictureEdit2, 1);
             this.pictureEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureEdit2.EditValue = global::Smart_POS_X.Properties.Resources.POS_이미지;
-            this.pictureEdit2.Location = new System.Drawing.Point(110, 99);
+            this.pictureEdit2.Location = new System.Drawing.Point(207, 197);
             this.pictureEdit2.Margin = new System.Windows.Forms.Padding(0);
             this.pictureEdit2.Name = "pictureEdit2";
             this.pictureEdit2.Properties.AllowFocused = false;
@@ -284,7 +285,7 @@
             this.pictureEdit2.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pictureEdit2.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.tablePanel3.SetRow(this.pictureEdit2, 1);
-            this.pictureEdit2.Size = new System.Drawing.Size(551, 263);
+            this.pictureEdit2.Size = new System.Drawing.Size(1037, 525);
             this.pictureEdit2.TabIndex = 0;
             // 
             // accordionControlElement2
@@ -302,11 +303,13 @@
             // 
             // AdminScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1036, 493);
+            this.ClientSize = new System.Drawing.Size(1952, 985);
             this.Controls.Add(this.tablePanel1);
+            this.Font = new System.Drawing.Font("Tahoma", 9F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "AdminScreen";
             this.Text = "관리자모드";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
