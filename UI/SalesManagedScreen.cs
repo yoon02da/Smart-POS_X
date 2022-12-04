@@ -137,5 +137,10 @@ namespace Smart_POS_X.UI
             chart_TopDessert.Legend.Visible = false;
             chart_TopDessert.AnimationStartMode = ChartAnimationMode.OnDataChanged;
         }
+
+        private void chart_Week_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

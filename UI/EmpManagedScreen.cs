@@ -21,7 +21,6 @@ namespace Smart_POS_X.UI
         public EmpManagedScreen()
         {
             InitializeComponent();
-
             Combo();
         }
 
@@ -32,11 +31,10 @@ namespace Smart_POS_X.UI
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
+            gridControl1.DataSource=DB.Exec($"EMPSelect_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
 
             if (DB.result == true)
             {
-
                 //DataTable DT1 = DB.Exec($"ReceiptSelct_S01 '{txt_EmpCode.Text}', '{cbo_Job.Text}', '{cbo_WorkGroup.Text}', '{cbo_WorkState.Text}'");
 
                 //gridControl1.DataSource = DT1;
@@ -56,6 +54,38 @@ namespace Smart_POS_X.UI
             cbo_Job.cbo.Properties.DisplayMember = "NAME";
             cbo_WorkGroup.cbo.Properties.DisplayMember = "NAME";
             cbo_WorkState.cbo.Properties.DisplayMember = "NAME";
+
+            repositoryItemLookUpEdit1.DataSource = DB.Exec($"CODE_SELECT '직급','Y'");
+            repositoryItemLookUpEdit2.DataSource = DB.Exec($"CODE_SELECT '근무조','Y'");
+            repositoryItemLookUpEdit3.DataSource = DB.Exec($"CODE_SELECT '근무상태','Y'");
         }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            this.Focus();
+            var dt = ((DataTable)gridControl1.DataSource);
+            var dtChanges = dt.GetChanges();
+
+
+            foreach(DataRow dr in dtChanges.Rows)   
+                DB.Exec($"EMPSelect_CUD '{dr["UserID"]}'" +           
+                    $"                 ,'{dr["UserPW"]}'" +
+                    $"                 ,'{dr["EmployeeCode"]}'" +
+                    $"                 ,'{dr["EmployeeName"]}'" +
+                    $"                 ,'{dr["EmployeeJob"]}'" +
+                    $"                 ,'{dr["EmployeeEmail"]}'" +
+                    $"                 ,'{dr["Address"]}'" +
+                    $"                 ,'{dr["EmployeeAge"]}'" +
+                    $"                 ,'{dr["WorkGroup"]}'" +
+                    $"                 ,'{dr["WorkStatus"]}'" +
+                    $"                 ,'{dr["Comments"]}'");
+
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            gridView1.AddNewRow();
+        }
+
     }
 }
