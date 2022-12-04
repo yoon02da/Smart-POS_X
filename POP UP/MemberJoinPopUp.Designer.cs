@@ -113,16 +113,20 @@
             // 
             this.tablePanel5.SetColumn(this.txt_PhoneNum, 1);
             this.txt_PhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_PhoneNum.Location = new System.Drawing.Point(127, 5);
-            this.txt_PhoneNum.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.txt_PhoneNum.Location = new System.Drawing.Point(127, 0);
+            this.txt_PhoneNum.Margin = new System.Windows.Forms.Padding(0);
             this.txt_PhoneNum.Name = "txt_PhoneNum";
+            this.txt_PhoneNum.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_PhoneNum.Properties.Appearance.Options.UseFont = true;
             this.txt_PhoneNum.Properties.AutoHeight = false;
             this.tablePanel5.SetRow(this.txt_PhoneNum, 0);
-            this.txt_PhoneNum.Size = new System.Drawing.Size(295, 24);
+            this.txt_PhoneNum.Size = new System.Drawing.Size(295, 34);
             this.txt_PhoneNum.TabIndex = 1;
             // 
             // labelControl3
             // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
             this.tablePanel5.SetColumn(this.labelControl3, 0);
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl3.Location = new System.Drawing.Point(0, 0);
@@ -155,16 +159,25 @@
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn9});
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
             // 
             // gridColumn1
             // 
+            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gridColumn1.AppearanceCell.Options.UseFont = true;
             this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn1.Caption = "고객명";
             this.gridColumn1.FieldName = "MemberName";
             this.gridColumn1.Name = "gridColumn1";
@@ -173,6 +186,15 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gridColumn2.AppearanceCell.Options.UseFont = true;
+            this.gridColumn2.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn2.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn2.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn2.Caption = "전화번호";
             this.gridColumn2.FieldName = "PhoneNumber";
             this.gridColumn2.Name = "gridColumn2";
@@ -181,6 +203,15 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gridColumn3.AppearanceCell.Options.UseFont = true;
+            this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn3.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn3.Caption = "보유 포인트";
             this.gridColumn3.FieldName = "PresentPoint";
             this.gridColumn3.Name = "gridColumn3";
@@ -189,6 +220,15 @@
             // 
             // gridColumn9
             // 
+            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.gridColumn9.AppearanceCell.Options.UseFont = true;
+            this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn9.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn9.AppearanceHeader.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.gridColumn9.Caption = "누적 포인트";
             this.gridColumn9.FieldName = "CumulativePoint";
             this.gridColumn9.Name = "gridColumn9";
@@ -216,16 +256,20 @@
             // 
             this.tablePanel4.SetColumn(this.txt_MemName, 1);
             this.txt_MemName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_MemName.Location = new System.Drawing.Point(127, 5);
-            this.txt_MemName.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.txt_MemName.Location = new System.Drawing.Point(127, 0);
+            this.txt_MemName.Margin = new System.Windows.Forms.Padding(0);
             this.txt_MemName.Name = "txt_MemName";
+            this.txt_MemName.Properties.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MemName.Properties.Appearance.Options.UseFont = true;
             this.txt_MemName.Properties.AutoHeight = false;
             this.tablePanel4.SetRow(this.txt_MemName, 0);
-            this.txt_MemName.Size = new System.Drawing.Size(295, 24);
+            this.txt_MemName.Size = new System.Drawing.Size(295, 34);
             this.txt_MemName.TabIndex = 1;
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl2.Location = new System.Drawing.Point(0, 0);
@@ -239,13 +283,17 @@
             // labelControl1
             // 
             this.labelControl1.Appearance.BackColor = System.Drawing.Color.Gainsboro;
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseBackColor = true;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.tablePanel1.SetColumn(this.labelControl1, 1);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(27, 13);
+            this.labelControl1.Location = new System.Drawing.Point(25, 11);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(1);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 1);
-            this.labelControl1.Size = new System.Drawing.Size(422, 24);
+            this.labelControl1.Size = new System.Drawing.Size(426, 28);
             this.labelControl1.TabIndex = 11;
             this.labelControl1.Text = "멤버십 가입 창";
             // 
@@ -269,6 +317,8 @@
             // 
             // btn_Cancel
             // 
+            this.btn_Cancel.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancel.Appearance.Options.UseFont = true;
             this.tablePanel3.SetColumn(this.btn_Cancel, 3);
             this.btn_Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Cancel.Location = new System.Drawing.Point(320, 3);
@@ -301,6 +351,8 @@
             // 
             // btn_ReInput
             // 
+            this.btn_ReInput.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ReInput.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_ReInput, 2);
             this.btn_ReInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_ReInput.Location = new System.Drawing.Point(217, 3);
@@ -313,6 +365,8 @@
             // 
             // btn_Join
             // 
+            this.btn_Join.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Join.Appearance.Options.UseFont = true;
             this.tablePanel2.SetColumn(this.btn_Join, 3);
             this.btn_Join.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_Join.Location = new System.Drawing.Point(324, 3);
@@ -330,7 +384,7 @@
             this.ClientSize = new System.Drawing.Size(475, 401);
             this.Controls.Add(this.tablePanel1);
             this.Name = "MemberJoinPopUp";
-            this.Text = "MemberJoinPopUp";
+            this.Text = "멤버십 가입";
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             this.tablePanel1.PerformLayout();

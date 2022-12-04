@@ -301,7 +301,7 @@
             // 
             // labelControl5
             // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl5.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl5, 0);
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -315,7 +315,7 @@
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl3.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl3, 0);
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -329,7 +329,7 @@
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -343,7 +343,7 @@
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 38F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 32F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.labelControl1.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl1, 0);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1126,7 +1126,7 @@
             // simpleButton17
             // 
             this.simpleButton17.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton17.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton17.Appearance.Options.UseBackColor = true;
             this.simpleButton17.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton17, 4);
@@ -1143,7 +1143,7 @@
             // simpleButton16
             // 
             this.simpleButton16.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton16.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton16.Appearance.Options.UseBackColor = true;
             this.simpleButton16.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton16, 3);
@@ -1160,7 +1160,7 @@
             // simpleButton15
             // 
             this.simpleButton15.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton15.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton15.Appearance.Options.UseBackColor = true;
             this.simpleButton15.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton15, 2);
@@ -1177,7 +1177,7 @@
             // simpleButton14
             // 
             this.simpleButton14.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton14.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton14.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton14.Appearance.Options.UseBackColor = true;
             this.simpleButton14.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton14, 1);
@@ -1194,7 +1194,7 @@
             // simpleButton13
             // 
             this.simpleButton13.Appearance.BackColor = System.Drawing.Color.RoyalBlue;
-            this.simpleButton13.Appearance.Font = new System.Drawing.Font("맑은 고딕", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.simpleButton13.Appearance.Font = new System.Drawing.Font("맑은 고딕", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.simpleButton13.Appearance.Options.UseBackColor = true;
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.tablePanel6.SetColumn(this.simpleButton13, 0);

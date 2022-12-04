@@ -75,7 +75,6 @@
             this.tablePanel1.Controls.Add(this.tablePanel3);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel1.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel1.Margin = new System.Windows.Forms.Padding(6);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F),
@@ -85,34 +84,32 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 15F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 20F)});
-            this.tablePanel1.Size = new System.Drawing.Size(802, 1414);
+            this.tablePanel1.Size = new System.Drawing.Size(432, 493);
             this.tablePanel1.TabIndex = 12;
             // 
             // pictureEdit1
             // 
             this.tablePanel1.SetColumn(this.pictureEdit1, 1);
             this.pictureEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureEdit1.Location = new System.Drawing.Point(26, 1052);
-            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(9, 11, 9, 11);
+            this.pictureEdit1.Location = new System.Drawing.Point(14, 367);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.NullText = " ";
             this.pictureEdit1.Properties.Padding = new System.Windows.Forms.Padding(5);
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.tablePanel1.SetRow(this.pictureEdit1, 4);
-            this.pictureEdit1.Size = new System.Drawing.Size(750, 154);
+            this.pictureEdit1.Size = new System.Drawing.Size(404, 51);
             this.pictureEdit1.TabIndex = 36;
             // 
             // gridControl2
             // 
             this.tablePanel1.SetColumn(this.gridControl2, 1);
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl2.Location = new System.Drawing.Point(23, 695);
+            this.gridControl2.Location = new System.Drawing.Point(12, 243);
             this.gridControl2.MainView = this.gridView2;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl2.Name = "gridControl2";
             this.tablePanel1.SetRow(this.gridControl2, 3);
-            this.gridControl2.Size = new System.Drawing.Size(756, 340);
+            this.gridControl2.Size = new System.Drawing.Size(408, 116);
             this.gridControl2.TabIndex = 14;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -122,79 +119,113 @@
             this.gridView2.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.gridView2.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.gridView2.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridView2.ColumnPanelRowHeight = 0;
             this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn4,
             this.gridColumn5,
             this.gridColumn6,
             this.gridColumn7,
             this.gridColumn8});
-            this.gridView2.DetailHeight = 747;
+            this.gridView2.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView2.FooterPanelHeight = 0;
             this.gridView2.GridControl = this.gridControl2;
+            this.gridView2.GroupRowHeight = 0;
             this.gridView2.Name = "gridView2";
+            this.gridView2.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView2.OptionsView.ShowGroupPanel = false;
             this.gridView2.OptionsView.ShowIndicator = false;
+            this.gridView2.RowHeight = 0;
+            this.gridView2.ViewCaptionHeight = 0;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn4.AppearanceCell.Options.UseFont = true;
+            this.gridColumn4.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn4.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn4.AppearanceHeader.Options.UseFont = true;
             this.gridColumn4.Caption = "총 결제 금액";
             this.gridColumn4.FieldName = "TotalPay";
-            this.gridColumn4.MinWidth = 37;
             this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.OptionsColumn.AllowEdit = false;
+            this.gridColumn4.OptionsColumn.AllowFocus = false;
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 0;
-            this.gridColumn4.Width = 139;
             // 
             // gridColumn5
             // 
+            this.gridColumn5.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn5.AppearanceCell.Options.UseFont = true;
+            this.gridColumn5.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn5.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn5.AppearanceHeader.Options.UseFont = true;
             this.gridColumn5.Caption = "현금 결제";
             this.gridColumn5.FieldName = "CashPay";
-            this.gridColumn5.MinWidth = 37;
             this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.OptionsColumn.AllowEdit = false;
+            this.gridColumn5.OptionsColumn.AllowFocus = false;
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 1;
-            this.gridColumn5.Width = 139;
             // 
             // gridColumn6
             // 
+            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn6.AppearanceCell.Options.UseFont = true;
+            this.gridColumn6.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn6.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.Caption = "포인트 결제";
             this.gridColumn6.FieldName = "PointPay";
-            this.gridColumn6.MinWidth = 37;
             this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.OptionsColumn.AllowEdit = false;
+            this.gridColumn6.OptionsColumn.AllowFocus = false;
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 2;
-            this.gridColumn6.Width = 139;
             // 
             // gridColumn7
             // 
+            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn7.AppearanceCell.Options.UseFont = true;
+            this.gridColumn7.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn7.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn7.AppearanceHeader.Options.UseFont = true;
             this.gridColumn7.Caption = "날짜";
             this.gridColumn7.FieldName = "CreateTime";
-            this.gridColumn7.MinWidth = 37;
             this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.OptionsColumn.AllowEdit = false;
+            this.gridColumn7.OptionsColumn.AllowFocus = false;
             this.gridColumn7.Visible = true;
             this.gridColumn7.VisibleIndex = 3;
-            this.gridColumn7.Width = 139;
             // 
             // gridColumn8
             // 
+            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn8.AppearanceCell.Options.UseFont = true;
+            this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn8.AppearanceHeader.Options.UseFont = true;
             this.gridColumn8.Caption = "책임자";
             this.gridColumn8.FieldName = "CreateUser";
-            this.gridColumn8.MinWidth = 37;
             this.gridColumn8.Name = "gridColumn8";
+            this.gridColumn8.OptionsColumn.AllowEdit = false;
+            this.gridColumn8.OptionsColumn.AllowFocus = false;
             this.gridColumn8.Visible = true;
             this.gridColumn8.VisibleIndex = 4;
-            this.gridColumn8.Width = 139;
             // 
             // gridControl1
             // 
             this.tablePanel1.SetColumn(this.gridControl1, 1);
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(6);
-            this.gridControl1.Location = new System.Drawing.Point(23, 108);
+            this.gridControl1.Location = new System.Drawing.Point(12, 40);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(6);
             this.gridControl1.Name = "gridControl1";
             this.tablePanel1.SetRow(this.gridControl1, 2);
-            this.gridControl1.Size = new System.Drawing.Size(756, 575);
+            this.gridControl1.Size = new System.Drawing.Size(408, 197);
             this.gridControl1.TabIndex = 13;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -203,50 +234,72 @@
             // 
             this.gridView1.Appearance.HeaderPanel.Options.UseTextOptions = true;
             this.gridView1.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridView1.ColumnPanelRowHeight = 0;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3});
-            this.gridView1.DetailHeight = 747;
+            this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
+            this.gridView1.FooterPanelHeight = 0;
             this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GroupRowHeight = 0;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             this.gridView1.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.False;
             this.gridView1.OptionsView.ShowGroupPanel = false;
             this.gridView1.OptionsView.ShowIndicator = false;
+            this.gridView1.RowHeight = 0;
+            this.gridView1.ViewCaptionHeight = 0;
             // 
             // gridColumn1
             // 
+            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn1.AppearanceCell.Options.UseFont = true;
             this.gridColumn1.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.Caption = "주문 목록";
             this.gridColumn1.FieldName = "MenuName";
-            this.gridColumn1.MinWidth = 37;
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.OptionsColumn.AllowEdit = false;
+            this.gridColumn1.OptionsColumn.AllowFocus = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 139;
             // 
             // gridColumn2
             // 
+            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn2.AppearanceCell.Options.UseFont = true;
+            this.gridColumn2.AppearanceCell.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn2.AppearanceHeader.Options.UseFont = true;
+            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.gridColumn2.Caption = "금액";
             this.gridColumn2.FieldName = "SellingPrice";
-            this.gridColumn2.MinWidth = 37;
             this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.OptionsColumn.AllowEdit = false;
+            this.gridColumn2.OptionsColumn.AllowFocus = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 139;
             // 
             // gridColumn3
             // 
+            this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("맑은 고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn3.AppearanceCell.Options.UseFont = true;
             this.gridColumn3.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridColumn3.AppearanceHeader.Options.UseFont = true;
             this.gridColumn3.Caption = "개수";
             this.gridColumn3.FieldName = "SellingCount";
-            this.gridColumn3.MinWidth = 37;
             this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.OptionsColumn.AllowEdit = false;
+            this.gridColumn3.OptionsColumn.AllowFocus = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 139;
             // 
             // tablePanel4
             // 
@@ -257,37 +310,40 @@
             this.tablePanel4.Controls.Add(this.lbl_SellingCode);
             this.tablePanel4.Controls.Add(this.labelControl2);
             this.tablePanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel4.Location = new System.Drawing.Point(23, 26);
-            this.tablePanel4.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel4.Location = new System.Drawing.Point(12, 12);
             this.tablePanel4.Name = "tablePanel4";
             this.tablePanel1.SetRow(this.tablePanel4, 1);
             this.tablePanel4.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel4.Size = new System.Drawing.Size(756, 70);
+            this.tablePanel4.Size = new System.Drawing.Size(408, 22);
             this.tablePanel4.TabIndex = 12;
             // 
             // lbl_SellingCode
             // 
             this.lbl_SellingCode.Appearance.BackColor = System.Drawing.Color.White;
+            this.lbl_SellingCode.Appearance.Font = new System.Drawing.Font("맑은 고딕", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_SellingCode.Appearance.Options.UseBackColor = true;
+            this.lbl_SellingCode.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.lbl_SellingCode, 1);
             this.lbl_SellingCode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbl_SellingCode.Location = new System.Drawing.Point(227, 0);
+            this.lbl_SellingCode.Location = new System.Drawing.Point(122, 0);
             this.lbl_SellingCode.Margin = new System.Windows.Forms.Padding(0);
             this.lbl_SellingCode.Name = "lbl_SellingCode";
             this.tablePanel4.SetRow(this.lbl_SellingCode, 0);
-            this.lbl_SellingCode.Size = new System.Drawing.Size(529, 70);
+            this.lbl_SellingCode.Size = new System.Drawing.Size(286, 22);
             this.lbl_SellingCode.TabIndex = 1;
             // 
             // labelControl2
             // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
             this.tablePanel4.SetColumn(this.labelControl2, 0);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelControl2.Location = new System.Drawing.Point(0, 0);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel4.SetRow(this.labelControl2, 0);
-            this.labelControl2.Size = new System.Drawing.Size(227, 70);
+            this.labelControl2.Size = new System.Drawing.Size(122, 22);
             this.labelControl2.TabIndex = 0;
             this.labelControl2.Text = "영수증 번호";
             // 
@@ -302,49 +358,49 @@
             this.tablePanel3.Controls.Add(this.simpleButton1);
             this.tablePanel3.Controls.Add(this.btn_Print);
             this.tablePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tablePanel3.Location = new System.Drawing.Point(23, 1223);
-            this.tablePanel3.Margin = new System.Windows.Forms.Padding(6);
+            this.tablePanel3.Location = new System.Drawing.Point(12, 426);
             this.tablePanel3.Name = "tablePanel3";
             this.tablePanel1.SetRow(this.tablePanel3, 5);
             this.tablePanel3.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 100F)});
-            this.tablePanel3.Size = new System.Drawing.Size(756, 164);
+            this.tablePanel3.Size = new System.Drawing.Size(408, 55);
             this.tablePanel3.TabIndex = 10;
             // 
             // simpleButton1
             // 
+            this.simpleButton1.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton1.Appearance.Options.UseFont = true;
             this.tablePanel3.SetColumn(this.simpleButton1, 0);
             this.simpleButton1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.simpleButton1.Location = new System.Drawing.Point(6, 6);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(6);
+            this.simpleButton1.Location = new System.Drawing.Point(3, 3);
             this.simpleButton1.Name = "simpleButton1";
             this.tablePanel3.SetRow(this.simpleButton1, 0);
-            this.simpleButton1.Size = new System.Drawing.Size(253, 152);
+            this.simpleButton1.Size = new System.Drawing.Size(137, 49);
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "나가기";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // btn_Print
             // 
+            this.btn_Print.Appearance.Font = new System.Drawing.Font("나눔스퀘어라운드OTF ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Print.Appearance.Options.UseFont = true;
             this.tablePanel3.SetColumn(this.btn_Print, 3);
             this.btn_Print.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Print.Location = new System.Drawing.Point(573, 6);
-            this.btn_Print.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_Print.Location = new System.Drawing.Point(309, 3);
             this.btn_Print.Name = "btn_Print";
             this.tablePanel3.SetRow(this.btn_Print, 0);
-            this.btn_Print.Size = new System.Drawing.Size(177, 152);
+            this.btn_Print.Size = new System.Drawing.Size(96, 49);
             this.btn_Print.TabIndex = 6;
             this.btn_Print.Text = "출력";
             this.btn_Print.Click += new System.EventHandler(this.btn_Print_Click);
             // 
             // ReceiptPrintPopUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 1414);
+            this.ClientSize = new System.Drawing.Size(432, 493);
             this.Controls.Add(this.tablePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ReceiptPrintPopUp";
             this.Text = "영수증 출력";
             this.Load += new System.EventHandler(this.ReceiptPrintPopUp_Load);
