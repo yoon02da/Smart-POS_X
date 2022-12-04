@@ -23,6 +23,7 @@ namespace Smart_POS_X.UI
             InitializeComponent();
 
             Combo();
+
         }
 
         private void EmpManagedScreen_Load(object sender, EventArgs e)
@@ -32,7 +33,7 @@ namespace Smart_POS_X.UI
 
         private void btn_Select_Click(object sender, EventArgs e)
         {
-            DB.Exec($"EmpManagedScreen_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
+            gridControl1.DataSource=DB.Exec($"EMPSelect_S01 '{txt_EmpCode.Text}', '{cbo_Job.Code}', '{cbo_WorkGroup.Code}', '{cbo_WorkState.Code}'");
 
             if (DB.result == true)
             {
@@ -56,6 +57,28 @@ namespace Smart_POS_X.UI
             cbo_Job.cbo.Properties.DisplayMember = "NAME";
             cbo_WorkGroup.cbo.Properties.DisplayMember = "NAME";
             cbo_WorkState.cbo.Properties.DisplayMember = "NAME";
+
+            repositoryItemLookUpEdit1.DataSource = DB.Exec($"CODE_SELECT '직급','Y'");
+            repositoryItemLookUpEdit2.DataSource = DB.Exec($"CODE_SELECT '근무조','Y'");
+            repositoryItemLookUpEdit3.DataSource = DB.Exec($"CODE_SELECT '근무상태','Y'");
         }
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            var dt = ((DataTable)gridControl1.DataSource);
+            dt.GetChanges();
+
+
+
+
+
+            DB.Exec($"EMPSelect_CUD '직급','Y'");
+        }
+
+        private void btn_Add_Click(object sender, EventArgs e)
+        {
+            gridView1.AddNewRow();
+        }
+
     }
 }

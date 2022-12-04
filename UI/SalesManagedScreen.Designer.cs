@@ -85,80 +85,81 @@
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 2F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 50F),
             new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 5F)});
-            this.tablePanel1.Size = new System.Drawing.Size(941, 571);
+            this.tablePanel1.Size = new System.Drawing.Size(1748, 1104);
             this.tablePanel1.TabIndex = 0;
             // 
             // chart_TopDessert
             // 
             this.tablePanel1.SetColumn(this.chart_TopDessert, 3);
             this.chart_TopDessert.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_TopDessert.Location = new System.Drawing.Point(618, 327);
+            this.chart_TopDessert.Location = new System.Drawing.Point(1147, 634);
             this.chart_TopDessert.Margin = new System.Windows.Forms.Padding(0);
             this.chart_TopDessert.Name = "chart_TopDessert";
             this.tablePanel1.SetRow(this.chart_TopDessert, 7);
             this.chart_TopDessert.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_TopDessert.Size = new System.Drawing.Size(294, 221);
+            this.chart_TopDessert.Size = new System.Drawing.Size(546, 428);
             this.chart_TopDessert.TabIndex = 11;
             // 
             // chart_TopDrink
             // 
             this.tablePanel1.SetColumn(this.chart_TopDrink, 3);
             this.chart_TopDrink.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_TopDrink.Location = new System.Drawing.Point(618, 53);
+            this.chart_TopDrink.Location = new System.Drawing.Point(1147, 103);
             this.chart_TopDrink.Margin = new System.Windows.Forms.Padding(0);
             this.chart_TopDrink.Name = "chart_TopDrink";
             this.tablePanel1.SetRow(this.chart_TopDrink, 3);
             this.chart_TopDrink.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_TopDrink.Size = new System.Drawing.Size(294, 221);
+            this.chart_TopDrink.Size = new System.Drawing.Size(546, 428);
             this.chart_TopDrink.TabIndex = 10;
             // 
             // chart_TimeSale
             // 
             this.tablePanel1.SetColumn(this.chart_TimeSale, 2);
             this.chart_TimeSale.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_TimeSale.Location = new System.Drawing.Point(323, 327);
+            this.chart_TimeSale.Location = new System.Drawing.Point(601, 634);
             this.chart_TimeSale.Margin = new System.Windows.Forms.Padding(0);
             this.chart_TimeSale.Name = "chart_TimeSale";
             this.tablePanel1.SetRow(this.chart_TimeSale, 7);
             this.chart_TimeSale.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_TimeSale.Size = new System.Drawing.Size(294, 221);
+            this.chart_TimeSale.Size = new System.Drawing.Size(546, 428);
             this.chart_TimeSale.TabIndex = 9;
             // 
             // chart_WeekMenu
             // 
             this.tablePanel1.SetColumn(this.chart_WeekMenu, 2);
             this.chart_WeekMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_WeekMenu.Location = new System.Drawing.Point(323, 53);
+            this.chart_WeekMenu.Location = new System.Drawing.Point(601, 103);
             this.chart_WeekMenu.Margin = new System.Windows.Forms.Padding(0);
             this.chart_WeekMenu.Name = "chart_WeekMenu";
             this.tablePanel1.SetRow(this.chart_WeekMenu, 3);
             this.chart_WeekMenu.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_WeekMenu.Size = new System.Drawing.Size(294, 221);
+            this.chart_WeekMenu.Size = new System.Drawing.Size(546, 428);
             this.chart_WeekMenu.TabIndex = 8;
             // 
             // chart_Day
             // 
             this.tablePanel1.SetColumn(this.chart_Day, 1);
             this.chart_Day.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_Day.Location = new System.Drawing.Point(29, 327);
+            this.chart_Day.Location = new System.Drawing.Point(55, 634);
             this.chart_Day.Margin = new System.Windows.Forms.Padding(0);
             this.chart_Day.Name = "chart_Day";
             this.tablePanel1.SetRow(this.chart_Day, 7);
             this.chart_Day.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_Day.Size = new System.Drawing.Size(294, 221);
+            this.chart_Day.Size = new System.Drawing.Size(546, 428);
             this.chart_Day.TabIndex = 7;
             // 
             // chart_Week
             // 
             this.tablePanel1.SetColumn(this.chart_Week, 1);
             this.chart_Week.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chart_Week.Location = new System.Drawing.Point(29, 53);
+            this.chart_Week.Location = new System.Drawing.Point(55, 103);
             this.chart_Week.Margin = new System.Windows.Forms.Padding(0);
             this.chart_Week.Name = "chart_Week";
             this.tablePanel1.SetRow(this.chart_Week, 3);
             this.chart_Week.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
-            this.chart_Week.Size = new System.Drawing.Size(294, 221);
+            this.chart_Week.Size = new System.Drawing.Size(546, 428);
             this.chart_Week.TabIndex = 6;
+            this.chart_Week.Click += new System.EventHandler(this.chart_Week_Click);
             // 
             // labelControl6
             // 
@@ -171,11 +172,11 @@
             this.labelControl6.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl6, 3);
             this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl6.Location = new System.Drawing.Point(618, 296);
+            this.labelControl6.Location = new System.Drawing.Point(1147, 574);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl6.Name = "labelControl6";
             this.tablePanel1.SetRow(this.labelControl6, 5);
-            this.labelControl6.Size = new System.Drawing.Size(294, 22);
+            this.labelControl6.Size = new System.Drawing.Size(546, 43);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "가장 잘 팔리는 디저트";
             // 
@@ -190,11 +191,11 @@
             this.labelControl5.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl5, 2);
             this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl5.Location = new System.Drawing.Point(323, 296);
+            this.labelControl5.Location = new System.Drawing.Point(601, 574);
             this.labelControl5.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl5.Name = "labelControl5";
             this.tablePanel1.SetRow(this.labelControl5, 5);
-            this.labelControl5.Size = new System.Drawing.Size(294, 22);
+            this.labelControl5.Size = new System.Drawing.Size(546, 43);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "시간별 매출";
             // 
@@ -209,11 +210,11 @@
             this.labelControl4.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl4, 1);
             this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl4.Location = new System.Drawing.Point(29, 296);
+            this.labelControl4.Location = new System.Drawing.Point(55, 574);
             this.labelControl4.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl4.Name = "labelControl4";
             this.tablePanel1.SetRow(this.labelControl4, 5);
-            this.labelControl4.Size = new System.Drawing.Size(294, 22);
+            this.labelControl4.Size = new System.Drawing.Size(546, 43);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "전일 대비 매출";
             // 
@@ -228,11 +229,11 @@
             this.labelControl3.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl3, 3);
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(618, 22);
+            this.labelControl3.Location = new System.Drawing.Point(1147, 43);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl3.Name = "labelControl3";
             this.tablePanel1.SetRow(this.labelControl3, 1);
-            this.labelControl3.Size = new System.Drawing.Size(294, 22);
+            this.labelControl3.Size = new System.Drawing.Size(546, 43);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "가장 잘 팔리는 음료";
             // 
@@ -247,11 +248,11 @@
             this.labelControl2.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl2, 2);
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(323, 22);
+            this.labelControl2.Location = new System.Drawing.Point(601, 43);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel1.SetRow(this.labelControl2, 1);
-            this.labelControl2.Size = new System.Drawing.Size(294, 22);
+            this.labelControl2.Size = new System.Drawing.Size(546, 43);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "주간 매출 상위 품목";
             // 
@@ -266,21 +267,22 @@
             this.labelControl1.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
             this.tablePanel1.SetColumn(this.labelControl1, 1);
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(29, 22);
+            this.labelControl1.Location = new System.Drawing.Point(55, 43);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 1);
-            this.labelControl1.Size = new System.Drawing.Size(294, 22);
+            this.labelControl1.Size = new System.Drawing.Size(546, 43);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "시간별 아메리카노 판매";
             // 
             // SalesManagedScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(941, 571);
+            this.ClientSize = new System.Drawing.Size(1748, 1104);
             this.Controls.Add(this.tablePanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "SalesManagedScreen";
             this.Text = "SalesManagedScreen";
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
